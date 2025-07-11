@@ -1,18 +1,19 @@
 [
   { // testing
-		"name": "Mechanized Infantry",
+		"name": "Marine",
 		"unitType": "Gunpowder",
-		"movement": 4,
-		"strength": 90,
-		"cost": 375,
-		"requiredTech": "Mobile Tactics",
+		"movement": 3,
+		"strength": 65,
+		"cost": 400,
+		"requiredTech": "Pharmaceuticals",
+		"promotions": ["Amphibious I","Medic I","Woodsman","Ambush I"],  // Well-trained unit
 		"uniques": [
-      "May Paradrop to [Grassland] tiles up to [8] tiles away",
-			"[+25]% Strength <vs [Air] units> <when defending>",
-			"May withdraw before melee ([25]%) <vs [Air] units> <when defending>",
-			"Never appears as a Barbarian unit", 
-		],
-		"promotions": ["Blitz"],
-		"attackSound": "tankshot",
+			"May Paradrop to [Grassland] tiles up to [8] tiles away",
+			"[+1] Sight <when [Embarked]>",
+			"Can move immediately once bought",
+			"Can move after attacking",
+			"Defense bonus when embarked",
+                ],
+		"attackSound": "shot"
 	},
 ]
