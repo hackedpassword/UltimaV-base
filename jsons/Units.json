@@ -1,0 +1,18 @@
+[
+  { // testing
+		"name": "Mechanized Infantry",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 90,
+		"cost": 375,
+		"requiredTech": "Mobile Tactics",
+		"uniques": [
+      "May Paradrop to [Grassland] tiles up to [8] tiles away",
+			"[+25]% Strength <vs [Air] units> <when defending>",
+			"May withdraw before melee ([25]%) <vs [Air] units> <when defending>",
+			"Never appears as a Barbarian unit", 
+		],
+		"promotions": ["Blitz"],
+		"attackSound": "tankshot",
+	},
+]
