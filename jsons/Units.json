@@ -6,7 +6,7 @@
 		"strength": 65,
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
-		"promotions": ["Amphibious I","Medic","Woodsman","Ambush I"],  // Well-trained unit
+		"promotions": ["Amphibious","Medic","Woodsman","Ambush I"],  // Well-trained unit
 		"uniques": [
 			"May Paradrop to [Grassland] tiles up to [8] tiles away",
 			"[+1] Sight <when [Embarked]>",
