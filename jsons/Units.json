@@ -1,19 +1,20 @@
 [
-  { // testing
-		"name": "Marine",
-		"unitType": "Gunpowder",
-		"movement": 3,
-		"strength": 65,
-		"cost": 400,
-		"requiredTech": "Pharmaceuticals",
-		"promotions": ["Amphibious","Medic","Woodsman","Ambush I"],  // Well-trained unit
+  {
+		"name": "Avatar",
+		"unitType": "Hero",
+		"movement": 2,
+		"strength": 50,
+		"cost": 500,
+		"requiredTech": "Summoning",
+		"promotions": ["Amphibious","Medic","Woodsman"],
 		"uniques": [
-			"May Paradrop to [Grassland] tiles up to [8] tiles away",
+			/* "May Paradrop to [Grassland] tiles up to [8] tiles away",  // move to blink spell
 			"[+1] Sight <when [Embarked]>",
 			"Can move immediately once bought",
 			"Can move after attacking",
 			"Defense bonus when embarked",
+			*/
                 ],
-		"attackSound": "shot"
+		"attackSound": "metalhit"
 	},
 ]
