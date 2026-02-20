@@ -1,1 +1,12 @@
-{"modUrl":"https://github.com/hackedpassword/UltimaV-base","defaultBranch":"main","author":"hackedpassword","topics":["unciv-mod","unciv-mod-expansions"]}
+{
+	"modUrl":"https://github.com/hackedpassword/UltimaV-base",
+	"defaultBranch":"main",
+	"author":"hackedpassword",
+	"isBaseRuleset":"true",
+	"topics":["unciv-mod","unciv-mod-rulesets","unciv-mod-fun","unciv-mod-maps"],
+	//"constants":{"unitUpgradeCost":{}},
+	"uniques":[
+		"Mod preselects map [Britannia]",
+		"Allow raze capital", "Allow raze holy city",
+  ]
+}
