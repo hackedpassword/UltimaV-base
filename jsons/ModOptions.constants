@@ -1,5 +1,10 @@
 [
-	{
-		"maxXPfromBarbarians": 10000,
+  /*
+    Documentation: https://yairm210.github.io/Unciv/Modders/Mod-file-structure/5-Miscellaneous-JSON-files/#modconstants
+  */
+
+    {
+		"maxXPfromBarbarians": 99999,   // unlimited
+		"maxGoldTradeOffer": 99999999,  // see https://github.com/yairm210/Unciv/pull/14147
 	}
 ]
