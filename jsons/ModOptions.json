@@ -3,7 +3,7 @@
 	"defaultBranch":"main",
 	"author":"hackedpassword",
 	"isBaseRuleset":"true",
-	"topics":["unciv-mod","unciv-mod-rulesets","unciv-mod-fun","unciv-mod-maps"],
+	"topics":[""],
 	//"constants":{"unitUpgradeCost":{}},
 	"uniques":[
 		"Mod preselects map [Britannia]",
