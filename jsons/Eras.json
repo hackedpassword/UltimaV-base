@@ -1,0 +1,1 @@
+{\n  "name": "Ancient Era",\n  "researchAgreementCost": 100,\n  "startingSettlerCount": 1,\n  "startingWorkerCount": 1,\n  "startingMilitaryUnitCount": 1,\n  "startingMilitaryUnit": "Warrior",\n  "settlerPopulation": 1,\n  "baseUnitBuyCost": 50,\n  "embarkDefense": 5,\n  "startPercent": 0.1,\n  "citySound": "ancient.wav",\n  "iconRGB": [255, 204, 0]\n}
