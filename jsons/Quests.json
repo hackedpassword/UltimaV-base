@@ -1,1 +1,13 @@
-{"quests":[{"type":"Route","description":"Establish a trade route between two cities.","influenceReward":100},{"type":"Clear Barbarian Camp","description":"Eliminate the barbarian threats in the region.","influenceReward":150},{"type":"Connect Resource","description":"Secure resources from neighboring cities.","influenceReward":120},{"type":"Construct Wonder","description":"Build a great wonder to enhance city influence.","influenceReward":200}]}
+{"quests":
+  [
+    // how to assign a quest to a specific CS only?
+		{"type":"Find Natural Wonder","description":"Discover the Codex of Wisdom","target":"Codex","influenceReward":100},
+    
+    /* base G&K quests, examples for templating 
+    {"type":"Route","description":"Establish a trade route between two cities.","influenceReward":100},
+    {"type":"Clear Barbarian Camp","description":"Eliminate the barbarian threats in the region.","influenceReward":150},
+    {"type":"Connect Resource","description":"Secure resources from neighboring cities.","influenceReward":120},
+    {"type":"Construct Wonder","description":"Build a great wonder to enhance city influence.","influenceReward":200}
+	*/
+  ]
+}
