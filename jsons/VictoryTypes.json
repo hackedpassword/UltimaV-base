@@ -10,7 +10,27 @@
   
   
     */
-  
+
+    /*    Creating a winning condition is hard - because the milestones are limited to certain conditions.
+          For a test run, we'll have a simple quest. This will demonstrate gaining an item, taking it
+          somewhere, some trigger responds granting the player something, player goes to capitol city
+          entity, builds a building requiring the thing.
+    */
+    {
+        "name": "Basic",
+        "victoryScreenHeader": "Find and return the stolen Sceptre",
+        "milestones": [
+            "Build [Shrine of the Avatar]", // "Add all [runes of virtue] in capital"
+        ],
+        "requiredSpaceshipParts": [
+            "Sceptre"
+        ],
+        "victoryString": "The Avatar succeeded.",
+        "defeatString": "Fail, try again."
+    },
+
+//////// templates
+    
     {
         "name": "Scientific",
         "victoryScreenHeader": "Complete all the spaceship parts to win!",
