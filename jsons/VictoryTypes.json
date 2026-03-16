@@ -7,14 +7,11 @@
           Design notes:
             Spaceship parts will likely be UV game items. These are units, which could be carried as items (air unit).
             SS parts = https://github.com/yairm210/Unciv/blob/master/android/assets/jsons/Civ%20V%20-%20Vanilla/Units.json#L1344
-  
-  
-    */
-
-    /*    Creating a winning condition is hard - because the milestones are limited to certain conditions.
-          For a test run, we'll have a simple quest. This will demonstrate gaining an item, taking it
-          somewhere, some trigger responds granting the player something, player goes to capitol city
-          entity, builds a building requiring the thing.
+    
+        Creating a winning UV condition is hard - because the milestones are limited to certain conditions.
+        For a test run, we'll have a simple quest. This will demonstrate gaining an item, taking it
+        somewhere, some trigger responds granting the player something, player goes to capitol city
+        entity, builds a building requiring the thing.
     */
     {
         "name": "Basic",
@@ -23,14 +20,14 @@
             "Build [Shrine of the Avatar]", // "Add all [runes of virtue] in capital"
         ],
         "requiredSpaceshipParts": [
-            "Sceptre"
+            "Sceptre",  // these are units
         ],
         "victoryString": "The Avatar succeeded.",
         "defeatString": "Fail, try again."
     },
 
 //////// templates
-    
+/*
     {
         "name": "Scientific",
         "victoryScreenHeader": "Complete all the spaceship parts to win!",
@@ -71,4 +68,7 @@
         "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
         "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
     }
+*/
 ]
+
+
