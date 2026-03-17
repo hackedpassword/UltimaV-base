@@ -4,6 +4,8 @@
 	"author":"hackedpassword",
 	"isBaseRuleset":"true",
 	"topics":[""],
+	"tileset":"",
+	"unitset":"",
 	//"constants":{"unitUpgradeCost":{}},
 	"uniques":[
 		"Mod preselects map [Britannia]",
