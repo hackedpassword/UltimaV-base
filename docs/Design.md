@@ -4,8 +4,8 @@ Prob a lot of thinking-out-loud progressiveness til the mod conjeals.
 
 ## Available systems
 
-1. Tech tree
-2. Policies
+1. Tech tree, science
+2. Policies, culture
 3. Promotions, experience XP
 4. Carried units, air combat actions
 5. Religion, religious units
@@ -23,6 +23,8 @@ Prob a lot of thinking-out-loud progressiveness til the mod conjeals.
 17. CS diplomacy modifiers
 18. Time/years/turns
 19. Events
+20. Revolts
+21. Food
 
 ## Systems brainstorming usage 🧠
 
@@ -32,7 +34,7 @@ Prob a lot of thinking-out-loud progressiveness til the mod conjeals.
 - Turn counts could be leveraged for paradrop moongate travel (div/8)
 - Settling might be restricted to being camps, while CS's rep cities of virtue, keeps, etc
 - Cities cannot be entered, so maybe a temporary city is placed adjacent as an interface to rep being in the city, so buying supplies, etc, and other city-based actions can occur, then the city-interface razes when out
-
+- Revolts can be used to trigger spawn monsters, maybe a monster civ where happiness is always super low and modding baseTurnsUntilRevolt to 1 or 2
 ## Considered ideas
 
 - unicode runic used with some events, etc
