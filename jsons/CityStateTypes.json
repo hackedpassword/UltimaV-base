@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Virtuous",
+        "friendBonusUniques": [
+            //"[+3 Culture] <before the [Medieval era]>",
+        ],
+        "allyBonusUniques": [
+            //"[+6 Culture] <before the [Medieval era]>",
+        ],
+        "color": [139, 96, 255]
+    },
+]

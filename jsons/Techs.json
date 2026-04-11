@@ -1,0 +1,38 @@
+[
+
+	{
+		"columnNumber": 0,
+		"era": "Enlightenment",
+		"techCost": 1,
+		"buildingCost": 1,
+		"wonderCost": 1,
+		"techs": [
+			{
+				"name": "Summoning",
+				"row": 1,
+				"quote": "",
+				"uniques": [
+				        "Starting tech",
+				],
+			"quote": "Welcome Avatar, thou hast work to do!",
+			},
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Enlightenment",
+		"techCost": 1,
+		"buildingCost": 1,
+		"wonderCost": 1,
+		"techs": [
+			{
+				"name": "Motivation",  // placeholder tech
+				"row": 1,
+				"quote": "",
+				"uniques": [
+				        //"motivated",
+				],
+			},
+		]
+	},
+]

@@ -1,0 +1,9 @@
+[
+	{
+		"name":"Chuckles",
+		"science":3,
+		"greatPersonPoints": {"Jester":3},
+		"color": [0,0,255]
+	},
+
+]

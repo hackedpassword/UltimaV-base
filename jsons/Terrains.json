@@ -1,0 +1,219 @@
+[
+	{
+		"name": "Grassland",
+		"type": "Land",
+		"food": 0,
+        	"gold": 0,
+		"movementCost": 1,
+		"uniques": []
+	},
+	{
+		"name": "Plains",
+		"type": "Land",
+		"food": 0,
+        	"gold": 0,
+		"movementCost": 1,
+		"uniques": []
+	},
+	{
+		"name": "Desert",
+		"type": "Land",
+		"food": 0,
+        	"gold": 0,
+		"movementCost": 1,
+		"uniques": []
+	},
+	{
+		"name": "Mountain",
+		"type": "Land",
+		"movementCost": 3,
+		"defenceBonus": 0.5,
+	        "impassable": true,  // unless unit has grapple gear/promotion 
+		"RGB": [99, 40, 7],
+		"uniques": [
+			"Rough terrain",
+		        "Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
+			"Considered [Undesirable] when determining start locations",
+			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
+		], 
+	},
+	{
+		"name": "Coast",
+		"type": "Water",
+		"food": 0,
+		"gold": 0,
+		"uniques": []
+	},
+	{
+		"name": "Surf",
+		"type": "Water",
+		"food": 1,
+		"gold": 0,
+		"uniques": []
+	},
+	{
+		"name": "Ocean",
+		"type": "Water",
+		"food": 2,
+		"gold": 0,
+		"uniques": []
+	},
+	{
+		"name": "Rough Ocean",
+		"type": "Water",
+		"food": 0,
+		"gold": 0,
+		"uniques": []
+	},
+
+
+	{
+		"name": "Forest",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.35,
+		"occursOn": ["Grassland","Hill"],
+		"uniques": [
+			"Rough terrain", "Vegetation",
+			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+		],
+	},
+	{
+		"name": "Swamp",
+		"type": "TerrainFeature",
+		"food": -1,
+		"movementCost": 2,
+		"unbuildable": true,
+		"defenceBonus": -0.4,
+		"occursOn": ["Grassland"],
+		"uniques": [
+			"Rough terrain", "Vegetation", 
+		],
+	},
+	{
+		"name": "Hill",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Plains","Grassland","Desert","Mountain"],
+		"uniques": [
+			"Rough terrain",
+			"[+10] Strength for cities built on this terrain",
+			"Blocks line-of-sight from tiles at same elevation",
+		],
+	},
+
+
+
+	{
+		"name": "Shame",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Despise",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Wrong",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Covetous",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Deceit",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Hythloth",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Destard",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+
+
+	{
+		"name": "Britannia Castle",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+	{
+		"name": "Blackthorn Castle",
+		"type": "NaturalWonder",
+		"gold": 10,
+		"occursOn": ["Grassland"],
+		"uniques": [
+		],
+		"turnsInto": "Grassland",
+		"impassable": false,
+		"unbuildable": true,
+	},
+
+
+
+]

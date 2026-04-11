@@ -1,0 +1,172 @@
+[
+// Z2 improvements
+
+	{
+	// City center to become camp, or such
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],  // check if Land is accepted
+		"uniques": [
+			// "Unpillagable", "Irremovable", "Unbuildable",
+			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
+										// ..could work if tile becomes hill for example
+		],
+        "civilopediaText": [
+			{"text":""},
+		]
+	},
+
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert"],
+		"food": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Motivation",
+		"uniques": [
+			"Can also be built on tiles adjacent to fresh water",
+                        "Pillaging this improvement yields approximately [+2 Food]",
+		],
+		"shortcutKey": "F"
+	},
+
+	{
+		"name": "Camp",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert"],
+		"turnsToBuild": 7,
+		"techRequired": "Motivation",
+		"uniques": [
+			"Does not need removal of [Forest]",
+			//"Does not need removal of [Jungle]",
+			"[+1 Gold] <after discovering [Motivation]>",
+			//"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "C"
+	},
+	// Transportation
+
+	{
+	// Name: Path
+		"name": "Road",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Motivation",
+		"shortcutKey": "R",
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [1] [Gold] per turn",
+			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
+		],
+	},
+	{
+		"name": "Railroad",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Motivation",
+		"shortcutKey": "R",
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [2] [Gold] per turn",
+			"[+2 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
+		], 
+	},
+
+
+////////////////////////////////
+
+//// G&K merged base ruleset ////
+
+////////////////////////////////
+
+
+
+	// Removals
+	// Any improvement that starts with 'Remove ' is automatically changed into
+	// the improvement that removes the terrainfeature after it.
+	{
+		"name": "Remove Forest",
+		"turnsToBuild": 4,
+		"techRequired": "Motivation",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	{
+		"name": "Remove Jungle",
+		"turnsToBuild": 7,
+		"techRequired": "Motivation",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},
+	{
+		"name": "Remove Fallout",
+		"turnsToBuild": 2,
+		// Has no tech requirements as it can always be built
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},
+	{
+		"name": "Remove Marsh",
+		"turnsToBuild": 6,
+		"techRequired": "Motivation",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},
+
+	// These are unique and have unique in-game checks related to them
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "."
+	},
+    // Purely for turnsToBuild and civilopediaText. Unbuildable so it doesn't show in ImprovementPicker
+    {
+        "name": "Repair",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "turnsToBuild": 2,
+        "shortcutKey": "E",
+        "uniques": ["Unbuildable"],
+        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
+    },
+
+
+    // Great Person improvements
+
+	{
+		"name": "Shrine",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 6,
+		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Ancient ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable", 
+			"Provides a random bonus when entered", 
+			// "Unbuildable", 
+		]
+	},
+	{
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable",
+			//"Will be replaced by automated workers"
+		],
+	},
+	{
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Unbuildable"],
+	}
+
+]

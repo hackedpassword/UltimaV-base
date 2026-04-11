@@ -1,14 +1,16 @@
-{
-  "name": "Enlightenment",
-  "researchAgreementCost": 100,
-  "startingSettlerCount": 0,
-  "startingWorkerCount": 0,
-  "startingMilitaryUnitCount": 1,
-  "startingMilitaryUnit": "Avatar",
-  "settlerPopulation": 1,
-  "baseUnitBuyCost": 50,
-  "embarkDefense": 5,
-  "startPercent": 0.1,
-  "citySound": "ancient.wav",
-  "iconRGB": [255, 204, 0]
-}
+[
+    {
+        "name": "Enlightenment",
+        "researchAgreementCost": 100,
+        "startingSettlerCount": 0,
+        "startingWorkerCount": 0,
+        "startingMilitaryUnitCount": 1,
+        "startingMilitaryUnit": "Avatar",
+        "settlerPopulation": 1,
+        "baseUnitBuyCost": 50,
+        "embarkDefense": 5,
+        "startPercent": 0.1,
+        "citySound": "ancient.wav",
+        "iconRGB": [255, 204, 0]
+    }
+]

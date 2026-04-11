@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land", 
+        "uniques": [
+            "Double movement in [Plains]", // ⚠️ ⛔ <when not at war>",
+        ]
+    },
+    {
+        "name": "Adventurer",
+        "movementType": "Land", 
+        "uniques": [
+            "Double movement in [Plains]",
+        ]
+    },
+]

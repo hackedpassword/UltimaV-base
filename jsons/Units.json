@@ -1,20 +1,27 @@
 [
   {
 		"name": "Avatar",
-		"unitType": "Hero",
+		"unitType": "Adventurer",
 		"movement": 2,
 		"strength": 50,
 		"cost": 500,
 		"requiredTech": "Summoning",
-		"promotions": ["Amphibious","Medic","Woodsman"],
+		"promotions": ["Hero","Blink"],
 		"uniques": [
-			/* "May Paradrop to [Grassland] tiles up to [8] tiles away",  // move to blink spell
-			"[+1] Sight <when [Embarked]>",
-			"Can move immediately once bought",
 			"Can move after attacking",
-			"Defense bonus when embarked",
-			*/
+			"Founds a new city <once>",
+
                 ],
 		"attackSound": "metalhit"
+	},
+	{
+		"name": "Jester",
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            //"Can instantly construct a [Landmark] improvement <by consuming this unit>",
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
 	},
 ]

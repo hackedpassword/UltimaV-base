@@ -1,0 +1,15 @@
+[  // Mostly representative abilities, good for now
+
+	{
+		"name": "Blink",
+		"uniques": [
+			"May Paradrop to [Land] tiles up to [8] tiles away", // mental note if Land fails add as label
+		]
+	},
+        {
+		"name": "Hero",  // temp/example
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+		]
+	},
+]

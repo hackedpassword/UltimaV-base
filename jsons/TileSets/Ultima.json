@@ -1,0 +1,46 @@
+{
+    "useColorAsBaseTerrain": "false",
+    "fallbackTileSet": "Minimal",
+
+    "ruleVariants": {
+
+        // for hardcoded terrains
+        "Grassland": ["Grassland"],
+        "Plains": ["Flatland","Grass"],
+        "Desert": ["Desert"],
+        "Lakes": ["Surf"],
+        "Snow": ["Desert","Hillss"],
+        "Tundra": ["Brick"],
+        "Ice": ["Whirlpool"],
+        "Fallout": ["Lava"],
+
+        "Flatland": ["Flatland","Grass"],
+
+        "Grassland+Deep Forest": ["Grassland","Deep Forest"],
+        "Grassland+Forest+Deep Forest": ["Grassland","Woods","Deep Forest"],
+        "Grassland+Deep Forest+Forest": ["Grassland","Deep Forest","Forest"],
+
+        //"Grassland+Hills": ["Grassland","Hills"],
+        "Grassland+Hills+Forest": ["Grassland","Hills","Woods"],
+        "Grassland+Hills+Deep Forest": ["Grassland","Hills","Forest"],
+        "Grassland+Hills+Forest+Deep Forest": ["Grassland","Hills","Deep Forest"],        
+
+        // Dungeons
+        "Shame": ["Dungeon2"],
+        "Despise": ["Dungeon3"],
+        "Wrong": ["Dungeon1"],
+        "Covetous": ["Dungeon1"],
+        "Deceit": ["Dungeon1"],
+        "Hythloth": ["Dungeon2"],
+        "Destard": ["Dungeon3"],
+
+        //["Blackthorn Castle"]: [""],
+        //["Britannia Castle"]: [""],
+
+        "Grassland+Farm": ["Grassland","Farm"],
+        "Flatland+Farm": ["Flatland","Flatland Farm"],
+        "Desert+Farm": ["Desert","Desert Farm"],
+
+
+    }
+} 

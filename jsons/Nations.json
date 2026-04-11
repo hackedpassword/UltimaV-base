@@ -1,0 +1,54 @@
+[
+	//Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+//		"innerColor": [255,255,255]
+	},
+	{
+		"name": "Brittania",
+		"leaderName": "Lord British",
+		"adjective": ["English"],
+		"startBias": ["Coast"],
+		"preferredVictoryType": "Basic",
+
+        "startIntroPart1": "",
+        "startIntroPart2": "",
+
+        "declaringWar": "By the grace of God, your days are numbered.",
+		"attacked": "We shall never surrender.",
+		"defeated": "You have triumphed over us. The day is yours.",
+		"introduction": "We are pleased to meet you.",
+		"neutralHello": "Hello, again.",
+		"hateHello": "Oh, it's you!",
+		"tradeRequest": "Would you be interested in a trade agreement with England?",
+		"outerColor": [109, 2, 0],
+		"innerColor": [255, 255, 255],
+		"favoredReligion": "Valor",
+		"uniqueName": "Sun Never Sets",
+		"uniques": ["[+2] Movement <for [Water] units>"],
+		"cities": ["Trinsic","Yew","Moonglow"],  // ...
+        "spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
+	},
+// CS's
+	{
+		"name": "Paws",  // example town/"nation"
+		"adjective": ["Wispies"],
+		"cityStateType": "Virtuous",
+
+		"declaringWar": "War lingers in our hearts. Why carry on with a false peace?",
+		"attacked": "You gormless radger! You'll dine on your own teeth before you set foot in Ireland!",
+		"defeated": "A lonely wind blows through the highlands today. A dirge for Ireland. Can you hear it?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [211,180,113],
+		"cities": ["Paws"],
+		"uniques": ["Will not be displayed in Civilopedia", "Will not be chosen for new games"]
+	},
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+	        "innerColor": [185,12,12],
+		"uniques": ["Can only heal by pillaging"]
+	}
+
+]

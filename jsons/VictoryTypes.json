@@ -20,7 +20,7 @@
             "Build [Shrine of the Avatar]", // "Add all [runes of virtue] in capital"
         ],
         "requiredSpaceshipParts": [
-            "Sceptre",  // these are units
+            //"Sceptre",  // these are units
         ],
         "victoryString": "The Avatar succeeded.",
         "defeatString": "Fail, try again."
