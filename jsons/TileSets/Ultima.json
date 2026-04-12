@@ -4,22 +4,29 @@
 
     "ruleVariants": {
 
-        // for hardcoded terrains
+        // for hardcoded or legacy terrains
         "Grassland": ["Grassland"],
-        "Plains": ["Flatland","Grass"],
+        "Plains": ["Flatland","features/Grass"],
         "Desert": ["Desert"],
         "Lakes": ["Surf"],
-        "Snow": ["Desert","Hillss"],
+        "Snow": ["Brick","Hills"],
         "Tundra": ["Brick"],
         "Ice": ["Whirlpool"],
         "Fallout": ["Lava"],
 
-        "Flatland": ["Flatland","Grass"],
+	// base terrains
+        "Flatland": ["Flatland","features/Grass"],
 
+	// legacy aliases - fyi this doesn't alias the Terrains.json definition; the key here needs to be an added duped definition
+        "Coast edgeless": ["editor/terrain/Coast edgeless"],
+	"Hill": ["Hills"],
+
+	// Forests
         "Grassland+Deep Forest": ["Grassland","Deep Forest"],
         "Grassland+Forest+Deep Forest": ["Grassland","Woods","Deep Forest"],
         "Grassland+Deep Forest+Forest": ["Grassland","Deep Forest","Forest"],
 
+	// Hills
         //"Grassland+Hills": ["Grassland","Hills"],
         "Grassland+Hills+Forest": ["Grassland","Hills","Woods"],
         "Grassland+Hills+Deep Forest": ["Grassland","Hills","Forest"],
@@ -37,6 +44,7 @@
         //["Blackthorn Castle"]: [""],
         //["Britannia Castle"]: [""],
 
+	// Farms
         "Grassland+Farm": ["Grassland","Farm"],
         "Flatland+Farm": ["Flatland","Flatland Farm"],
         "Desert+Farm": ["Desert","Desert Farm"],
