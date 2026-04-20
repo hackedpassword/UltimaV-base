@@ -97,6 +97,22 @@
 	},
 
 	{
+		"name": "Woods",
+		"type": "TerrainFeature",
+		"movementCost": 21
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.1,
+		"occursOn": ["Grassland","Hills"],
+		"uniques": [
+			"Vegetation",
+			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			//"Blocks line-of-sight from tiles at same elevation",
+			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+		],
+	},
+
+	{
 		"name": "Forest",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -109,6 +125,22 @@
 			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+		],
+	},
+	{
+		"name": "Deep Forest",
+		"type": "TerrainFeature",
+		"movementCost": 3,
+		//"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.5,
+		"occursOn": ["Grassland","Hills"],
+		"uniques": [
+			"Rough terrain", "Vegetation",
+			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
+			// add more vis blockage
 		],
 	},
 	{
@@ -243,7 +275,9 @@
 
 
 
-	// Rivers - check out the unicode glyph naming scheme. Simplified naming, game/filesystem accepted characters.
+// Rivers
+
+	// Check out the unicode glyph naming scheme. Simplified naming, game/filesystem accepted characters.
 	{
 		"name": "rivers/║",
 		"type": "TerrainFeature",
@@ -252,202 +286,344 @@
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ˭",
+		"name": "rivers/⮝ ˭",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ‗",
+		"name": "rivers/⮟ ‗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╔",
+		"name": "rivers/⮝ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╗",
+		"name": "rivers/⮝ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╝",
+		"name": "rivers/⮟ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╚",
+		"name": "rivers/⮟ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╔",
+		"name": "rivers/⮝ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╗",
+		"name": "rivers/⮝ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╝",
+		"name": "rivers/⮟ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╚",
+		"name": "rivers/⮟ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╦",
+		"name": "rivers/⮝ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╩",
+		"name": "rivers/⮟ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╣",
+		"name": "rivers/⮝ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ╠",
+		"name": "rivers/⮟ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╦",
+		"name": "rivers/⮝ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╩",
+		"name": "rivers/⮝ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╣",
+		"name": "rivers/⮟ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/▽ ╠",
+		"name": "rivers/⮟ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ⩓",
+		"name": "rivers/⮝ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ⩔",
+		"name": "rivers/⮟ ⩔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ▨⋖",
+		"name": "rivers/⮟ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/△ ⋗▨",
+		"name": "rivers/⮝ ⩔",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮝ ▨⋖",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮝ ⋗▨",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮟ ▨⋖",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮟ ⋗▨",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮝ ▀",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮟ ▄",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 
+
+// Paths
+
+	// "TerrainDecor" label for future use, "Flatland" makes the TF behave as Flatland (convenient!)
 	{
-		"name": "rivers/▽ ⩓",
+		"name": "paths/║",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "rivers/▽ ⩔",
+		"name": "paths/⮝ ˭",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "rivers/▽ ▨⋖",
+		"name": "paths/⮟ ‗",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "rivers/▽ ⋗▨",
+		"name": "paths/⮝ ╝",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "rivers/△ ▀",
+		"name": "paths/⮝ ╚",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "rivers/▽ ▄",
+		"name": "paths/⮟ ╗",
 		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
+	{
+		"name": "paths/⮟ ╔",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮟ ╝",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮟ ╚",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮝ ╗",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮝ ╔",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮝ ╦",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮟ ╩",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮝ ╗╚ ⮟",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "paths/⮟ ╝╔ ⮝",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland","Desert","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+
+
+// Quaint little bridges
+	{
+		"name": "bridges/⮝ ⎶",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
+		"uniques": ["TerrainDecor","Bridge","Flatland"]
+	},
+	{
+		"name": "bridges/⮝ ][",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
+		"uniques": ["TerrainDecor","Bridge","Flatland"]
+	},
+	{
+		"name": "bridges/⮟ ⎶",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
+		"uniques": ["TerrainDecor","Bridge","Flatland"]
+	},
+	{
+		"name": "bridges/⮟ ][",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
+		"uniques": ["TerrainDecor","Bridge","Flatland"]
+	},
+
+
 
 
 
