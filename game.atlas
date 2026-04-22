@@ -20,42 +20,42 @@ TileSets/Ultima/Hexagon
   index: -1
 TileSets/Ultima/Highlight
   rotate: false
-  xy: 476, 444
+  xy: 140, 180
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Railroad
   rotate: false
-  xy: 140, 136
+  xy: 268, 336
   size: 64, 36
   orig: 64, 36
   offset: 0, 0
   index: -1
 TileSets/Ultima/Road
   rotate: false
-  xy: 268, 266
+  xy: 140, 138
   size: 60, 34
   orig: 60, 34
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Blackthorn Castle
   rotate: false
-  xy: 452, 404
+  xy: 516, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Brick
   rotate: false
-  xy: 732, 476
+  xy: 556, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Britannia Castle
   rotate: false
-  xy: 492, 404
+  xy: 596, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -69,301 +69,238 @@ TileSets/Ultima/Tiles/Camp
   index: -1
 TileSets/Ultima/Tiles/Coast
   rotate: false
-  xy: 772, 476
+  xy: 636, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Coast shore
   rotate: false
-  xy: 772, 476
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Covetous
-  rotate: false
-  xy: 4, 44
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Deceit
-  rotate: false
-  xy: 4, 44
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Wrong
-  rotate: false
-  xy: 4, 44
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Deep Forest
-  rotate: false
-  xy: 812, 476
+  xy: 636, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert
   rotate: false
-  xy: 572, 404
+  xy: 716, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Snow
   rotate: false
-  xy: 572, 404
+  xy: 716, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert Farm
   rotate: false
-  xy: 852, 476
+  xy: 756, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert Farm-Pillaged
   rotate: false
-  xy: 612, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Despise
-  rotate: false
-  xy: 140, 180
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Destard
-  rotate: false
-  xy: 140, 180
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Dungeon1
-  rotate: false
-  xy: 892, 476
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Dungeon2
-  rotate: false
-  xy: 652, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Dungeon3
-  rotate: false
-  xy: 692, 436
+  xy: 796, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Farm
   rotate: false
-  xy: 852, 436
+  xy: 596, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Farm-Pillaged
   rotate: false
-  xy: 892, 436
+  xy: 636, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmPH-Pillaged
   rotate: false
-  xy: 932, 436
+  xy: 676, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Flatland
   rotate: false
-  xy: 972, 436
+  xy: 716, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Flatland Farm
   rotate: false
-  xy: 212, 124
+  xy: 756, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Forest
   rotate: false
-  xy: 340, 292
+  xy: 796, 436
   size: 32, 32
   orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Grass
-  rotate: false
-  xy: 404, 444
-  size: 64, 64
-  orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Grassland
   rotate: false
-  xy: 336, 252
+  xy: 876, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
-TileSets/Ultima/Tiles/Hills
+TileSets/Ultima/Tiles/Hill
   rotate: false
-  xy: 140, 96
+  xy: 916, 436
   size: 32, 32
   orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Hythloth
-  rotate: false
-  xy: 548, 444
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/Shame
-  rotate: false
-  xy: 548, 444
-  size: 64, 64
-  orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Lava
   rotate: false
-  xy: 132, 56
+  xy: 956, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Mountain
   rotate: false
-  xy: 124, 16
+  xy: 260, 208
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Ocean
   rotate: false
-  xy: 388, 340
+  xy: 212, 164
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Rough Ocean
   rotate: false
-  xy: 388, 340
+  xy: 212, 164
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-Bottom
   rotate: false
-  xy: 268, 230
+  xy: 140, 102
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-BottomLeft
   rotate: false
-  xy: 260, 194
+  xy: 132, 66
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-BottomRight
   rotate: false
-  xy: 252, 158
+  xy: 180, 102
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
+TileSets/Ultima/Tiles/Scrub
+  rotate: false
+  xy: 172, 62
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 TileSets/Ultima/Tiles/Shrine
   rotate: false
-  xy: 252, 118
+  xy: 316, 296
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Surf
   rotate: false
-  xy: 452, 364
+  xy: 84, 20
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Surf shore
   rotate: false
-  xy: 452, 364
+  xy: 84, 20
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Swamp
   rotate: false
-  xy: 492, 364
+  xy: 380, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/Thicket
+  rotate: false
+  xy: 356, 300
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/Waterfall
+  rotate: false
+  xy: 452, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Whirlpool
   rotate: false
-  xy: 532, 364
+  xy: 492, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Woods
   rotate: false
-  xy: 572, 364
+  xy: 532, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridges/⮝ ][
   rotate: false
-  xy: 380, 292
+  xy: 652, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridges/⮝ ⎶
   rotate: false
-  xy: 212, 84
+  xy: 812, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridges/⮟ ][
   rotate: false
-  xy: 932, 356
+  xy: 348, 220
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridges/⮟ ⎶
   rotate: false
-  xy: 500, 324
+  xy: 372, 140
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -384,7 +321,7 @@ TileSets/Ultima/Tiles/editor/24x28 (32x32) detailed
   index: -1
 TileSets/Ultima/Tiles/editor/entities/Editor entity 1
   rotate: false
-  xy: 268, 308
+  xy: 4, 44
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -398,42 +335,42 @@ TileSets/Ultima/Tiles/editor/finetune (256x256) ultra
   index: -1
 TileSets/Ultima/Tiles/editor/large (64x64) detailed
   rotate: false
-  xy: 620, 444
+  xy: 404, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/terrain/Coast edgeless
   rotate: false
-  xy: 532, 404
+  xy: 676, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 1
   rotate: false
-  xy: 932, 476
+  xy: 956, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 10
   rotate: false
-  xy: 772, 436
+  xy: 516, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 11
   rotate: false
-  xy: 812, 436
+  xy: 556, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 2
   rotate: false
-  xy: 732, 436
+  xy: 268, 248
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -447,14 +384,14 @@ TileSets/Ultima/Tiles/editor/units/Editor unit 3
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 4
   rotate: false
-  xy: 972, 476
+  xy: 476, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 5
   rotate: false
-  xy: 340, 332
+  xy: 268, 288
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
@@ -468,336 +405,357 @@ TileSets/Ultima/Tiles/editor/units/Editor unit 6
   index: -1
 TileSets/Ultima/Tiles/features/Grass
   rotate: false
-  xy: 84, 20
+  xy: 836, 436
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/landmark/Dungeon1
+  rotate: false
+  xy: 836, 476
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/landmark/Dungeon2
+  rotate: false
+  xy: 876, 476
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/landmark/Dungeon3
+  rotate: false
+  xy: 916, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/║
   rotate: false
-  xy: 612, 364
+  xy: 572, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ˭
   rotate: false
-  xy: 376, 252
+  xy: 692, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╔
   rotate: false
-  xy: 252, 78
+  xy: 852, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╗
   rotate: false
-  xy: 212, 4
+  xy: 932, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╗╚ ⮟
   rotate: false
-  xy: 292, 154
+  xy: 972, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╚
   rotate: false
-  xy: 732, 396
+  xy: 420, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╝
   rotate: false
-  xy: 812, 396
+  xy: 172, 22
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮝ ╦
   rotate: false
-  xy: 972, 396
+  xy: 292, 168
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ‗
   rotate: false
-  xy: 972, 356
+  xy: 388, 220
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╔
   rotate: false
-  xy: 540, 324
+  xy: 372, 100
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╗
   rotate: false
-  xy: 620, 324
+  xy: 436, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╚
   rotate: false
-  xy: 460, 284
+  xy: 476, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╝
   rotate: false
-  xy: 540, 284
+  xy: 500, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╝╔ ⮝
   rotate: false
-  xy: 620, 284
+  xy: 468, 196
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/paths/⮟ ╩
   rotate: false
-  xy: 500, 244
+  xy: 540, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/║
   rotate: false
-  xy: 652, 364
+  xy: 612, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ˭
   rotate: false
-  xy: 172, 56
+  xy: 732, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ⋗▨
   rotate: false
-  xy: 164, 16
+  xy: 772, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╔
   rotate: false
-  xy: 212, 44
+  xy: 892, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╗
   rotate: false
-  xy: 252, 38
+  xy: 420, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╚
   rotate: false
-  xy: 772, 396
+  xy: 132, 26
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╝
   rotate: false
-  xy: 852, 396
+  xy: 308, 248
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╠
   rotate: false
-  xy: 892, 396
+  xy: 300, 208
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╣
   rotate: false
-  xy: 932, 396
+  xy: 252, 164
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╦
   rotate: false
-  xy: 692, 364
+  xy: 220, 124
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ╩
   rotate: false
-  xy: 732, 356
+  xy: 220, 84
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ▀
   rotate: false
-  xy: 772, 356
+  xy: 332, 168
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ▨⋖
   rotate: false
-  xy: 812, 356
+  xy: 292, 128
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ⩓
   rotate: false
-  xy: 852, 356
+  xy: 332, 128
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮝ ⩔
   rotate: false
-  xy: 892, 356
+  xy: 356, 260
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ‗
   rotate: false
-  xy: 420, 300
+  xy: 396, 260
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ⋗▨
   rotate: false
-  xy: 460, 324
+  xy: 372, 180
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╔
   rotate: false
-  xy: 580, 324
+  xy: 428, 220
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╗
   rotate: false
-  xy: 660, 324
+  xy: 460, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╚
   rotate: false
-  xy: 500, 284
+  xy: 468, 236
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╝
   rotate: false
-  xy: 580, 284
+  xy: 516, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╠
   rotate: false
-  xy: 660, 284
+  xy: 428, 180
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╣
   rotate: false
-  xy: 420, 260
+  xy: 412, 140
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╦
   rotate: false
-  xy: 460, 244
+  xy: 412, 100
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ╩
   rotate: false
-  xy: 540, 244
+  xy: 556, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ▄
   rotate: false
-  xy: 580, 244
+  xy: 468, 156
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ▨⋖
   rotate: false
-  xy: 620, 244
+  xy: 580, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ⩓
   rotate: false
-  xy: 660, 244
+  xy: 596, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/rivers/⮟ ⩔
   rotate: false
-  xy: 420, 220
+  xy: 620, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Avatar
   rotate: false
-  xy: 692, 476
+  xy: 340, 340
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Bard
   rotate: false
-  xy: 212, 164
+  xy: 476, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 7
   rotate: false
-  xy: 212, 164
+  xy: 476, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0

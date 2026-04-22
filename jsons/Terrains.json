@@ -1,4 +1,34 @@
 [
+
+/*	Welcome to Terrains.json, world's best hash/keys since 0xD!
+
+	Being a TC basemod, mod explorers might want a bit more description on the internals. 
+	Base terrains are mostly the same as G&K:
+		Flatland =~ Plains, w/ features/Grass overlay, by default used w/ paths on Grassland
+		+ Surf = Usually found between Coast and Ocean as a water mid-body
+		+ Coast|Surf shore: non- /edges clones of themselves for shoreline decors
+		+ Rough Ocean: Vis blocking ocean tiles, w/ specific buff/de-buffs
+		- Lakes: May add specific Lake terrain for Lost Lake etc
+		- Tundra: No related use
+		Snow =~ Snow, only one default instance atm, glass sword, also may apply to Stonegate and other deep mountain areas like Avatar island
+	Then TerrainFeatures:
+		Swamp =~ Marsh, basically the same thing
+		Hills = Hill, but might restore this name due to easing map conversion
+		+ Scrub: light vegetation
+		+ Woods =~ Forest
+		Forest: Heavier density
+		Thicket =~ Jungle, more apt naming for a European fantasy setting
+		- Ice,Atoll
+		- Flood plains, possibly for bridges/ as underbody TF
+	Finally TerrainDecor:
+		+ bridges/
+		+ paths/
+		+ rivers/ - a mapdev trickplay, requiring placing actual river as guides then rivers/ decor to follow river flows
+	Special assets:
+		features/ - for ruleVariant terrain render layering, or other indirect tile render assets
+
+*/ //////// Base terrains ////////
+
 	{
 		"name": "Grassland",
 		"type": "Land",
@@ -35,8 +65,8 @@
 		        "Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Undesirable] when determining start locations",
-		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>",  // get in get out
-			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise - #todo: figure out how river tiles get gold assigned .. does not appear to be json/mod configured (atm)
+		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		], 
 	},
 	{
@@ -96,14 +126,16 @@
 		"uniques": []
 	},
 
+//////// TerrainFeatures ////////
+
 	{
-		"name": "Woods",
+		"name": "Scrub",
 		"type": "TerrainFeature",
 		"movementCost": 21
 		"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.1,
-		"occursOn": ["Grassland","Hills"],
+		"occursOn": ["Grassland","Hill"],
 		"uniques": [
 			"Vegetation",
 			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
@@ -111,15 +143,14 @@
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 		],
 	},
-
 	{
-		"name": "Forest",
+		"name": "Woods",
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.35,
-		"occursOn": ["Grassland","Hills"],
+		"occursOn": ["Grassland","Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
 			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
@@ -128,13 +159,13 @@
 		],
 	},
 	{
-		"name": "Deep Forest",
+		"name": "Forest",
 		"type": "TerrainFeature",
 		"movementCost": 3,
 		//"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.5,
-		"occursOn": ["Grassland","Hills"],
+		"occursOn": ["Grassland","Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
 			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
@@ -142,6 +173,21 @@
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 			// add more vis blockage
 		],
+	},
+	{
+		"name": "Thicket",
+		"type": "TerrainFeature",
+		"food": 0,
+		"movementCost": 4,
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Flatland","Grassland"],
+		"uniques": [
+			"Rough terrain", "Vegetation",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[70]% Chance to be destroyed by nukes",
+		]
 	},
 	{
 		"name": "Swamp",
@@ -156,7 +202,7 @@
 		],
 	},
 	{
-		"name": "Hills",
+		"name": "Hill",
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"overrideStats": true,
@@ -168,8 +214,23 @@
 			"Blocks line-of-sight from tiles at same elevation",
 		],
 	},
+	{
+		"name": "Waterfall",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["River","TerrainDecor","NaturalWonder","Flatland","Desert","Mountain","Grassland"],
+		"uniques": [
+			"Rough terrain",
+			"[+10] Strength for cities built on this terrain",
+			"Blocks line-of-sight from tiles at same elevation",
+		],
+	},
 
 
+
+//////// Wonders ////////
 
 	{
 		"name": "Shame",
@@ -274,10 +335,16 @@
 	},
 
 
+  ///////////////////////////////
+ //////// Terrain Decor ////////
+///////////////////////////////
 
-// Rivers
+//////// Rivers ////////
 
-	// Check out the unicode glyph naming scheme. Simplified naming, game/filesystem accepted characters.
+	// Check out the original filename unicode glyph scheme!
+	// A simplified name-desc with game/filesystem accepted characters. Each decor group [asset]/*.png for better asset mgmt and editor UI naming.
+	// Characters render 🗹 in-game, 🗹 explorer.exe (win10), 🗹 excel (2016), 🗹 notepad, but not 🗵 cmd.exe or 🗵 powershell [5] (however they will copy from cmd to wherever)
+	// These were 𝑚𝑒𝑡𝑖𝑐𝑢𝑙𝑜𝑢𝑠𝑙𝑦 selected for clarity and relativity, reducing long names to a few readable glyphs. Consideration towards in-game tile info box readout.
 	{
 		"name": "rivers/║",
 		"type": "TerrainFeature",
@@ -296,7 +363,7 @@
 		"name": "rivers/⮟ ‗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"occursOn": ["NaturalWonder","Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
@@ -314,14 +381,7 @@
 		"uniques": ["TerrainDecor","River","Grassland"]
 	},
 	{
-		"name": "rivers/⮟ ╗",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "rivers/⮟ ╔",
+		"name": "rivers/⮝ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
@@ -329,13 +389,6 @@
 	},
 	{
 		"name": "rivers/⮝ ╗",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "rivers/⮝ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
@@ -350,6 +403,20 @@
 	},
 	{
 		"name": "rivers/⮟ ╚",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮟ ╔",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
+		"uniques": ["TerrainDecor","River","Grassland"]
+	},
+	{
+		"name": "rivers/⮟ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Mountain","Flatland","Desert","Coast","Coast shore","Grassland"],
@@ -483,7 +550,7 @@
 	},
 
 
-// Paths
+//////// Paths ////////
 
 	// "TerrainDecor" label for future use, "Flatland" makes the TF behave as Flatland (convenient!)
 	{
@@ -593,38 +660,41 @@
 	},
 
 
-// Quaint little bridges
+
+  //////////////////////////
+ /////// Landmarks ////////
+//////////////////////////
+
+//////// Quaint little bridges ////////
+
 	{
 		"name": "bridges/⮝ ⎶",
 		"type": "TerrainFeature",
 		"unbuildable": false,
 		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
-		"uniques": ["TerrainDecor","Bridge","Flatland"]
+		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridges/⮝ ][",
 		"type": "TerrainFeature",
 		"unbuildable": false,
 		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
-		"uniques": ["TerrainDecor","Bridge","Flatland"]
+		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridges/⮟ ⎶",
 		"type": "TerrainFeature",
 		"unbuildable": false,
 		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
-		"uniques": ["TerrainDecor","Bridge","Flatland"]
+		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridges/⮟ ][",
 		"type": "TerrainFeature",
 		"unbuildable": false,
 		"occursOn": ["Desert","Coast","Coast shore","Grassland","Flatland"],
-		"uniques": ["TerrainDecor","Bridge","Flatland"]
+		"uniques": ["Landmark","Bridge","Flatland"]
 	},
-
-
-
 
 
 
