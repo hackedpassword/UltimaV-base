@@ -1,5 +1,4 @@
 [
-// Z2 improvements
 
 	{
 	// City center to become camp, or such
@@ -10,9 +9,6 @@
 			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
 										// ..could work if tile becomes hill for example
 		],
-        "civilopediaText": [
-			{"text":""},
-		]
 	},
 
 	{
@@ -42,77 +38,41 @@
 		],
 		"shortcutKey": "C"
 	},
-	// Transportation
 
+
+
+// Removals
 	{
-	// Name: Path
-		"name": "Road",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 4,
+		"name": "Remove Brush",
+		"turnsToBuild": 7,
 		"techRequired": "Motivation",
-		"shortcutKey": "R",
-		"uniques": [
-			"Can be built outside your borders",
-			"Costs [1] [Gold] per turn",
-			"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
-		],
+		"uniques": ["Can be built outside your borders"],
 	},
 	{
-		"name": "Railroad",
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 4,
+		"name": "Remove Woods",
+		"turnsToBuild": 7,
 		"techRequired": "Motivation",
-		"shortcutKey": "R",
-		"uniques": [
-			"Can be built outside your borders",
-			"Costs [2] [Gold] per turn",
-			"[+2 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>", // no spamming resource icons
-		], 
+		"uniques": ["Can be built outside your borders"],
 	},
-
-
-////////////////////////////////
-
-//// G&K merged base ruleset ////
-
-////////////////////////////////
-
-
-
-	// Removals
-	// Any improvement that starts with 'Remove ' is automatically changed into
-	// the improvement that removes the terrainfeature after it.
 	{
 		"name": "Remove Forest",
 		"turnsToBuild": 4,
 		"techRequired": "Motivation",
 		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X",
-        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
-	},
-	{
-		"name": "Remove Jungle",
-		"turnsToBuild": 7,
-		"techRequired": "Motivation",
-		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
 	},
 	{
 		"name": "Remove Fallout",
 		"turnsToBuild": 2,
-		// Has no tech requirements as it can always be built
 		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
 	},
 	{
-		"name": "Remove Marsh",
+		"name": "Remove Swamp",
 		"turnsToBuild": 6,
 		"techRequired": "Motivation",
 		"uniques": ["Can be built outside your borders"],
-		"shortcutKey": "X"
 	},
 
-	// These are unique and have unique in-game checks related to them
+// Required improvements
 	{
 		"name": "Remove Road",
 		"turnsToBuild": 2,
@@ -128,33 +88,34 @@
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "."
 	},
-    // Purely for turnsToBuild and civilopediaText. Unbuildable so it doesn't show in ImprovementPicker
-    {
-        "name": "Repair",
-        "terrainsCanBeBuiltOn": ["Land"],
-        "turnsToBuild": 2,
-        "shortcutKey": "E",
-        "uniques": ["Unbuildable"],
-        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
-    },
-
-
-    // Great Person improvements
-
 	{
-		"name": "Shrine",
+        	"name": "Repair",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"faith": 6,
-		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"turnsToBuild": 2,
+		"uniques": ["Unbuildable"],
+		"civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
 	},
 	{
-		"name": "Ancient ruins",
+		"name": "Road",
 		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Motivation",
 		"uniques": [
-			"Unpillagable", 
-			"Provides a random bonus when entered", 
-			// "Unbuildable", 
-		]
+			"Can be built outside your borders",
+			"Costs [1] [Gold] per turn",
+			//"[+1 Production] <in [Friendly Land] tiles> <within [3] tiles of a [City center]>",
+		],
+	},
+	{
+		"name": "Railroad",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Motivation",
+		"shortcutKey": "R",
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [2] [Gold] per turn",
+		], 
 	},
 	{
 		"name": "City ruins",
@@ -168,5 +129,37 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable", "Unbuildable"],
 	}
+
+
+
+
+	{
+		"name": "Shrine of the Codex",
+		"terrainsCanBeBuiltOn": ["Sacred Ground"],
+		"faith": 0,
+		"uniques": [ // "Can be built on [The Hallowed Meadow]", // "Great Improvement", 
+		]
+	},
+	{
+		"name": "Shrine",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 0,
+		"uniques": [ // "Great Improvement",
+			"Removes removable features when built",
+			// "Pillaging this improvement yields approximately [+20 Gold]",
+		]
+	},
+	{
+		"name": "Treasure",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Provides a random bonus when entered", 
+			"Does not need removal of [Brush]",
+			"Does not need removal of [Woods]",
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Thicket]",
+		]
+	},
 
 ]

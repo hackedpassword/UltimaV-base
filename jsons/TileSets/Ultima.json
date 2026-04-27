@@ -19,34 +19,32 @@
 
 	// legacy aliases - fyi this doesn't alias the Terrains.json definition; the key here needs to be an added duped definition
         //"Coast edgeless": ["editor/terrain/Coast edgeless"],
-	//"Hill": ["Hills"],
+	//"Hills": ["Hills"],
 
 	// Forests
         "Grassland+Deep Forest": ["Grassland","Deep Forest"],
         "Grassland+Forest+Deep Forest": ["Grassland","Woods","Deep Forest"],
         "Grassland+Deep Forest+Forest": ["Grassland","Deep Forest","Forest"],
 
-	// Hills
+	// Hill
         //"Grassland+Hills": ["Grassland","Hills"],
-        "Grassland+Hills+Forest": ["Grassland","Hills","Woods"],
-        "Grassland+Hills+Deep Forest": ["Grassland","Hills","Forest"],
-        "Grassland+Hills+Forest+Deep Forest": ["Grassland","Hills","Deep Forest"],        
+        "Grassland+Hill+Forest": ["Grassland","Hills","Woods"],
+        "Grassland+Hill+Deep Forest": ["Grassland","Hills","Forest"],
+        "Grassland+Hill+Forest+Deep Forest": ["Grassland","Hills","Deep Forest"],        
 
 	// Landmarks
-        "Waterfall": ["Waterfall","features/Grass"],
-//        "landmark/Waterfall": ["Grassland","landmark/Waterfall"],
 
         // Dungeons
-        "Shame": ["landmark/Dungeon2"],
-        "Despise": ["landmark/Dungeon3"],
-        "Wrong": ["landmark/Dungeon1"],
-        "Covetous": ["landmark/Dungeon1"],
-        "Deceit": ["landmark/Dungeon1"],
-        "Hythloth": ["landmark/Dungeon2"],
-        "Destard": ["landmark/Dungeon3"],
+        "Shame": ["Dungeon2"],
+        "Despise": ["Dungeon3"],
+        "Wrong": ["Dungeon1"],
+        "Covetous": ["Dungeon1"],
+        "Deceit": ["Dungeon1"],
+        "Hythloth": ["Dungeon2"],
+        "Destard": ["Dungeon3"],
 
-        //["Blackthorn Castle"]: ["landmark/"],
-        //["Britannia Castle"]: ["landmark/"],
+        //["Blackthorn Castle"]: [""],
+        //["Britannia Castle"]: [""],
 
 	// Farms
         "Grassland+Farm": ["Grassland","Farm"],
