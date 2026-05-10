@@ -1,40 +1,66 @@
 {
+
+/* 	Welcome to Ultima.json where tiles and sprites are like making gourmet burgers!
+	
+	This mod dispenses with the usual HexaRealm/FantasyRealm/etc tilesets, using a built-in
+	tileset to fulfill the mod theme, which can be applied to base G&K as a standard tileset.
+*/
+
     "useColorAsBaseTerrain": "false",
     "fallbackTileSet": "Minimal",
 
     "ruleVariants": {
 
-        // for hardcoded or legacy terrains
-        "Grassland": ["Grassland"],
-        "Plains": ["Flatland","features/Grass"],
-        "Desert": ["Desert"],
-        "Lakes": ["Surf"],
+	// Base terrains have clones to disable tile edging for decors, example:
+        // "Grassland beach": ["Grassland","editor\terrain\Bordered square"], // 2nd element temporary for map editing
+	// There's a catch: base terrains *cannot* be alpha transparent, else they won't be rendered! The above
+	// won't work leaving a blank tile, so a clone sprite is required. :P
+
+	// These work because no alpha trans sprites are ref'd
+        	//"Surf": ["Surf"],
+        "Surf shore": ["Surf"],
+        	//"Coast": ["Coast"],
+        "Coast shore": ["Coast"],
+
+	// These have no real place in Bitannia as-is but the engine likes to have them defined
         "Snow": ["Brick","Hills"],
         "Tundra": ["Brick"],
         "Ice": ["Whirlpool"],
         "Fallout": ["Lava"],
 
-	// base terrains
-        "Flatland": ["Flatland","features/Grass"],
+// legacy aliases //
+	// fyi this entry does not alias the Terrains.json definition; 
+	// the name here needs to be added as a clone in Terrains.json
+        //  "Coast edgeless": ["editor/terrain/Coast edgeless"], // transition complete!
 
-	// legacy aliases - fyi this doesn't alias the Terrains.json definition; the key here needs to be an added duped definition
-        //"Coast edgeless": ["editor/terrain/Coast edgeless"],
-	//"Hills": ["Hills"],
 
-	// Forests
-        "Grassland+Deep Forest": ["Grassland","Deep Forest"],
-        "Grassland+Forest+Deep Forest": ["Grassland","Woods","Deep Forest"],
-        "Grassland+Deep Forest+Forest": ["Grassland","Deep Forest","Forest"],
+/*	Nothing to change with these atm, will see later
+	// Forests //
+        "Grassland+Forest": ["Grassland","Forest"],
+        "Grassland+Woods+Forest": ["Grassland","Woods","Forest"],
+        "Grassland+Forest+Thicket": ["Grassland","Forest","Thicket"],
 
-	// Hill
-        //"Grassland+Hills": ["Grassland","Hills"],
-        "Grassland+Hill+Forest": ["Grassland","Hills","Woods"],
-        "Grassland+Hill+Deep Forest": ["Grassland","Hills","Forest"],
-        "Grassland+Hill+Forest+Deep Forest": ["Grassland","Hills","Deep Forest"],        
+	// Hills //
+        "Grassland+Hills": ["Grassland","Hills"],
+        "Grassland+Hills+Scrub": ["Grassland","Hills","Scrub"],
+        "Grassland+Hills+Woods": ["Grassland","Hills","Woods"],
+        "Grassland+Hills+Forest": ["Grassland","Hills","Forest"],
+        "Grassland+Hills+Thicket": ["Grassland","Hills","Thicket"],
+        "Grassland+Hills+Forest+Thicket": ["Grassland","Hills","Forest","Thicket"],        
+*/
 
-	// Landmarks
 
-        // Dungeons
+// Editor //
+	// Doesn't work, thinking RuleVariants aren't unicode friendly
+	// "⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘": ["blank"],
+
+// Landmarks //
+        //["Blackthorn's Castle"]: [""],
+        //["Britannia Castle"]: [""],
+
+
+// Dungeons //
+	// There are 3 unique dungeon sprites so we'll just alias the generic sprites
         "Shame": ["Dungeon2"],
         "Despise": ["Dungeon3"],
         "Wrong": ["Dungeon1"],
@@ -43,13 +69,15 @@
         "Hythloth": ["Dungeon2"],
         "Destard": ["Dungeon3"],
 
-        //["Blackthorn Castle"]: [""],
-        //["Britannia Castle"]: [""],
 
 	// Farms
         "Grassland+Farm": ["Grassland","Farm"],
         "Flatland+Farm": ["Flatland","Flatland Farm"],
         "Desert+Farm": ["Desert","Desert Farm"],
+
+
+// Many more to add! See Ultima Tileset/Retroset for an example!
+// https://github.com/hackedpassword/UltimaV-retroset/blob/main/jsons/TileSets/HexaRealm.json
 
 
     }

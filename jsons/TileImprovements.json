@@ -21,7 +21,6 @@
 			"Can also be built on tiles adjacent to fresh water",
                         "Pillaging this improvement yields approximately [+2 Food]",
 		],
-		"shortcutKey": "F"
 	},
 
 	{
@@ -36,7 +35,6 @@
 			//"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+10 Gold]"
 		],
-		"shortcutKey": "C"
 	},
 
 
@@ -161,5 +159,120 @@
 			"Does not need removal of [Thicket]",
 		]
 	},
+
+
+
+//////// LEGACY FOR REMOVAL ////////
+
+
+	{
+		"name": "Lumber mill",
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"uniques": []
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"uniques": []
+	},
+	{
+		"name": "Trading post",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
+		"uniques": []
+	},
+
+	{
+		"name": "Oil well",
+		"uniques": []
+	},
+	{
+		"name": "Offshore Platform",
+		"turnsToBuild": 1,  // Allows this to be constructed for city-states
+		"uniques": []
+	},
+	{
+		"name": "Pasture",
+		"uniques": []
+	},
+	{
+		"name": "Plantation",
+		"uniques": []
+	},
+	{
+		"name": "Quarry",
+		"uniques": []
+	},
+	{
+		"name": "Fishing Boats",
+		"uniques": []
+	},
+	{
+		"name": "Fort",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"uniques": []
+	},
+
+	{
+		"name": "Remove Jungle",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+	},
+	{
+		"name": "Remove Marsh",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+	},
+
+
+
+
+    // Great Person improvements
+	{
+		"name": "Academy",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement", "Removes removable features when built"]
+	},
+	{
+		"name": "Landmark",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement", "Removes removable features when built"]
+	},
+	{
+		"name": "Manufactory",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement", "Removes removable features when built"]
+	},
+	{
+		"name": "Customs house",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement", "Removes removable features when built"]
+	},
+	{
+		"name": "Holy site",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement", "Removes removable features when built"]
+	},
+	{
+		"name": "Citadel",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [100]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Can be built just outside your borders",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Removes removable features when built",
+			"Will not be replaced by automated units"
+		]
+	},
+
+
+
+	// Unbuildable improvements
+	{
+		"name": "Ancient ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable",
+			"Does not need removal of [Forest]", "Does not need removal of [Jungle]"]
+	},
+
 
 ]
