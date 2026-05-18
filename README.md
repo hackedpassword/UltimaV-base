@@ -7,8 +7,36 @@ Want to see something unusual? Check out [the rivers scheme](https://github.com/
 
 
 
+## River glyph map
+
+|     |     |     |      |     |     |     |     |
+| :-: | :-: | :-: | :--: | :-: | :-: | :-: | :-: |
+|  ║  | ⮝ ╚ | ⮟ ╚ | ⮝ ⋗▨ | ⮝ ╠ | ⮝ ╦ | ⮝ ▀ | ⮝ ⩓ |
+| ⮝ ˭ | ⮝ ╝ | ⮟ ╝ | ⮟ ⋗▨ | ⮝ ╣ | ⮝ ╩ | ⮟ ▄ | ⮝ ⩔ |
+| ⮟ ‗ | ⮝ ╔ | ⮟ ╔ | ⮝ ▨⋖ | ⮟ ╠ | ⮟ ╦ |     | ⮟ ⩓ |
+|     | ⮝ ╗ | ⮟ ╗ | ⮟ ▨⋖ | ⮟ ╣ | ⮟ ╩ |     | ⮟ ⩔ |
+
+|                                                                                                                                                    |                                                                                                                                                    |                                                                                                                                                    |                                                                                                                                                              |                                                                                                                                                    |                                                                                                                                                    |                                                                                                                                                    |                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
+|        ![║](Images/TileSets/Ultima/Tiles/river/%E2%95%91.png)        | ![⮝ ╚](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%9A.png) | ![⮟ ╚](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%9A.png) | ![⮝ ⋗▨](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%8B%97%E2%96%A8.png) | ![⮝ ╠](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A0.png) | ![⮝ ╦](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A6.png) | ![⮝ ▀](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%96%80.png) | ![⮝ ⩓](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%A9%93.png) |
+|   ![⮝ ˭](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%CB%AD.png)  | ![⮝ ╝](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%9D.png) | ![⮟ ╝](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%9D.png) | ![⮟ ⋗▨](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%8B%97%E2%96%A8.png) | ![⮝ ╣](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A3.png) | ![⮝ ╩](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A9.png) | ![⮟ ▄](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%96%84.png) | ![⮝ ⩔](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%A9%94.png) |
+| ![⮟ ‗](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%80%97.png) | ![⮝ ╔](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%94.png) | ![⮟ ╔](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%94.png) | ![⮝ ▨⋖](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%96%A8%E2%8B%96.png) | ![⮟ ╠](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%A0.png) | ![⮟ ╦](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%A6.png) |                                                                                                                                                    | ![⮟ ⩓](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%A9%93.png) |
+|                                                                                                                                                    | ![⮝ ╗](Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%97.png) | ![⮟ ╗](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%97.png) | ![⮟ ▨⋖](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%96%A8%E2%8B%96.png) | ![⮟ ╣](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%A3.png) | ![⮟ ╩](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%A9.png) |                                                                                                                                                    | ![⮟ ⩔](Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%A9%94.png) |
 
 
 
+## Path and bridge glyph map
 
+| | | | | | |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| ║ | ⮝ ╝ | ⮟ ╝ | ⮝ ╗╚ ⮟ | ⮝ ╦ | ⮝ ][ |
+| ⮝ ˭ | ⮝ ╚ | ⮟ ╚ | ⮟ ╝╔ ⮝ | ⮟ ╩ | ⮝ ⎶ |
+| ⮟ ‗ | ⮝ ╔ | ⮟ ╔ | | | ⮟ ][ |
+| | ⮝ ╗ | ⮟ ╗ | | | ⮟ ⎶ |
 
+| | | | | | |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| ![║](Images/TileSets/Ultima/Tiles/path/%E2%95%91.png) | ![⮝ ╝](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%9D.png) | ![⮟ ╝](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%9D.png) | ![⮝ ╗╚ ⮟](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%97%E2%95%9A%20%E2%AE%9F.png) | ![⮝ ╦](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%A6.png) | ![⮝ \]\[](Images/TileSets/Ultima/Tiles/bridges/%E2%AE%9D%20%5D%5B.png) |
+| ![⮝ ˭](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%CB%AD.png) | ![⮝ ╚](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%9A.png) | ![⮟ ╚](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%9A.png) | ![⮟ ╝╔ ⮝](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%9D%E2%95%94%20%E2%AE%9D.png) | ![⮟ ╩](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%A9.png) | ![⮝ ⎶](Images/TileSets/Ultima/Tiles/bridges/%E2%AE%9D%20%E2%8E%B6.png) |
+| ![⮟ ‗](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%80%97.png) | ![⮝ ╔](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%94.png) | ![⮟ ╔](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%94.png) | | | ![⮟ \]\[](Images/TileSets/Ultima/Tiles/bridges/%E2%AE%9F%20%5D%5B.png) |
+| | ![⮝ ╗](Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%97.png) | ![⮟ ╗](Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%97.png) | | | ![⮟ ⎶](Images/TileSets/Ultima/Tiles/bridges/%E2%AE%9F%20%E2%8E%B6.png) |
