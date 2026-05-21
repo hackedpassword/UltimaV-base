@@ -11,27 +11,14 @@
 
     "ruleVariants": {
 
-	// Base terrains have clones to disable tile edging for decors, example:
-        // "Grassland beach": ["Grassland","editor\terrain\Bordered square"], // 2nd element temporary for map editing
-	// There's a catch: base terrains *cannot* be alpha transparent, else they won't be rendered! The above
-	// won't work leaving a blank tile, so a clone sprite is required. :P
-
-	// These work because no alpha trans sprites are ref'd
-        	//"Surf": ["Surf"],
-        "Surf shore": ["Surf"],
-        	//"Coast": ["Coast"],
-        "Coast shore": ["Coast"],
+	// Base terrains have clone terrains for disabling tile edging when needed for decors.
+	// There's a catch: base terrains *cannot* be alpha transparent, else they won't be rendered!
 
 	// These have no real place in Bitannia as-is but the engine likes to have them defined
         "Snow": ["Brick","Hills"],
         "Tundra": ["Brick"],
         "Ice": ["Whirlpool"],
         "Fallout": ["Lava"],
-
-// legacy aliases //
-	// fyi this entry does not alias the Terrains.json definition; 
-	// the name here needs to be added as a clone in Terrains.json
-        //  "Coast edgeless": ["editor/terrain/Coast edgeless"], // transition complete!
 
 
 /*	Nothing to change with these atm, will see later
@@ -49,10 +36,49 @@
         "Grassland+Hills+Forest+Thicket": ["Grassland","Hills","Forest","Thicket"],        
 */
 
+	// Farms
+        "Grassland+Farm": ["Grassland","Farm"],
+        "Flatland+Farm": ["Flatland","Flatland Farm"],
+        "Desert+Farm": ["Desert","Desert Farm"],
 
-// Editor //
-	// Doesn't work, thinking RuleVariants aren't unicode friendly
-	// "⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘": ["blank"],
+// Paths
+	"Flatland+path/║": ["Grassland","path/║"],
+	"Flatland+path/⮝ ˭": ["Grassland","path/⮝ ˭"],
+	"Flatland+path/⮟ ‗": ["Grassland","path/⮟ ‗"],
+
+	"Flatland+path/⮝ ╔": ["Grassland","path/⮝ ╔"],
+	"Flatland+path/⮝ ╗": ["Grassland","path/⮝ ╗"],
+	"Flatland+path/⮝ ╚": ["Grassland","path/⮝ ╚"],
+	"Flatland+path/⮝ ╝": ["Grassland","path/⮝ ╝"],
+
+	"Flatland+path/⮟ ╔": ["Grassland","path/⮟ ╔"],
+	"Flatland+path/⮟ ╗": ["Grassland","path/⮟ ╗"],
+	"Flatland+path/⮟ ╚": ["Grassland","path/⮟ ╚"],
+	"Flatland+path/⮟ ╝": ["Grassland","path/⮟ ╝"],
+
+	"Flatland+path/⮝ ╦": ["Grassland","path/⮝ ╦"],
+	"Flatland+path/⮟ ╩": ["Grassland","path/⮟ ╩"],
+
+	"Flatland+path/⮝ ╗╚ ⮟": ["Grassland","path/⮝ ╗╚ ⮟"],
+	"Flatland+path/⮟ ╝╔ ⮝": ["Grassland","path/⮟ ╝╔ ⮝"],
+
+
+/*	river/║
+	river/⮝ ˭
+	river/⮟ ‗
+*/
+
+
+// Many more to add! See Ultima Tileset/Retroset for an example!
+// https://github.com/hackedpassword/UltimaV-retroset/blob/main/jsons/TileSets/HexaRealm.json
+
+
+
+
+
+///////////////////////// Non-functional experiments ///////////////////////////
+
+	// This section has notes on why certain things didn't work.
 
 // Landmarks //
         //["Blackthorn's Castle"]: [""],
@@ -60,24 +86,30 @@
 
 
 // Dungeons //
-	// There are 3 unique dungeon sprites so we'll just alias the generic sprites
-        "Shame": ["Dungeon2"],
+	// There are 3 unique dungeon sprites so we'll just alias the generic sprites.
+	// ..however that doesn't work apparently. My guess is terrain type: Land and NaturalWonder
+	// demand a 24-bit sprite as a base. Side note yes these get stuffed into the 32bit atlas.
+	// Dungeon solution atm is name: dungeons/[sprite], then fancy up the name in translations.
+	// No..not even that. NaturalWonder sprites must live in the Tileset root. K..
+/*	"Shame": ["Dungeon2"],
+        "Hythloth": ["dungeons/Hythloth"],
         "Despise": ["Dungeon3"],
-        "Wrong": ["Dungeon1"],
-        "Covetous": ["Dungeon1"],
-        "Deceit": ["Dungeon1"],
-        "Hythloth": ["Dungeon2"],
+        "Wrong": ["Dungeon"],
+        "Covetous": ["Dungeon"],
+        "Deceit": ["Dungeon"],
         "Destard": ["Dungeon3"],
+*/
 
 
-	// Farms
-        "Grassland+Farm": ["Grassland","Farm"],
-        "Flatland+Farm": ["Flatland","Flatland Farm"],
-        "Desert+Farm": ["Desert","Desert Farm"],
+// Editor //
+	// Doesn't work, thinking RuleVariants aren't unicode friendly
+	// "⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘": ["blank"],
 
 
-// Many more to add! See Ultima Tileset/Retroset for an example!
-// https://github.com/hackedpassword/UltimaV-retroset/blob/main/jsons/TileSets/HexaRealm.json
+	// These don't work for overlying TFs because alpha trans sprites are ref'd in the TF, use normal sprite.
+        //"Surf shore": ["Surf"],
+        //"Coast shore": ["Coast"],
+
 
 
     }
