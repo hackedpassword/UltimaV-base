@@ -2,16 +2,24 @@
 
 /*	Welcome to Terrains.json, world's best json object hash/keys since 0xD!
 
-	Ultima V base is a TC basemod. Mod explorers should find interest in this mods' internals. [TC=total conversion, isBaseRuleset+TileSet+UnitSet]
+	Ultima V base is a TC basemod. Mod explorers should find interest in this mods' internals.
+	  ("TC" mod="total conversion") Mod_params: isBaseRuleset
+	Includes:
+	  ✅ TileSet
+	  ✅ UnitSet
+	  ✅ Edges
+	  ✅ Map
 
-	Base terrains are mostly the same as G&K, highlighting familiar tiles:
+	# Base terrains
+	    Mostly the same as G&K, highlighting familiar tiles:
 		Flatland =~ Plains+<features/Grass>, used primarily for Paths
 		Surf: Usually found between Coast and Ocean as a water mid-body, originally subbed as Lakes
 		+ Land&Water de-edging: cloned base tiles de-edge shorelines for decors, suffixed '[land] beach' and '[water] shore'
 		+ Rough Ocean: Vis blocking ocean tiles, w/ specific buff/de-buffs
 		? Lakes: May add specific Lake terrain for Lost Lake etc
 		Tundra|Snow: Only one default instance atm, glass sword
-	TerrainFeatures:
+	# TerrainFeatures
+	    Migrating TF's from Ultima-tileset mod and G&K:
 		Swamp =~ Marsh, basically the same
 		+ Brush: light vegetation
 		+ Woods =~ Forest
@@ -19,18 +27,32 @@
 		Thicket =~ Jungle, more apt naming for a European fantasy setting
 		- Ice,Atoll
 		? Flood plains, possibly useful for bridges/ as an underbody TF
-	Finally TerrainDecor:
-		+ bridges/
+		+ bridges/, features/
+	# Natural Wonders
+		No G&K NW's.
+		+ Ultima V specific NW's:
+		> Dungeons, both main castles, Codex, others
+	# TerrainDecor
+	    What is "TerrainDecor" (TD)? A sub-class of TF's treated as non-entity TFs to decorate tiles:
 		+ paths/
 		+ rivers/ - a mapdev trickplay, requiring placing actual river as guides then rivers/ decor to follow river flows
-	Special assets:
+	# Special assets
 		features/ - for ruleVariant terrain render layering, or other indirect tile render assets
 		editor/ - useful map editor related sprites for better mapdev
+		  We implement some new editor techniques for advanced map creation. See the Editor section.
+	# Legacy
+		Assets from Ultima-tileset|retroset and G&K that are being replaced tile by tile. Map migration!
+		It was decided not to rebuild the whole map, instead, recolor replacement tiles, swap in new tiles/entities.
+		  This process itself was an immense undertaking. Several new techniques emerged from this effort.
+
+//// internal Terrains.json block notes ////
+
 	tOdO:
 		> Add minimal base terrain tile coloring i.e. `"RGB": [99, 40, 7],`
 		> Asset blocks are generally bare atm
+		> Build/restore RuleVariant aliases
 
-	MIGRATION STRATEGY - retain original names as legacy, color tint them, seek/replace in editor.
+	MIGRATION STRATEGY: Retain original names as legacy, color tint them, seek/replace in editor.
 		Far below in the `migration` section there's a smattering of various terrains that
 		exist in the legacy Britannia map (Ultima-tileset mod). In moving to a basemod, many
 		assets have been updated. Rather than rebuild the map from scratch, assets to be swapped
@@ -38,19 +60,28 @@
 		need to be swapped for new assets. This way all legacy assets are accounted for when
 		updating, otherwise it's too easy to miss identical looking terrains with new names.
 
+	Unicode: I have expressly put dedicated effort into leveraging Unicode symbols into assets, json, anywhere
+		that unicode symbols would prove more useful than plain text.
+		For terminology, sets of symbols are referred to as glyphs. i.e.: `⮝ ╗╚ ⮟`
+
+	p.s. If you recognize, the next header is particularly clever. ;D Hint: you're in a comment block already.
+
   /*/ /// ////////////////////////////// / / / /// /*/
  /*/ // ////////// Base terrains / / / / /  / //  /*/
 /*/ /  ///// / / / / / / / / / / / / / / / / /   /*/
 
-	// Design note on base terrains and wonders: These sprites cannot have alpha transparency pixels or the tile will not render. 24-bit only sprites!
-	//   "Beach" isn't a good name since these are terrains w/o beaches - will fix later. 'waterfront'?
+	// Design note on base terrains and wonders: Base terrain sprites, BT's and NW's, cannot have alpha
+	//   transparency pixels or the tile will not render. 24-bit only non-alpha sprites!
+	//   Nor can either be placed in an images subfolder like paths and rivers are.
 
-		// [beach] base terrains are for edgeless land->water tiles, whereas
-		// [shore] remove all adjacent coastal edges. More decor control.
-		// Clone tile sprites should be identical.
+	// For more edge/decor control:	
+	// [*-shoreline] base terrain clones are for edgeless land->water tiles
+	// [*-shore] water tile clones remove all adjacent water-land edging
+	// Cloned tile sprite png's and entity blocks should be identical. Define Edges/ edges for BT's, none for shores.
+	//   RuleVariant alias cloning doesn't work for this purpose.
 
 	{
-		"name": "Grassland",
+		"name": "Grassland",  // tl;dr entities are not populated yet
 		"type": "Land",
 		"food": 0,
         	"gold": 0,
@@ -113,13 +144,13 @@
 		], 
 	},
 	{
-		"name": "Mountain shoreline",
+		"name": "Mountain shoreline",  // rebuild per above when ready
 		"type": "Land",
 		"movementCost": 3,
 		"defenceBonus": 0.5,
 	        "impassable": true, 
 		"uniques": [
-		], // rebuild when ready
+		],
 	},
 	{
 		"name": "Coast",
@@ -162,7 +193,7 @@
 		"uniques": []
 	},
 	{
-		"name": "Rough Ocean",
+		"name": "Rough Ocean",  // wishlist gameplay enhancement
 		"type": "Water",
 		"food": 0,
 		"gold": 0,
@@ -183,23 +214,24 @@
 		"turnsInto": "Sacred Ground",
 		"impassable": false,
 	},
-	// Idea. The base terrain is a clone of grassland, path decor layer, shrine improvement.
-	// Then improvement modifiers are available along with wonder buffs. Also if desired
-	// for a yet known reason the shrine could be removed/replaced. Why? Versitile gameplay? :/
-	// Update: seems TF's cannot stack on NW's no matter what. Gemini says it's because
-	//         Civ V uses a single TF slot, but afaik in Unciv NW's are implemented as
-	//         base terrain. Means I can't create a NW trigger w/ improvement trigger. \o/
+	/* THINKING >>> design idea
+	   The Codex base terrain could be a clone of grassland, w/ path decor layer, & shrine improvement.
+	   Update: seems TF's cannot stack on NW's no matter what. Gemini says it's because Civ V NW's are base
+	     terrains being a special single TF slot, however afaik in Unciv, NW's are implemented as special
+	     base terrains.
+	     Means I can't create a NW trigger w/ an Improvement trigger! \o/ We'll see about that...
+	*/
 	{
-		"name": "The Hallowed Meadow",
+		"name": "The Hallowed Meadow",  // supposed to be the Codex base terrain
 		"type": "NaturalWonder",
 		"uniques": [],
 		"turnsInto": "Sacred Ground",
 		"impassable": false,
 	},
 	{
-		"name": "Britannia Castle",  // Also may become an improvement
+		"name": "Britannia Castle",  // May become an improvement
 		"type": "NaturalWonder",
-		"gold": 10,
+		"gold": 10,  // Lord British! You cheap bastard!
 		"occursOn": ["Grassland"],
 		"uniques": [],
 		"turnsInto": "Grassland",
@@ -209,7 +241,7 @@
 	{
 		"name": "Blackthorn's Castle",
 		"type": "NaturalWonder",
-		"gold": 10,
+		"gold": 10,  // Lord Blackthorn! You squandering bastard!
 		"occursOn": ["Flatland","Hill"],
 		"uniques": [],
 		"turnsInto": "Grassland",
@@ -217,7 +249,11 @@
 		"unbuildable": true,
 	},
 
-	// Dungeons
+// Dungeons
+
+	// Dungeon entities are organized into a subfolder. We'll use English.translations later to clean the name up.
+	// It is intended to utilize the `Hybrid tiles` maphack so dungeons can be both land and water accessible.
+	//   https://github.com/hackedpassword/Unciv-Assets/tree/main/Hybrid%20tiles
 	{
 		"name": "dungeons/Shame",
 		"type": "NaturalWonder",
@@ -303,7 +339,7 @@
 		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Vegetation",
-			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			// ⚠️ ⛔ Actual use will likely differ from vanilla: "Provides a one-time Production bonus to the closest city when cut down",
 			//"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 		],
@@ -448,65 +484,67 @@
 		"uniques": ["Editor"],
 	},
 
-// Land beach decors (land -> water)
-	// devnotes: Applying this over a Forest would blank the forest .. any other TF would work. Had to copy ForestG.png to Forest.png
-	// (just more artifacts of an unmigrated tileset that will be properly fixed later)
+// Land shoreline decors (land -> water)
+
+	// We describe the asset name with symbol(s) for minimal panel noise and rapid-glance recognition.
+	// Because decors are heavily used, and the sets of decors can be dense, this methodology presents cleanly.
+	// Only symbols that can render in Unciv are used. Many very fancy symbols don't, we need to manage as such.
+
+	// devnotes: Applying this over a G&K Forest would blank the forest .. any other TF would work. Had to copy
+	// ForestG.png to Forest.png (just more artifacts of an unmigrated tileset that will be properly fixed later)
 	{
-		//"name": "shoreline NE straight",
-		"name": "waterline/◥",
+		"name": "waterline/◥", // legacy - "shoreline NE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","shoreline"],
 	},
 	{
-		//"name": "shoreline NW straight",
-		"name": "waterline/◤",
+		"name": "waterline/◤", // legacy - "shoreline NW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 	{
-		//"name": "shoreline SE straight",
-		"name": "waterline/◢",
+		"name": "waterline/◢", // legacy - "shoreline SE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 	{
-		//"name": "shoreline SW straight",
-		"name": "waterline/◣",
+		"name": "waterline/◣", // legacy - "shoreline SW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
+
 // Water shore decors (water -> land)
 	{
-		"name": "waterline/◺", //"name": "Shore SW straight",
+		"name": "waterline/◺", // legacy - "Shore SW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
-		"name": "waterline/◿", //"name": "Shore SE straight",
+		"name": "waterline/◿", // legacy - "Shore SE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
-		"name": "waterline/◸", // //"name": "Shore NW straight",
+		"name": "waterline/◸", // legacy - "Shore NW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
-		"name": "waterline/◹", //"name": "Shore NE straight",
+		"name": "waterline/◹", // legacy - "Shore NE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
@@ -516,12 +554,15 @@
 
 //////// Rivers ////////
 
-/*	Check out this original unicode glyph scheme for sprite names!
-	A simplified name-desc with game/filesystem accepted characters. Each decor group [asset]/*.png for better asset mgmt and editor UI naming.
-	Characters render 🗹 in-game, 🗹 explorer.exe (win10), 🗹 excel (2016), 🗹 notepad, but not 🗵 cmd.exe or 🗵 powershell [5] (however they will copy from cmd to wherever)
-	These were 𝑚𝑒𝑡𝑖𝑐𝑢𝑙𝑜𝑢𝑠𝑙𝑦 selected for clarity and relativity, reducing long names to a few readable glyphs. Consideration towards in-game tile info box readout.
+/*	This original unicode glyph scheme for sprite names is a simplified name-desc with game/filesystem accepted
+	  characters. Each decor group [asset]/*.png for better asset mgmt and editor UI naming.
+	Characters render 🗹 in-game, 🗹 explorer.exe (win10), 🗹 excel (2016), 🗹 notepad, but not 🗵 cmd.exe
+	  or 🗵 powershell [5] (however they will copy from cmd correctly despite not font rendering in cmd).
+	These symbols were 𝑚𝑒𝑡𝑖𝑐𝑢𝑙𝑜𝑢𝑠𝑙𝑦 selected for clarity and relativity, reducing long names to a few
+	  readable glyphs. Consideration given towards in-game panel info box clarity.
 
-	Represented as square tiles on a grid we can use this set. In our hex-squares, we use up/down prefixes.
+	In our hex-squares, we use up⮝/down⮟ prefixes. To achieve the hex-square effect, high/low assets horizontally
+	  link to their opposing vertical adjacency (i.e. high path is seamless to low path).
 
 	High or low glyph context: ⮝ ⮟
 		Rivers/paths: ║ ˭ ‗ ╝ ╚ ╔ ╗ ╦ ╩ ╣ ╠
@@ -530,20 +571,14 @@
 		Shores: ◸ ◹ ◺ ◿
 		Non-decor left/right space: ▀ ▄
 
-	Square tile dev only, unused atm:
-		Grassland: ■
-		Flatland: ▥
-		Desert: ▤
-		Mountains: ▣
+	Did an experiment mapping out parts of the original Britannia with Excel. Noting here for now, unused atm:
+		Grassland,Flatland,Desert,Mountain: ■ ▥ ▤ ▣
 		Coast, Surf, Ocean: ▨ ▧ ⬜
-		// Presumes grassland
 		Scrub/Woods/Forest/Thicket: ▵ △ ▲ ◆
-		Swamp: ▩
-		Hill: ▦
-		River: ═
-
+		Swamp,Hill,River: ▩ ▦ ═
 */
 
+	// The order of the entities below determines their presentation order in the map editor!
 	{
 		"name": "river/║",
 		"type": "TerrainFeature",
@@ -751,7 +786,9 @@
 
 //////// Paths ////////
 
-	// "TerrainDecor" label for future use, "Flatland" makes the TF behave as Flatland (convenient!)
+	// "TerrainDecor" label is for future tagging or dependency decor use.
+	// Applying a "Flatland" tag here inherits the Flatland entity (convenient!)
+	// Pretty sure I can do the same with 'Path', shrinking entity noise (occursOn) with a special 'Path' entity dependency.
 	{
 		"name": "path/║",
 		"type": "TerrainFeature",
@@ -866,6 +903,7 @@
 
 //////// Quaint little bridges ////////
 
+	// These are normal TF's. Their irregular use in the editor makes it less noisy to fit at the tail end of decors.
 	{
 		"name": "bridge/⮝ ⎶",
 		"type": "TerrainFeature",
@@ -901,8 +939,14 @@
 //// Map Editor decors ////
 ///////////////////////////
 
-// These are map tiles/sprites that are only used during the construction of the map, ⚠️ remove editor sprites in map before publishing! ⚠️
-	// These sprites aren't rendered on the unit layer (later in the render stack) so they get tiled over by adjacent tile rendering :P
+/* Editor decors are map tiles/sprites that are only used during the construction of the map. 
+   Info: ⚠️ Remove editor sprites placed in your map before publishing! ⚠️
+   These TF layer sprites aren't rendered on the unit layer (later in the render stack) so they get tiled over
+     by adjacent tile top-down rendering. :P
+*/
+
+	// Special spacer entity. Used only for the Edit menu. Blank alpha .png sprite associated for menu aesthetics.
+	// ⚠️ Unicode works fine, however cannot be placed in a subfolder.
 	{
 		"name": "⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕",
 		"type": "TerrainFeature",
@@ -910,7 +954,34 @@
 		"uniques": ["Editor"],
 	},
 
-	// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently (add later?)
+	/* "Editor" entity definition, for an Improvement "terrainsCanBeBuiltOn". Any improvement entity with "Editor"
+	     as a terrainsCanBeBuiltOn can then have "Editor" tagged sprites applied to an improvement tile.
+	     Cannot use this technique on Natural Wonders since no TF can be applied to them. 
+	   To activate, specify the entity name in the terrain block unique as a tag.
+	⚠️ A `name` using unicode characters will silently not work. the "name": must be non-unicode. :(
+	*/
+	{
+		"name": "Editor",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Grassland shoreline","Flatland","Flatland shoreline","Desert","Desert shoreline","Mountain","Mountain shoreline",
+			"Coast","Coast shore","Surf","Surf shore","Ocean",
+			"Plains","Snow","Tundra"],  // no "Natural.*?Wonder"
+		"uniques": [],
+	},
+
+
+// Terrain editor sprites
+	{
+		"name": "editor/terrain/Bordered square",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		//"occursOn": [],  // Let `Editor` handle this.
+		"uniques": [ "TerrainDecor","Editor","Terrain"],
+	},
+
+
+// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently (add later?)
 	{
 		"name": "editor/units/Editor unit 1",
 		"type": "TerrainFeature",
@@ -961,7 +1032,7 @@
 		"uniques": [ "TerrainDecor","Editor","Unit"],
 	},
 
-	// Water units, serial 10..19
+// Water units, serial 10..19
 	{
 		"name": "editor/units/Editor unit 10",
 		"type": "TerrainFeature",
@@ -977,7 +1048,7 @@
 		"uniques": [ "TerrainDecor","Editor","Unit"],
 	},
 
-	// Entity sprites, like improvements or any other field sprites
+// Other entity sprites, like improvements or any other field sprites
 	{
 		"name": "editor/entities/Editor entity 1",
 		"type": "TerrainFeature",
@@ -986,7 +1057,7 @@
 		"uniques": [ "TerrainDecor","Editor","Entity"],
 	},
 
-	// Sprite alignment - very useful for square-hex pixel identification
+// Sprite alignment - very useful for inspecting square-hex pixel alignment identification
 	{
 		"name": "editor/24x28 (32x32)",
 		"type": "TerrainFeature",
@@ -1021,19 +1092,12 @@
 	},
 
 
-	// Terrain sprites
-	{
-		"name": "editor/terrain/Bordered square",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-/*		"occursOn": ["Grassland","Grassland beach","Grassland coast","Flatland","Flatland beach","Flatland coast","Desert","Desert beach","Desert coast","Mountain","Mountain beach","Mountain coast",
-				"Coast","Coast shore","Surf","Surf shore","Ocean",
-				"Plains","Snow","Tundra"],*/
-		"uniques": [ "TerrainDecor","Editor","Terrain"],
-	},
 
+// / / / / / / / / / / / / / / / / / / / / / // 
 
+//// THAT'S THE END OF ALL MAIN ENTITIES! ////
 
+// / / / / / / / / / / / / / / / / / / / / //
 
 
 

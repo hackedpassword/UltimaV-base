@@ -1334,6 +1334,48 @@ TileSets/Ultima/Tiles/Dyes
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/Ultima/Tiles/Editor
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/blank
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/⚕
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘
+  rotate: false
+  xy: 268, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
 TileSets/Ultima/Tiles/Eternal Flame
   rotate: false
   xy: 1892, 348
@@ -2277,34 +2319,6 @@ TileSets/Ultima/Tiles/Woods
   xy: 660, 212
   size: 32, 32
   orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/blank
-  rotate: false
-  xy: 268, 4
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠
-  rotate: false
-  xy: 268, 4
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕
-  rotate: false
-  xy: 268, 4
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Tiles/⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘
-  rotate: false
-  xy: 268, 4
-  size: 16, 16
-  orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridge/⮝ ][
