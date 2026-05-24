@@ -986,8 +986,8 @@
 		"name": "editor/units/Editor unit 1",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		//"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
+		"uniques": [ "TerrainDecor","Editor","Unit","river"],
 	},
 	{
 		"name": "editor/units/Editor unit 2",
