@@ -20,6 +20,23 @@ To see this in action, check out this example of [the rivers asset scheme](https
 ![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%9A.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%95%97.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9F%20%E2%96%84.png)<br>![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%97.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%95%91.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/Waterfall.png)<br>![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/bridge/%E2%AE%9D%20%5D%5B.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A9.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%CB%AD.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%A6.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%8B%97%E2%96%A8.png)<br>![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%95%91.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/Academy.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/Mountain.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%9A.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/river/%E2%AE%9D%20%E2%95%97.png)<br>![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%9A.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%CB%AD.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9D%20%E2%95%97%E2%95%9A%20%E2%AE%9F.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%80%97.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/bridges/%E2%AE%9F%20%E2%8E%B6.png)![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/path/%E2%AE%9F%20%E2%95%9D.png)
 
 
+## Symbol rendering in browsers (vs in-game)
+
+Unicode can be stressful on various apps and platforms. The glyph maps below render as follows:
+
+| Android | Chrome | Firefox | Edge | Ghostery |
+| --- | --- | --- | --- | --- |
+| Renders |   |   |   |   |
+| Doesn't |   | X | X |   |
+| Partial | X |   |   | X |
+
+| Windows | Chrome | Firefox | Edge | cmd | powershell | explorer | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Renders |  |  |  |  | | | | |
+| Doesn't |  |  |  |  | | | | |
+| Partial |  |  |  |  | | | | |
+
+
 
 ## River glyph map
 
