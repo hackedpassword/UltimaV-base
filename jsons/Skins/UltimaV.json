@@ -1,0 +1,502 @@
+{
+// Sourced from BabylonUI as the template. All elements listed in Modders/Creating-a-UI-skin/ docs are included here.
+
+	//"baseColor": {"r":0.12,"g":0.25,"b":0.40,"a":1}, 	// Unciv color
+	"baseColor": {"r":0,"g":0,"b":0.66,"a":0.5}, 		// Ultima V color
+	"foregroundColor": {"r":1,"g":0,"b":0.66,"a":1}, 	// The color this UI element should use for its font and icons
+	"iconColor": {"r":0.5,"g":0.5,"b":0.5,"a":1},	 	// The color this UI element should use for its icons. Overrides the foregroundColor for icons if specified
+	"defaultVariantTint": {"r":1,"g":1,"b":1,"a":1}, 	// default per docs
+
+	"fallbackSkin": "Minimal",
+	
+"skinVariants": {
+
+//// CityScreen ////
+
+        "CityScreen/CityInfoTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "cityInfotable", }, 	// background of show stats drilldown in city screen
+
+	"CityScreen/CityPickerTable": {}, 	// controls background of city name in city screen on bottom of the screen
+
+	"CityScreen/CitizenManagementTable/AvoidCell": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Avoid growth background
+
+	"CityScreen/CitizenManagementTable/FocusCell": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Focus on X button
+
+	"CityScreen/CitizenManagementTable/ResetCell": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Reset Citizens button
+
+	"CityScreen/CityConstructionTable/AvailableConstructionsTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Construction list headers blend
+
+	"CityScreen/CityConstructionTable/ConstructionsQueueTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Current construction header blend
+
+	"CityScreen/CityConstructionTable/Header": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Current Construction header main color
+
+	"CityScreen/CityConstructionTable/PickConstructionButton": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Construction list backgrounds
+
+	"CityScreen/CityConstructionTable/PickConstructionButtonSelected": {
+		"tint": {"r": 0.7, "g": 0.7, "b": 0.7, "a": 1},
+		"image": "checkbox", }, 	// Construction list clicked
+
+	"CityScreen/CityConstructionTable/QueueEntry": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Construction queue background
+
+	"CityScreen/CityConstructionTable/QueueEntrySelected": {
+		"tint": {"r": 0.7, "g": 0.7, "b": 0.7, "a": 1},
+		"image": "checkbox", }, 	// Construction queue selected
+
+	"CityScreen/CityScreenTileTable/Background": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Border of selected tile details in the city screen right corner
+
+	"CityScreen/CityScreenTileTable/InnerTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Background of selected tile details in the city screen right corner
+
+	"CityScreen/CityStatsTable/Background": {}, 	// Color tint of Population tab in city screen top right corner
+
+	"CityScreen/CityStatsTable/InnerTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// Color of population tab
+
+	"CityScreen/ConstructionInfoTable/Background": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// tint or border of selected construction item details
+
+	"CityScreen/ConstructionInfoTable/SelectedConstructionTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// color of backgound of selected construction item details
+
+
+//// CivilopediaScreen ////
+
+	"CivilopediaScreen/EntryButton": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// color of backgrounds of civilopedia items names
+
+
+//// General ////
+
+	"General/Border": {  //// not defined ////
+		//"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5}, }, 	// tech progress bar
+
+	"General/ExpanderTab": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5},
+		"image": "rectangleWithOutline", }, 	// Color of most expander tabs excluding main menu
+
+	"General/HealthBar": {
+		//"tint": {"r":0.12,"g":0.25,"b":0.40,"a":1}
+		"tint": {"r": .25, "g": 0.5, "b": 1, "a": 0.75}, }, 	// color of health bars borders
+
+	"General/TabbedPager": {  //// mapedit main pane inner border, image will layer on top of MapEditor/MapEditorToolsDrawer/Handle ////
+		"tint": {"r": 0, "g": 0, "b": 0.66, "a": 0.5},
+		"image": "checkbox", }, 	// background of overview screens, options menu, map editor
+
+	"General/Tooltip": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5},
+		"image": "notification", }, 	// color of shortcut tooltips 
+
+	"General/Popup/Background": {  //// no effect ////
+		//"tint": {"r":0.12,"g":0.25,"b":0.40,"a":0.5}
+		"tint": {"r": 1, "g": 0, "b": 0.5, "a": 0.5}, }, 	// color of general background like opening main menu during game
+
+	"General/Popup/InnerTable": {  //// options screen panel ////
+		//"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"tint": {"r": 0, "g": 0.5, "b": 0.5, "a": 0.75},
+		"image": "roundedEdgeRectangle", }, 	// controls color of popup windows and main menu background 	
+
+	"General/AnimatedMenu": {
+		"image": "roundedEdgeRectangle", },
+
+	"General/DisabledBox": {},
+
+	"General/KeyCapturingButton": {
+		"image": "roundedEdgeRectangleSmall", },
+
+
+//// LanguagePickerScreen ////
+
+	"LanguagePickerScreen/LanguageTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "checkbox", }, 	// language text background
+
+
+//// LoadGameScreen ////
+
+	"LoadGameScreen/BottomTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxbottom", }, 	// bottom of load game screen - not save game screen
+
+	"LoadGameScreen/TopTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxtop", }, 	// top of load game screen 
+
+
+//// MainMenuScreen ////
+
+	"MainMenuScreen/Background": {
+		"tint": {"r":0,"g":0,"b":0,"a":1}, }, 	// this is not functional, bugged as random map covers it
+
+	"MainMenuScreen/MenuButton": {  ///// main screen buttons ////
+		"tint": {"r": 1,"g":1,"b":0,"a":0.5},
+		"image": "roundedEdgeRectangle", }, 	// controls main menu buttons on title screen only
+
+	"MainMenuScreen/Version": {
+		"image": "roundedEdgeRectangle", },
+
+
+//// MapEditor ////
+
+	"MapEditor/MapEditorToolsDrawer/Handle": {  ///// controls mapedit main pane bgtint/alpha ////
+		"tint": {"r": 0, "g": 0, "b": 0, "a": 0.80},
+		"image": "thinrectangle", }, 	// self explanatory 
+
+
+//// ModManagementOptions ////
+
+	"ModManagementOptions/ExpanderTab": {
+		"tint": {"r": 1,"g": 1,"b": 1,"a":1},
+		"image": "checkbox", }, 	// background of mod sort and filter 
+
+	"ModManagementScreen/BottomTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxbottom", }, 	// bottom of mod picker screen
+
+	"ModManagementScreen/TopTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxtop", }, 	// top of mod picker screen
+
+
+//// MultiplayerScreen ////
+
+	"MultiplayerScreen/BottomTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxbottom", }, 	// bottom of multiplayer screen
+
+	"MultiplayerScreen/TopTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxtop", }, 	// top of multiplayer screen
+
+
+//// NewGameScreen ////
+
+	"NewGameScreen/BottomTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// whole bottom of new game screen
+
+	"NewGameScreen/GameOptionsTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// left part of new game screen
+
+	"NewGameScreen/MapOptionsTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// middle part of new game screen
+
+	"NewGameScreen/PlayerPickerTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// right part of new game screen
+
+	"NewGameScreen/TopTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// top part of new game screen
+
+	"NewGameScreen/NationTable/Background": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "boxempty", }, 	// outer border of picked nation screen
+
+	"NewGameScreen/NationTable/BorderTable": {}, 	// inner border of picked nation screen
+
+	"NewGameScreen/NationTable/RightInnerTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// inside of picked nation screen
+
+	"NewGameScreen/NationTable/Title": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "boxempty", }, 	// picked nation screen name background 
+
+	"NewGameScreen/PlayerPickerTable/PlayerTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "boxempty", }, 	// picked nations bacground in new game screen
+
+
+//// OverviewScreen ////
+
+	"OverviewScreen/DiplomacyOverviewTab/CivTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "boxempty", }, 	// diplomacy overview diagram table background
+
+	"OverviewScreen/NotificationOverviewTable/Notification": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "notification", }, 	// notification screen notifications button bacgrounds
+
+	"OverviewScreen/ReligionOverviewTab/BeliefDescription": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "notification", }, 	// belief description background
+
+	"OverviewScreen/TradesOverviewTab/OffersTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// active trades background
+
+	"OverviewScreen/UnitOverviewTab/UnitSupplyTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// unit supply table 
+
+	"OverviewScreen/NotificationLog/HighlightColor1": {
+		"tint": {"r": 0.94, "g": 0.87, "b": 0.83, "a": 1}, }, 	// #f0ead6
+
+	"OverviewScreen/NotificationLog/HighlightColor2": {
+		"tint": {"r": 0.96, "g": 0.78, "b": 0.57, "a": 1}, }, 	// #f5c993
+
+
+//// PlayerReadyScreen ////
+
+	"PlayerReadyScreen/Background": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "boxempty", }, 	// as above
+
+
+//// TechPickerScreen ////
+
+	"TechPickerScreen/Background": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxtop", }, 	// tech picker top
+
+	"TechPickerScreen/BottomTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkboxbottom", }, 	// tech picker bottom
+
+	"TechPickerScreen/TechButton": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "roundedEdgeRectangle", }, 	// techs button 
+
+	"TechPickerScreen/CurrentTechColor": {
+		"tint": {"r": 0.28, "g": 0.57, "b": 0.68, "a": 1}, }, 	// 72,147,175
+
+	"TechPickerScreen/QueuedTechColor": {
+		"tint": {"r": 0.28, "g": 0.57, "b": 0.33, "a": 1}, }, 	// 72,146,86 (interpreted)
+
+	"TechPickerScreen/ResearchableTechColor": {
+		"tint": {"r": 0.11, "g": 0.66, "b": 0.00, "a": 1}, }, 	// 28,170,0
+
+	"TechPickerScreen/ResearchedFutureTechColor": {
+		"tint": {"r": 0.49, "g": 0.19, "b": 0.00, "a": 1}, }, 	// 127,50,0
+
+	"TechPickerScreen/ResearchedTechColor": {
+		"tint": {"r": 1, "g": 0.84, "b": 0.00, "a": 1}, }, 	// 255,215,0
+
+	"TechPickerScreen/TechButtonIconsOutline": {
+		"image": "roundedEdgeRectangleSmall", },
+
+
+//// VictoryScreen ////
+
+	"VictoryScreen/CivGroup": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "roundedEdgeRectangle", }, 	// victory status nations bacgrounds
+
+
+//// WorldScreen ////
+
+	"WorldScreen/BattleTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "rectangleWithOutline", }, 	// battle background
+
+	"WorldScreen/Notification": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "notification", }, 	// notifications in world screen
+
+	"WorldScreen/PickTechButton": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "roundedEdgeRectangle", }, 	// pick tech button
+
+	"WorldScreen/TileInfoTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "rectangleWithOutline", }, 	// tile info in main map
+
+	"WorldScreen/TutorialTaskTable": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "checkbox", }, 	// tutorial tables
+
+	"WorldScreen/UnitTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "unitstat", }, 	// unit box in the left corner
+
+	"WorldScreen/CityButton/AirUnitTable": {}, 	// Aircraft icon
+
+	"WorldScreen/CityButton/IconTable": {
+		"image": "roundedEdgeRectangle",
+		"alpha": 0.9, }, 	// Cities names
+
+	"WorldScreen/CityButton/InfluenceBar": {
+		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"image": "thinrectangle", }, 	// Inluence bar background
+
+	"WorldScreen/Minimap/Background": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "minimap_inside", }, 	// minimap background
+
+	"WorldScreen/Minimap/Border": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "minimap_border", }, 	// minimap border
+
+	"WorldScreen/TopBar/LeftAttachment": {}, 	// ??
+
+	"WorldScreen/TopBar/ResourceTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "bottombarstats", }, 	// Top bar bottom part
+
+	"WorldScreen/TopBar/RightAttachment": {}, 	// ??
+
+	"WorldScreen/TopBar/StatsTable": {
+		"tint": {"r": 1, "g": 1, "b": 1, "a": 1},
+		"image": "topbarstats", }, 	// top bar top part
+
+	"WorldScreen/AirUnitTable": {},
+
+	"WorldScreen/CityButton/AirUnitTableBorder": {
+		"image": "roundedEdgeRectangleSmall", },
+
+	"WorldScreen/CityButton/DefenceTable": {
+		"image": "roundedTopEdgeRectangleSmall", },
+
+	"WorldScreen/CityButton/DefenceTableBorder": {
+		"image": "roundedTopEdgeRectangleSmallBorder", },
+
+	"WorldScreen/CityButton/IconTableBorder": {
+		"image": "roundedEdgeRectangleMidBorder", },
+
+	"WorldScreen/NextTurn/ProgressBar": {},
+
+	"WorldScreen/NextTurn/ProgressColor": {
+		"tint": {"r": 0.133, "g": 0.545, "b": 0.133, "a": 1}, }, 	// FOREST
+
+
+//// AnimatedMenu ////
+
+	"AnimatedMenu/Button": {
+		"image": "roundedEdgeRectangleMid", },
+
+
+//// DiplomacyScreen ////
+
+	"DiplomacyScreen/LeftSide": {},
+	"DiplomacyScreen/RightSide": {},
+	"DiplomacyScreen/SelectedCiv": {},
+
+
+//// NotificationScroll ////
+
+	"NotificationScroll/OneTimeNotificationColor": {
+		"tint": {"r": 0.988, "g": 0.933, "b": 0.659, "a": 1}, }, 	// #fceea8
+
+
+//// PolicyScreen ////
+
+	"PolicyScreen/PolicyBranchAdoptButton": {
+		"image": "roundedEdgeRectangleSmall", },
+
+	"PolicyScreen/PolicyBranchAdoptButtonBorder": {
+		"image": "roundedEdgeRectangleSmall", },
+
+	"PolicyScreen/PolicyBranchBackground": {
+		"image": "rectangleWithOutline", },
+
+	"PolicyScreen/PolicyBranchBackgroundBorder": {
+		"image": "rectangleWithOutline", },
+
+	"PolicyScreen/PolicyBranchHeader": {
+		"image": "rectangleWithOutline", },
+
+	"PolicyScreen/PolicyBranchHeaderBorder": {
+		"image": "rectangleWithOutline", },
+
+	"PolicyScreen/Colors/BranchBGAdopted": {
+		"tint": {"r": 0.196, "g": 0.176, "b": 0.020, "a": 1}, }, 	// 50,45,5
+
+	"PolicyScreen/Colors/BranchBGCompleted": {
+		"tint": {"r": 1.000, "g": 0.804, "b": 0.000, "a": 1}, }, 	// 255,205,0
+
+	"PolicyScreen/Colors/BranchBGNotAdopted": {
+		"tint": {"r": 0.020, "g": 0.176, "b": 0.255, "a": 1}, }, 	// 5,45,65
+
+	"PolicyScreen/Colors/BranchHeaderBG": {
+		"tint": {"r": 0.184, "g": 0.353, "b": 0.361, "a": 1}, }, 	// 47,90,92
+
+	"PolicyScreen/Colors/BranchLabelAdopted": {
+		"tint": {"r": 0.588, "g": 0.275, "b": 0.157, "a": 1}, }, 	// 150,70,40
+
+	"PolicyScreen/Colors/BranchLabelNotPickable": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 0.498}, }, 	// 0xffffff7f
+
+	"PolicyScreen/Colors/BranchLabelPickable": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 1}, }, 	// WHITE
+
+	"PolicyScreen/Colors/ButtonBGAdopted": {
+		"tint": {"r": 0.004, "g": 0.067, "b": 0.075, "a": 1}, }, 	// 1,17,19
+
+	"PolicyScreen/Colors/ButtonBGAdoptedSelected": {
+		"tint": {"r": 0.004, "g": 0.067, "b": 0.075, "a": 1}, }, 	// 1,17,19
+
+	"PolicyScreen/Colors/ButtonBGNotPickable": {
+		"tint": {"r": 0.078, "g": 0.078, "b": 0.078, "a": 1}, }, 	// 20,20,20
+
+	"PolicyScreen/Colors/ButtonBGNotPickableSelected": {
+		"tint": {"r": 0.078, "g": 0.078, "b": 0.078, "a": 1}, }, 	// 20,20,20
+
+	"PolicyScreen/Colors/ButtonBGPickable": {
+		"tint": {"r": 0.125, "g": 0.180, "b": 0.251, "a": 1}, }, 	// 32,46,64
+
+	"PolicyScreen/Colors/ButtonBGPickableSelected": {
+		"tint": {"r": 0.145, "g": 0.341, "b": 0.322, "a": 1}, }, 	// 37,87,82
+
+	"PolicyScreen/Colors/ButtonIconAdopted": {
+		"tint": {"r": 1.000, "g": 0.843, "b": 0.000, "a": 1}, }, 	// GOLD
+
+	"PolicyScreen/Colors/ButtonIconAdoptedSelected": {
+		"tint": {"r": 1.000, "g": 0.843, "b": 0.000, "a": 1}, }, 	// GOLD
+
+	"PolicyScreen/Colors/ButtonIconNotPickable": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 0.200}, }, 	// 0xffffff33 (approx 0.2 alpha)
+
+	"PolicyScreen/Colors/ButtonIconNotPickableSelected": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 0.200}, }, 	// same
+
+	"PolicyScreen/Colors/ButtonIconPickable": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 1}, }, 	// WHITE
+
+	"PolicyScreen/Colors/ButtonIconPickableSelected": {
+		"tint": {"r": 1.000, "g": 1.000, "b": 1.000, "a": 1}, }, 	// WHITE
+
+
+//// PromotionScreen ////
+
+	"PromotionScreen/PromotionButton": {
+		"image": "roundedEdgeRectangleMid", },
+
+	"PromotionScreen/PromotionButtonBorder": {
+		"image": "roundedEdgeRectangleMidBorder", },
+
+
+//// WorldScreenMusicPopup ////
+
+	"WorldScreenMusicPopup/TrackList/Down": {},
+	"WorldScreenMusicPopup/TrackList/Over": {},
+	"WorldScreenMusicPopup/TrackList/Up": {},
+
+    }
+}
