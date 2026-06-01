@@ -1,7 +1,7 @@
-![](west_of_dungeon_shame.png)
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/basemod/west_of_dungeon_shame.png)
 
 # UltimaV base mod
-![](Images/TileSets/Ultima/Tiles/Citadel.png) Ultima V series total conversion mod ![](Images/TileSets/Ultima/Tiles/Citadel.png)
+![](Images/TileSets/Ultima/Tiles/Citadel.png) Ultima V series **total conversion** mod ![](Images/TileSets/Ultima/Tiles/Citadel.png)
 
 	Includes:
 	  ✅ TileSet
@@ -11,7 +11,23 @@
 
 # Info
 
-A non-broadcast repo for development. When complete/ready, will package as a new mod. Feel free to explore this repo if you've never seen it before.
+A WIP repo for development, excluded from the mods menu. When complete/ready, will package as a new mod. Feel free to explore this repo if you've never seen it before.
+
+# Updates
+
+A requirement for technical visuals has been to change the root background color. This has been notoriously impossible to change, until now. Another Madmapper(tm) modhack. See:
+
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/basemod/black_background.png)
+
+The background is black!
+
+To avoid overlap artifacts, base terrain is being re-shaped (you have to click it to see the alpha punchout):
+
+![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/Grassland.png)
+
+The issue becomes the alpha punchout exposes the base background color. For Ultima, our base background is black, not Unciv's dark blue. By changing the background color, we can use alpha exposures without artifacts.
+
+Peruse [jsons/Skins/](jsons/Skins/) to see how this was accomplished.
 
 # Let's Pique
 
