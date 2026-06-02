@@ -434,7 +434,7 @@
 	{
 		"name": "Oasis",
 		"type": "TerrainFeature",
-		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
 		"uniques": [],
 	},
 	{
