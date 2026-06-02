@@ -169,7 +169,7 @@
 	//// mapedit main pane inner border, image will layer on top of MapEditor/MapEditorToolsDrawer/Handle ////
 	"General/TabbedPager": { 						// background of overview screens, options menu, map editor
 		//"tint": {"r": 0, "g": 0, "b": 0.66, "a": 0.5},
-		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5},
+		"tint": {"r": 0, "g": 0, "b": 0.66, "a": 0.5},
 		"image": "checkbox", },
 
 	"General/Tooltip": { 							// color of shortcut tooltips 
@@ -212,7 +212,7 @@
 		"image": "checkboxbottom", },
 
 	"LoadGameScreen/TopTable": { 						// top of load game screen 
-		"tint": {"r":1,"g":1,"b":1,"a":1},
+		"tint": {"r":0,"g":1,"b":1,"a":0.7},
 		"image": "checkboxtop", },
 
 
@@ -220,7 +220,7 @@
 
 	"MainMenuScreen/Background": { 						// Default shape: this is not functional, bugged as random map covers it
 		//"tint": {"r":0,"g":0,"b":0,"a":1}, },
-		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5}, },
+		"tint": {"r": 1, "g": 0, "b": 1, "a": 0.5}, },	// Using magenta color as hint if it shows anywhere
 
 	///// main screen buttons ////
 	"MainMenuScreen/MenuButton": { 						// controls main menu buttons on title screen only
@@ -234,10 +234,10 @@
 
 //// MapEditor ////
 
-	///// controls mapedit main pane bgtint/alpha ////
+	///// Controls mapedit main pane bgtint/alpha ////
 	"MapEditor/MapEditorToolsDrawer/Handle": {
-		//"tint": {"r": 0, "g": 0, "b": 0, "a": 0.80},
-		"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5},
+		"tint": {"r": 0, "g": 0, "b": 0, "a": 0.80},
+		//"tint": {"r": 1, "g": 1, "b": 1, "a": 0.5},
 		"image": "thinrectangle", },
 
 
