@@ -63,7 +63,9 @@
 	"useColorAsBaseTerrain": "false",	// Minimal-style toggles
 	"useSummaryImages": "false",
 
-	"tileScales": {},
+	"tileScales": {
+		"_Editor_":0.5,
+	},
 	//	{ "City center":0.75, },	// example for within the block element
 
 
