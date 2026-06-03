@@ -1197,7 +1197,7 @@ TileSets/Ultima/Tiles/Cactus
   orig: 32, 32
   offset: 0, 0
   index: -1
-TileSets/Ultima/Tiles/Camp (2)
+TileSets/Ultima/Tiles/Camp
   rotate: false
   xy: 1300, 388
   size: 48, 48
