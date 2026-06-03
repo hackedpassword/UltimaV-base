@@ -329,6 +329,10 @@
 ////////////////////////////////////
 //////// TerrainFeatures //////////
 //////////////////////////////////
+
+	{ "name":"editor/menu/spacer000","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+	{ "name":"editor/menu/spacer00","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+
 	{
 		"name": "Brush",
 		"type": "TerrainFeature",
@@ -477,12 +481,16 @@
   ///////////////////////////////
  //////// Terrain Decor ////////
 ///////////////////////////////
+
+	// Special spacer entity for Edit sections, used only for the Edit menu. Sprite associated for menu aesthetics. Translations used to shape the name.
+	{ "name":"editor/menu/spacer01","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
-		"name": "⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘", // ⚠️ see if we can bump this to editor/ then flatten it in translations, maybe that will play better with unicode
+		"name": "editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___", //  ⚠️ see if we can bump this to editor/ then flatten it in translations, maybe that will play better with unicode
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"uniques": ["Editor"],
+		"uniques": ["_Editor_"],
 	},
+
 
 // Land shoreline decors (land -> water)
 
@@ -577,6 +585,9 @@
 		Scrub/Woods/Forest/Thicket: ▵ △ ▲ ◆
 		Swamp,Hill,River: ▩ ▦ ═
 */
+
+
+
 
 	// The order of the entities below determines their presentation order in the map editor!
 	{
@@ -942,31 +953,31 @@
 /* Editor decors are map tiles/sprites that are only used during the construction of the map. 
    Info: ⚠️ Remove editor sprites placed in your map before publishing! ⚠️
    These TF layer sprites aren't rendered on the unit layer (later in the render stack) so they get tiled over
-     by adjacent tile top-down rendering. :P
+     by adjacent tiles by top-down rendering. :P
 */
 
-	// Special spacer entity. Used only for the Edit menu. Blank alpha .png sprite associated for menu aesthetics.
-	// ⚠️ Unicode works fine, however cannot be placed in a subfolder.
+
+	{ "name":"editor/menu/spacer02","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
-		"name": "⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕",
+		"name": "editor/menu/___⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕___",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"uniques": ["Editor"],
+		"uniques": ["_Editor_"],
 	},
 
-	/* "Editor" entity definition, for an Improvement "terrainsCanBeBuiltOn". Any improvement entity with "Editor"
-	     as a terrainsCanBeBuiltOn can then have "Editor" tagged sprites applied to an improvement tile.
+	/* "_Editor_" entity definition, for an Improvement "terrainsCanBeBuiltOn". Any improvement entity with "_Editor_"
+	     as a terrainsCanBeBuiltOn can then have "_Editor_" tagged sprites applied to an improvement tile.
 	     Cannot use this technique on Natural Wonders since no TF can be applied to them. 
 	   To activate, specify the entity name in the terrain block unique as a tag.
 	⚠️ A `name` using unicode characters will silently not work. the "name": must be non-unicode. :(
 	*/
 	{
-		"name": "Editor",
+		"name": "_Editor_",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Grassland","Grassland shoreline","Flatland","Flatland shoreline","Desert","Desert shoreline","Mountain","Mountain shoreline",
+		"occursOn": ["Flatland","Flatland shoreline","Desert","Desert shoreline","Mountain","Mountain shoreline", "Grassland","Grassland shoreline",
 			"Coast","Coast shore","Surf","Surf shore","Ocean",
-			"Plains","Snow","Tundra"],  // no "Natural.*?Wonder"
+			"Plains","Snow","Tundra"], 	// can't do /Natural.*?Wonder/
 		"uniques": [],
 	},
 
@@ -977,19 +988,19 @@
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		//"occursOn": [],  // Let `Editor` handle this.
-		"uniques": [ "TerrainDecor","Editor","Terrain"],
+		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
 	{
 		"name": "editor/terrain/Striped square",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"uniques": [ "TerrainDecor","Editor","Terrain"],
+		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
 	{
 		"name": "editor/terrain/Edging square",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"uniques": [ "TerrainDecor","Editor","Terrain"],
+		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
 
 
@@ -998,50 +1009,50 @@
 		"name": "editor/units/Editor unit 1",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		//"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 2",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 3",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 4",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 5",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 6",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 7",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 
 // Water units, serial 10..19
@@ -1050,14 +1061,14 @@
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Coast","Ocean","Coast shore","Surf shore","Surf"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 	{
 		"name": "editor/units/Editor unit 11",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Coast","Ocean","Coast shore","Surf shore","Surf"],
-		"uniques": [ "TerrainDecor","Editor","Unit"],
+		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 
 // Other entity sprites, like improvements or any other field sprites
@@ -1066,7 +1077,7 @@
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","Editor","Entity"],
+		"uniques": [ "TerrainDecor","_Editor_","Entity"],
 	},
 
 // Sprite alignment - very useful for inspecting square-hex pixel alignment identification
@@ -1076,7 +1087,7 @@
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
 			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","Editor"],
+		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
 		"name": "editor/24x28 (32x32) detailed",
@@ -1084,7 +1095,7 @@
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
 			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","Editor"],
+		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
 		"name": "editor/large (64x64) detailed",
@@ -1092,7 +1103,7 @@
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
 			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","Editor"],
+		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
 		"name": "editor/finetune (256x256) ultra",
@@ -1100,7 +1111,7 @@
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
 			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","Editor"],
+		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 
 
@@ -1117,73 +1128,13 @@
   // // // // // // // // // // // // // ///
   ////////// Legacy >> migration //////////
   // // // // // // // // // // // // // /
-	{
-		"name": "☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"uniques": ["Editor"],
-	},
 
-
-////////// >>>>>>>>> Waterfront decor migration blocks <<<<<<<<< //////////////////
-// Land beach decors (land -> water)
-	// devnotes: Applying this over a Forest would blank the forest .. any other TF would work. Had to copy ForestG.png to Forest.png
-	// (just more artifacts of an unmigrated tileset that will be properly fixed later)
+	{ "name":"editor/menu/spacer03","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
-		"name": "Beach NE straight",
+		"name": "editor/menu/___☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠___",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Desert","Mountain","Plains","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		"name": "Beach NW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Mountain","Plains","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		"name": "Beach SE straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Mountain","Plains","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		"name": "Beach SW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Mountain","Plains","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		"name": "Shore SW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Lakes","Lakes shore","Coast","Coast shore","Coast edgeless"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "Shore SE straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Lakes","Lakes shore","Coast","Coast shore","Coast edgeless"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "Shore NW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Lakes","Lakes shore","Coast","Coast shore","Coast edgeless"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "Shore NE straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Lakes","Lakes shore","Coast","Coast shore","Coast edgeless"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
+		"uniques": ["_Editor_"],
 	},
 	{
 		"name": "Lakes",
@@ -1242,13 +1193,6 @@
 		"uniques": []
 	},
 	{
-		"name": "Flood plains",
-		"type": "TerrainFeature",
-		"movementCost": 1,
-		"occursOn": ["Grassland","Desert","Plains","Flatland"],
-		"uniques": [],
-	},
-	{
 		"name": "Jungle",
 		"type": "TerrainFeature",
 		"food": 0,
@@ -1257,11 +1201,7 @@
 		"unbuildable": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Flatland","Grassland"],
-		"uniques": [
-			"Rough terrain", "Vegetation",
-			"Blocks line-of-sight from tiles at same elevation",
-			"[70]% Chance to be destroyed by nukes",
-		]
+		"uniques": [],
 	},
 	{
 		"name": "Marsh",
@@ -1271,292 +1211,10 @@
 		"unbuildable": true,
 		"defenceBonus": -0.4,
 		"occursOn": ["Grassland"],
-		"uniques": [
-			"Rough terrain", "Vegetation", 
-		],
-	},
-	{
-		"name": "Atoll",
-		"type": "TerrainFeature",
-		"occursOn": ["Coast shore","Coast","Lake shore","Lake"],
 		"uniques": [],
 	},
 
-///////// PATHS AND RIVERS MIGRATION ////////
 
-	{
-		"name": "RiverD",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high west down",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high east down",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low west up",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low east up",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-
-	{
-		"name": "RiverD high west east up",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD high west east down",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low west east up",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD low west east down",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD north south high east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD north south high west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD north south low east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD north south low west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub north",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub south",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub high south",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub high west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub high east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub high north",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub high south",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub low north",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub low south",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub low west",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-	{
-		"name": "RiverD stub low east",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Land","Mountain","Plains","Desert","Coast","Coast edgeless","Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
-	},
-
-	{
-		//"name": "Beach NE straight",
-		"name": "waterfront/◥",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Desert beach","Mountain","Mountain beach","Flatland","Flatland beach","Grassland beach","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		//"name": "Beach NW straight",
-		"name": "waterfront/◤",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Desert beach","Mountain","Mountain beach","Flatland","Flatland beach","Grassland beach","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		//"name": "Beach SE straight",
-		"name": "waterfront/◢",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Desert beach","Mountain","Mountain beach","Flatland","Flatland beach","Grassland beach","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-	{
-		//"name": "Beach SW straight",
-		"name": "waterfront/◣",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Desert beach","Mountain","Mountain beach","Flatland","Flatland beach","Grassland beach","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","Beach"],
-	},
-// Water shore decors (water -> land)
-	{
-		"name": "waterfront/◺", //"name": "Shore SW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf","Surf shore","Coast","Coast shore"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "waterfront/◿", //"name": "Shore SE straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf","Surf shore","Coast","Coast shore"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "waterfront/◸", // //"name": "Shore NW straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf","Surf shore","Coast","Coast shore"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
-	{
-		"name": "waterfront/◹", //"name": "Shore NE straight",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf","Surf shore","Coast","Coast shore"],
-		"uniques": ["TerrainDecor","Coast","Shore"],
-	},
 
 
 // // // // // // // // // // // // // ///
