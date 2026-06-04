@@ -4,14 +4,28 @@
 ![](Images/TileSets/Ultima/Tiles/Citadel.png) Ultima V series **total conversion** mod ![](Images/TileSets/Ultima/Tiles/Citadel.png)
 
 	Includes:
-	  ✅ TileSet
-	  ✅ UnitSet
-	  ✅ Edges
-	  ✅ Map
+	  ✅ TileSet: UltimaV
+	  ✅ UnitSet: UltimaV
+	  ✅ Edges: UltimaV
+	  ✅ Maps: Britannia Overworld
+	  ✅ Skins: UltimaV, Minimal
 
 # Info
 
-A WIP repo for development, excluded from the mods menu. When complete/ready, will package as a new mod. Feel free to explore this repo if you've never seen it before.
+A WIP repo for continuing development. No Unciv tags atm thus excluded from the mods menu - copy the url and d/l manually in the mods menu. When complete/ready, will package as a new mod.
+
+Feel free to explore this repo - you've never seen modding techniques we use within before! Examples will be highlighted later.
+
+## WIP
+
+The current focus is conversion of the Britannia map from G&K to pure UltimaV. Extensive use of terrainDecor brings forth a natural landscape cartography with stunning details.
+
+Because the eventual gameplay will be quite different from Civ-style, all legacy resources have been ejected. Every available entity type will have a new role, including promotions and policies for example. CoeHarMod makes use of this type of modded system, to conceptualize the vision here.
+
+Ongoing mapdev work continues to produce new and fun modding techniques that can be harnessed in the Unciv modding ecosystem. A few are downright amusing in their application.
+
+![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/editor/menu/spacer01rgb.png)
+
 
 # Updates
 
