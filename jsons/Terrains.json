@@ -436,6 +436,30 @@
 		"uniques": [],
 	},
 	{
+		"name": "Sand ⭦┋",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ⭩┋",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ┋⭧",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ┋⭨",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
 		"name": "Oasis",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
