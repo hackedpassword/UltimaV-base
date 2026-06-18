@@ -14,7 +14,7 @@
 
 A WIP repo for continuing development. No Unciv tags atm thus excluded from the mods menu - copy the url and d/l manually in the mods menu. When complete/ready, will package as a new mod.
 
-Feel free to explore this repo - you've never seen modding techniques we use within before! Examples will be highlighted later.
+Feel free to explore this repo - you've never seen modding techniques used within before! Examples will be highlighted later.
 
 ## WIP
 
@@ -28,6 +28,8 @@ Ongoing mapdev work continues to produce new and fun modding techniques that can
 
 
 # Updates
+
+Map detailing progresses. Load it up yourself to see mapping artistic capabilities on a whole new level. "Unciv can do that?!"
 
 A requirement for technical visuals has been to change the root background color. This has been notoriously impossible to change, until now. Another Madmapper(tm) modhack. See:
 
