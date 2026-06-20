@@ -420,59 +420,6 @@
 		],
 	},
 	{
-		"name": "Waterfall",
-		"type": "TerrainFeature",
-		"movementCost": 3,
-		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": [
-			"Rough terrain",
-			"Blocks line-of-sight from tiles at same elevation",
-		],
-	},
-	{
-		"name": "Cactus",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ⭦┋",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ⭩┋",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ┋⭧",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ┋⭨",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Oasis",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Dock",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
-		"uniques": [],
-	},
-	{
 		"name": "Fallout",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -931,10 +878,72 @@
 	},
 
 
+  //////////////////////////
+ ///////  Details  ////////
+//////////////////////////
+
+	{ "name":"editor/menu/spacer04","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+
+	{
+		"name": "Sand ⭦┋",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ⭩┋",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ┋⭧",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Sand ┋⭨",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+
+
 
   //////////////////////////
  /////// Landmarks ////////
 //////////////////////////
+
+	{
+		"name": "Waterfall",
+		"type": "TerrainFeature",
+		"movementCost": 3,
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"uniques": [
+			"Rough terrain",
+			"Blocks line-of-sight from tiles at same elevation",
+		],
+	},
+	{
+		"name": "Cactus",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Oasis",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Dock",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"uniques": [],
+	},
 
 //////// Quaint little bridges ////////
 
@@ -1131,6 +1140,30 @@
 	},
 	{
 		"name": "editor/finetune (256x256) ultra",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/Notch template",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/Notch detail",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/terrain/Ocean aligner",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
