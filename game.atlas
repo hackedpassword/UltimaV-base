@@ -42,7 +42,7 @@ Skins/UltimaV/roundedEdgeRectangle
   index: -1
 Skins/UltimaV/thinrectangle
   rotate: false
-  xy: 436, 11
+  xy: 460, 11
   size: 9, 9
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
@@ -1757,6 +1757,13 @@ TileSets/Ultima/Tiles/Woods
   orig: 32, 32
   offset: 0, 0
   index: -1
+TileSets/Ultima/Tiles/_Editor_
+  rotate: false
+  xy: 364, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
 TileSets/Ultima/Tiles/bridge/⮝ ][
   rotate: false
   xy: 532, 122
@@ -2081,21 +2088,21 @@ TileSets/Ultima/Tiles/Fort
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠___
   rotate: false
-  xy: 364, 4
+  xy: 388, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕___
   rotate: false
-  xy: 388, 4
+  xy: 412, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___
   rotate: false
-  xy: 412, 4
+  xy: 436, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
