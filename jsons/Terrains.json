@@ -9,6 +9,7 @@
 	  ✅ UnitSet
 	  ✅ Edges
 	  ✅ Map
+	  ✅ Skin
 
 	# Base terrains
 	    Mostly the same as G&K, highlighting familiar tiles:
@@ -49,16 +50,8 @@
 
 	tOdO:
 		> Add minimal base terrain tile coloring i.e. `"RGB": [99, 40, 7],`
-		> Asset blocks are generally bare atm
+		> Asset blocks are generally bare atm, no gameplay attributes until ready
 		> Build/restore RuleVariant aliases
-
-	MIGRATION STRATEGY: Retain original names as legacy, color tint them, seek/replace in editor.
-		Far below in the `migration` section there's a smattering of various terrains that
-		exist in the legacy Britannia map (Ultima-tileset mod). In moving to a basemod, many
-		assets have been updated. Rather than rebuild the map from scratch, assets to be swapped
-		have been re-colored to highlight map editor sprites that might be cloned sprites but
-		need to be swapped for new assets. This way all legacy assets are accounted for when
-		updating, otherwise it's too easy to miss identical looking terrains with new names.
 
 	Unicode: I have expressly put dedicated effort into leveraging Unicode symbols into assets, json, anywhere
 		that unicode symbols would prove more useful than plain text.
@@ -68,7 +61,7 @@
 
   /*/ /// ////////////////////////////// / / / /// /*/
  /*/ // ////////// Base terrains / / / / /  / //  /*/
-/*/ /  ///// / / / / / / / / / / / / / / / / /   /*/
+/*/ / ////// / / / / / / / / / / / / / / / / /   /*/
 
 	// Design note on base terrains and wonders: Base terrain sprites, BT's and NW's, cannot have alpha
 	//   transparency pixels or the tile will not render. 24-bit only non-alpha sprites!
@@ -129,30 +122,6 @@
 		"uniques": []
 	},
 	{
-		"name": "Mountain",
-		"type": "Land",
-		"movementCost": 3,
-		"defenceBonus": 0.5,
-	        "impassable": true,  // unless unit has grapple gear/promotion
-		"uniques": [
-			"Rough terrain",
-		        "Has an elevation of [1] for visibility calculations",
-			"Blocks line-of-sight from tiles at same elevation",
-			"Considered [Undesirable] when determining start locations",
-		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
-			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
-		], 
-	},
-	{
-		"name": "Mountain shoreline",  // rebuild per above when ready
-		"type": "Land",
-		"movementCost": 3,
-		"defenceBonus": 0.5,
-	        "impassable": true, 
-		"uniques": [
-		],
-	},
-	{
 		"name": "Coast",
 		"type": "Water",
 		"food": 0,
@@ -200,6 +169,30 @@
 		"movementCost": 2,
 		"uniques": []
 	},
+	{
+		"name": "Mountain",
+		"type": "Land",
+		"movementCost": 3,
+		"defenceBonus": 0.5,
+	        "impassable": true,  // unless unit has grapple gear/promotion
+		"uniques": [
+			"Rough terrain",
+		        "Has an elevation of [1] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			"Considered [Undesirable] when determining start locations",
+		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
+		], 
+	},
+	{
+		"name": "Mountain shoreline",  // rebuild per above when ready
+		"type": "Land",
+		"movementCost": 3,
+		"defenceBonus": 0.5,
+	        "impassable": true, 
+		"uniques": [
+		],
+	},
 
 
   ////////////////////////
@@ -222,7 +215,7 @@
 	     Means I can't create a NW trigger w/ an Improvement trigger! \o/ We'll see about that...
 	*/
 	{
-		"name": "The Hallowed Meadow",  // supposed to be the Codex base terrain
+		"name": "The Hallowed Meadow",  // supposed to be the Codex base terrain, tbd
 		"type": "NaturalWonder",
 		"uniques": [],
 		"turnsInto": "Sacred Ground",
@@ -330,8 +323,9 @@
 //////// TerrainFeatures //////////
 //////////////////////////////////
 
-	{ "name":"editor/menu/spacer000","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+	// To use the spacer lines, we must create a new asset per spacer. Can't re-use the same or they'll just LIFO
 	{ "name":"editor/menu/spacer00","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+	{ "name":"editor/menu/header","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Flashy menu gfx
 
 	{
 		"name": "Brush",
@@ -419,33 +413,6 @@
 			"Blocks line-of-sight from tiles at same elevation",
 		],
 	},
-	{
-		"name": "Fallout",
-		"type": "TerrainFeature",
-		"movementCost": 2,
-		"unbuildable": true,
-		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
-		"occursOn": ["Grassland", "Grassland shoreline", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Tundra", "Snow"],
-		"defenceBonus": -0.15
-	},
-	{  // Clone of Fallout ... how will the engine handle this being Fallout is a special TF?
-		"name": "Lava",
-		"type": "TerrainFeature",
-		"movementCost": 2,
-		"unbuildable": true,
-		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
-		"occursOn": ["Grassland", "Grassland shoreline", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Tundra", "Snow"],
-		"defenceBonus": -0.15
-	},
-
-// other features tbd //
-	{
-		"name": "Sacred Ground",
-		"type": "TerrainFeature",
-		"movementCost": 1,
-		"occursOn": ["Grassland shoreline", "Grassland", "Desert shoreline", "Desert", "Flatland shoreline", "Flatland"],
-		"uniques": [],
-	},
 
 
 
@@ -456,7 +423,7 @@
 	// Special spacer entity for Edit sections, used only for the Edit menu. Sprite associated for menu aesthetics. Translations used to shape the name.
 	{ "name":"editor/menu/spacer01","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
-		"name": "editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___", //  ⚠️ see if we can bump this to editor/ then flatten it in translations, maybe that will play better with unicode
+		"name": "editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___", //  ⚠️ We'll flatten the name in translations to play better with unicode
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"uniques": ["_Editor_"],
@@ -465,12 +432,19 @@
 
 // Land shoreline decors (land -> water)
 
-	// We describe the asset name with symbol(s) for minimal panel noise and rapid-glance recognition.
+	// We describe the asset name with Unicode symbol(s) for minimal panel noise and rapid-glance recognition.
 	// Because decors are heavily used, and the sets of decors can be dense, this methodology presents cleanly.
 	// Only symbols that can render in Unciv are used. Many very fancy symbols don't, we need to manage as such.
 
 	// devnotes: Applying this over a G&K Forest would blank the forest .. any other TF would work. Had to copy
 	// ForestG.png to Forest.png (just more artifacts of an unmigrated tileset that will be properly fixed later)
+	{
+		"name": "waterline/◤", // legacy - "shoreline NW straight"
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor","Grassland","waterline"],
+	},
 	{
 		"name": "waterline/◥", // legacy - "shoreline NE straight"
 		"type": "TerrainFeature",
@@ -479,7 +453,7 @@
 		"uniques": ["TerrainDecor","Grassland","shoreline"],
 	},
 	{
-		"name": "waterline/◤", // legacy - "shoreline NW straight"
+		"name": "waterline/◣", // legacy - "shoreline SW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
@@ -492,29 +466,8 @@
 		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
-	{
-		"name": "waterline/◣", // legacy - "shoreline SW straight"
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
-		"uniques": ["TerrainDecor","Grassland","waterline"],
-	},
 
 // Water shore decors (water -> land)
-	{
-		"name": "waterline/◺", // legacy - "Shore SW straight"
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
-		"uniques": ["TerrainDecor","Coast","waterline"],
-	},
-	{
-		"name": "waterline/◿", // legacy - "Shore SE straight"
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
-		"uniques": ["TerrainDecor","Coast","waterline"],
-	},
 	{
 		"name": "waterline/◸", // legacy - "Shore NW straight"
 		"type": "TerrainFeature",
@@ -529,7 +482,80 @@
 		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
+	{
+		"name": "waterline/◺", // legacy - "Shore SW straight"
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"uniques": ["TerrainDecor","Coast","waterline"],
+	},
+	{
+		"name": "waterline/◿", // legacy - "Shore SE straight"
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"uniques": ["TerrainDecor","Coast","waterline"],
+	},
 
+
+  //////////////////////////
+ ///////  Details  ////////
+//////////////////////////
+
+// Sprites for blends and artistic composition
+
+	{ "name":"editor/menu/spacer04","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+
+	{
+		"name": "detail/Hills ◰",
+		"type": "TerrainFeature",
+		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Hills ◳",
+		"type": "TerrainFeature",
+		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Hills ◱",
+		"type": "TerrainFeature",
+		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Hills ◲",
+		"type": "TerrainFeature",
+		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Sand ◰",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Sand ◳",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Sand ◱",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "detail/Sand ◲",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+
+	{ "name":"editor/menu/spacer05","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 //////// Rivers ////////
 
@@ -878,36 +904,6 @@
 	},
 
 
-  //////////////////////////
- ///////  Details  ////////
-//////////////////////////
-
-	{ "name":"editor/menu/spacer04","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
-
-	{
-		"name": "Sand ⭦┋",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ⭩┋",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ┋⭧",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
-	{
-		"name": "Sand ┋⭨",
-		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
-	},
 
 
 
@@ -915,6 +911,10 @@
  /////// Landmarks ////////
 //////////////////////////
 
+
+	{ "name":"editor/menu/spacer06","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+
+	// Let's move these to the bottom of the list to save on menu scroll grinding
 	{
 		"name": "Waterfall",
 		"type": "TerrainFeature",
@@ -952,35 +952,70 @@
 		"name": "bridge/⮝ ⎶",
 		"type": "TerrainFeature",
 		"unbuildable": false,
-		"occursOn": ["Desert","Coast","Coast shore","Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
+		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland","Coast shore","Coast"],
 		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridge/⮝ ][",
 		"type": "TerrainFeature",
 		"unbuildable": false,
-		"occursOn": ["Desert","Coast","Coast shore","Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
+		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland","Coast shore","Coast"],
 		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridge/⮟ ⎶",
 		"type": "TerrainFeature",
 		"unbuildable": false,
-		"occursOn": ["Desert","Coast","Coast shore","Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
+		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland","Coast shore","Coast"],
 		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 	{
 		"name": "bridge/⮟ ][",
 		"type": "TerrainFeature",
 		"unbuildable": false,
-		"occursOn": ["Desert","Coast","Coast shore","Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
+		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland","Coast shore","Coast"],
 		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 
+//////// Other TF's ////////
+
+	{
+		"name": "features/Grass",
+		"type": "TerrainFeature",
+		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"uniques": [],
+	},
+	{
+		"name": "Fallout",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": true,
+		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
+		"occursOn": ["Grassland", "Grassland shoreline", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Tundra", "Snow"],
+		"defenceBonus": -0.15
+	},
+	{  // Clone of Fallout ... how will the engine handle this being Fallout is a special TF? tbd
+		"name": "Lava",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": true,
+		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
+		"occursOn": ["Grassland", "Grassland shoreline", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Tundra", "Snow"],
+		"defenceBonus": -0.15
+	},
+
+	// other features tbd //
+	{
+		"name": "Sacred Ground",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"occursOn": ["Grassland shoreline", "Grassland", "Desert shoreline", "Desert", "Flatland shoreline", "Flatland"],
+		"uniques": [],
+	},
 
 
-///////////////////////////
-//// Map Editor decors ////
+  ///////////////////////////
+ //// Map Editor decors ////
 ///////////////////////////
 
 /* Editor decors are map tiles/sprites that are only used during the construction of the map. 
@@ -1017,27 +1052,43 @@
 
 // Terrain editor sprites
 	{
-		"name": "editor/terrain/Bordered square",
+		"name": "editor/terrain/Bordered square",	// great for fast alignments and sprite marking
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		//"occursOn": [],  // Let `Editor` handle this.
 		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
 	{
-		"name": "editor/terrain/Striped square",
+		"name": "editor/terrain/Striped square",	// a bit more fidelity for revealing alignments
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
 	{
-		"name": "editor/terrain/Edging square",
+		"name": "editor/terrain/Edging square",		// used usually for filling an area to plug fill boundaries within
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"uniques": [ "TerrainDecor","_Editor_","Terrain"],
 	},
+	{
+		"name": "editor/terrain/Ocean aligner",		// excellent in finding how overlaps are artifacting
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
 
+// Entity sprites, like improvements or any other field sprites
+	{
+		"name": "editor/entities/Editor entity 1",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
+		"uniques": [ "TerrainDecor","_Editor_","Entity"],
+	},
 
-// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently (add later?)
+// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently. Render order artifacts the sprite
 	{
 		"name": "editor/units/Editor unit 1",
 		"type": "TerrainFeature",
@@ -1104,18 +1155,9 @@
 		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 
-// Other entity sprites, like improvements or any other field sprites
-	{
-		"name": "editor/entities/Editor entity 1",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow"],
-		"uniques": [ "TerrainDecor","_Editor_","Entity"],
-	},
-
 // Sprite alignment - very useful for inspecting square-hex pixel alignment identification
 	{
-		"name": "editor/24x28 (32x32)",
+		"name": "editor/alignment/24x28 (32x32)",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1123,7 +1165,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/24x28 (32x32) detailed",
+		"name": "editor/alignment/24x28 (32x32) detailed",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1131,7 +1173,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/large (64x64) detailed",
+		"name": "editor/alignment/large (64x64) detailed",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1139,7 +1181,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/finetune (256x256) ultra",
+		"name": "editor/alignment/finetune (256x256) ultra",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1147,7 +1189,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/Notch template",
+		"name": "editor/Notch template",	// master sprite template
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1155,15 +1197,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/Notch detail",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/terrain/Ocean aligner",
+		"name": "editor/Notch detail",		// applying the sprite template, see notes next
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1171,6 +1205,21 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 
+	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdrawing and top-down
+	      rendering artifacts. This is a 32x32px image. The main sprite itself is 24x28, to fit in the hex grid offsets, interlocking
+	      cropped 16x16px source sprites that are placed in the main sprite in a 4x4 config.
+	    Overlap section: The first two px rows/lines are hard overlap space, we use this space for sprite features that are tall like mountains
+	      and trees. The next two lines are overlap also, we might use these for sprite features that extend upward, which will overdraw
+	      the tile above. The fourth line of the overlap section is used for detail overlapping, but is prone to artifacting.
+	    Notch sections: We cut the black background from the notch area, leaving the detailed pixels, which cleans up messy offset
+	      overlapping to look as close to aligned as possible.
+	    Sprite body: A 16x16px sprite is overlaid into the 32x32px area as 4x4 merged source sprites, shaped to the notch punchout.
+	    Bottom overlap: The last line is normally cut. Corner case artifacts like Surf use the Bottom overlap, vs the Top overlap,
+	      otherwise Surf gets between decor in adjacent land above.
+
+	    And that's how we accurately use square tiling on a hex grid! The only catch is the X axis spacing is squished by like .25px,
+	      as is the Y axis, so tiny corners of the sprites overlap. Solution is to offest _much_ higher res sprites... not needed here.
+	*/
 
 
 // / / / / / / / / / / / / / / / / / / / / / // 
@@ -1181,10 +1230,21 @@
 
 
 
+// Hey! If this json is helpful or any content in the repo, give the repo a star, I'd appreciate that!
+
 
   // // // // // // // // // // // // // ///
   ////////// Legacy >> migration //////////
   // // // // // // // // // // // // // /
+
+/*	MIGRATION STRATEGY: Retain original names as legacy, color tint them, seek/replace in editor.
+		Far below in the `migration` section there's a smattering of various terrains that
+		exist in the legacy Britannia map (Ultima-tileset mod). In moving to a basemod, many
+		assets have been updated. Rather than rebuild the map from scratch, assets to be swapped
+		have been re-colored to highlight map editor sprites that might be cloned sprites but
+		need to be swapped for new assets. This way all legacy assets are accounted for when
+		updating, otherwise it's too easy to miss identical looking terrains with new names.
+*/
 
 	{ "name":"editor/menu/spacer03","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
@@ -1194,44 +1254,12 @@
 		"uniques": ["_Editor_"],
 	},
 	{
-		"name": "Lakes",
-		"type": "Water",
-		"food": 0,
-		"gold": 0,
-		"movementCost": 1,
-		"uniques": [],
-	},
-	{
-		"name": "Lakes shore",
-		"type": "Water",
-		"food": 0,
-		"gold": 0,
-		"movementCost": 1,
-		"uniques": [],
-	},
-	{
 		"name": "Plains",
 		"type": "Land",
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
 		"uniques": []
-	},
-	{
-		"name": "Coast edgeless",
-		"type": "Water",
-		"food": 0,
-		"gold": 0,
-		"movementCost": 1,
-		"uniques": [],
-	},
-	{
-		"name": "Lakes edgeless",
-		"type": "Water",
-		"food": 0,
-		"gold": 0,
-		"movementCost": 1,
-		"uniques": [],
 	},
 	{
 		"name": "Tundra",
