@@ -430,7 +430,7 @@
 	},
 
 
-// Land shoreline decors (land -> water)
+// [Land] shoreline decors (land major -> water)
 
 	// We describe the asset name with Unicode symbol(s) for minimal panel noise and rapid-glance recognition.
 	// Because decors are heavily used, and the sets of decors can be dense, this methodology presents cleanly.
@@ -467,7 +467,7 @@
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 
-// Water shore decors (water -> land)
+// [Water] shore decors (water major -> land)
 	{
 		"name": "waterline/◸", // legacy - "Shore NW straight"
 		"type": "TerrainFeature",
@@ -510,52 +510,53 @@
 		"name": "detail/Hills ◰",
 		"type": "TerrainFeature",
 		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◳",
 		"type": "TerrainFeature",
 		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◱",
 		"type": "TerrainFeature",
 		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◲",
 		"type": "TerrainFeature",
 		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◰",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◳",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◱",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◲",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"uniques": ["TerrainDetail"],
 	},
 
 	{ "name":"editor/menu/spacer05","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
+
 
 //////// Rivers ////////
 
@@ -1049,8 +1050,7 @@
 		"uniques": [],
 	},
 
-
-// Terrain editor sprites
+	// Terrain editor sprites
 	{
 		"name": "editor/terrain/Bordered square",	// great for fast alignments and sprite marking
 		"type": "TerrainFeature",
@@ -1079,7 +1079,57 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 
-// Entity sprites, like improvements or any other field sprites
+	// Sprite alignment - very useful for inspecting square-hex pixel alignment identification
+	{
+		"name": "editor/alignment/24x28 (32x32)",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/alignment/24x28 (32x32) detailed",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/alignment/large (64x64) detailed",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/alignment/finetune (256x256) ultra",
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/Notch template",	// master sprite template
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+	{
+		"name": "editor/Notch detail",		// applying the sprite template, see notes next
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
+
+	// Entity sprites, like improvements or any other field sprites
 	{
 		"name": "editor/entities/Editor entity 1",
 		"type": "TerrainFeature",
@@ -1088,7 +1138,7 @@
 		"uniques": [ "TerrainDecor","_Editor_","Entity"],
 	},
 
-// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently. Render order artifacts the sprite
+	// Unit sprites, doing a Pretty Good (tm) job of showing units on the field, missing unit icons inherently. Render order artifacts the sprite
 	{
 		"name": "editor/units/Editor unit 1",
 		"type": "TerrainFeature",
@@ -1139,7 +1189,7 @@
 		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 
-// Water units, serial 10..19
+	// Water units, serial 10..19
 	{
 		"name": "editor/units/Editor unit 10",
 		"type": "TerrainFeature",
@@ -1155,55 +1205,7 @@
 		"uniques": [ "TerrainDecor","_Editor_","Unit"],
 	},
 
-// Sprite alignment - very useful for inspecting square-hex pixel alignment identification
-	{
-		"name": "editor/alignment/24x28 (32x32)",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/alignment/24x28 (32x32) detailed",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/alignment/large (64x64) detailed",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/alignment/finetune (256x256) ultra",
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/Notch template",	// master sprite template
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
-	{
-		"name": "editor/Notch detail",		// applying the sprite template, see notes next
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
-			"Coast shore","Surf shore"],
-		"uniques": [ "TerrainDecor","_Editor_"],
-	},
+
 
 	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdrawing and top-down
 	      rendering artifacts. This is a 32x32px image. The main sprite itself is 24x28, to fit in the hex grid offsets, interlocking
