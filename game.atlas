@@ -42,7 +42,7 @@ Skins/UltimaV/roundedEdgeRectangle
   index: -1
 Skins/UltimaV/thinrectangle
   rotate: false
-  xy: 460, 11
+  xy: 364, 15
   size: 9, 9
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
@@ -1759,7 +1759,7 @@ TileSets/Ultima/Tiles/Woods
   index: -1
 TileSets/Ultima/Tiles/_Editor_
   rotate: false
-  xy: 364, 4
+  xy: 532, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
@@ -1904,6 +1904,13 @@ TileSets/Ultima/Tiles/decor/Stove
   orig: 48, 48
   offset: 0, 0
   index: -1
+TileSets/Ultima/Tiles/decor/sleeping
+  rotate: false
+  xy: 468, 4
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
 TileSets/Ultima/Tiles/detail/Hills ◰
   rotate: false
   xy: 1572, 324
@@ -2011,21 +2018,21 @@ TileSets/Ultima/Tiles/dungeons/Destard
   index: -1
 TileSets/Ultima/Tiles/editor/Editor
   rotate: false
-  xy: 340, 4
+  xy: 508, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/blank
   rotate: false
-  xy: 340, 4
+  xy: 508, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/⚕
   rotate: false
-  xy: 340, 4
+  xy: 508, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
@@ -2088,21 +2095,21 @@ TileSets/Ultima/Tiles/Fort
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠___
   rotate: false
-  xy: 388, 4
+  xy: 556, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕___
   rotate: false
-  xy: 412, 4
+  xy: 580, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___
   rotate: false
-  xy: 436, 4
+  xy: 340, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
@@ -2157,6 +2164,13 @@ TileSets/Ultima/Tiles/editor/menu/spacer05
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer06
+  rotate: false
+  xy: 412, 322
+  size: 48, 58
+  orig: 48, 58
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Tiles/editor/menu/spacer07
   rotate: false
   xy: 412, 322
   size: 48, 58

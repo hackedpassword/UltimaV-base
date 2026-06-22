@@ -326,6 +326,7 @@
 	// To use the spacer lines, we must create a new asset per spacer. Can't re-use the same or they'll just LIFO
 	{ "name":"editor/menu/spacer00","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{ "name":"editor/menu/header","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Flashy menu gfx
+	{ "name":"editor/menu/spacer01","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 	{
 		"name": "Brush",
@@ -421,7 +422,6 @@
 ///////////////////////////////
 
 	// Special spacer entity for Edit sections, used only for the Edit menu. Sprite associated for menu aesthetics. Translations used to shape the name.
-	{ "name":"editor/menu/spacer01","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 	{
 		"name": "editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___", //  ⚠️ We'll flatten the name in translations to play better with unicode
 		"type": "TerrainFeature",
@@ -558,8 +558,11 @@
 	{ "name":"editor/menu/spacer05","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 
-//////// Rivers ////////
+  ////////////////////////////
+ //////// Connectors ////////
+////////////////////////////
 
+	//////// Rivers ////////
 /*	This original unicode glyph scheme for sprite names is a simplified name-desc with game/filesystem accepted
 	  characters. Each decor group [asset]/*.png for better asset mgmt and editor UI naming.
 	Characters render 🗹 in-game, 🗹 explorer.exe (win10), 🗹 excel (2016), 🗹 notepad, but not 🗵 cmd.exe
@@ -583,9 +586,6 @@
 		Scrub/Woods/Forest/Thicket: ▵ △ ▲ ◆
 		Swamp,Hill,River: ▩ ▦ ═
 */
-
-
-
 
 	// The order of the entities below determines their presentation order in the map editor!
 	{
@@ -793,7 +793,7 @@
 	},
 
 
-//////// Paths ////////
+	//////// Paths ////////
 
 	// "TerrainDecor" label is for future tagging or dependency decor use.
 	// Applying a "Flatland" tag here inherits the Flatland entity (convenient!)
@@ -946,9 +946,7 @@
 		"uniques": [],
 	},
 
-//////// Quaint little bridges ////////
-
-	// These are normal TF's. Their irregular use in the editor makes it less noisy to fit at the tail end of decors.
+	//////// Quaint little bridges ////////
 	{
 		"name": "bridge/⮝ ⎶",
 		"type": "TerrainFeature",
@@ -978,7 +976,11 @@
 		"uniques": ["Landmark","Bridge","Flatland"]
 	},
 
-//////// Other TF's ////////
+  ///////////////////////////////////
+ //////// Terrain modifiers ////////
+///////////////////////////////////
+
+	{ "name":"editor/menu/spacer07","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 	{
 		"name": "features/Grass",
