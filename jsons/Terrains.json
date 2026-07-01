@@ -1130,6 +1130,14 @@
 			"Coast shore","Surf shore"],
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
+	{
+		"name": "editor/Notch overlay",		// translucent template
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
+			"Coast shore","Surf shore"],
+		"uniques": [ "TerrainDecor","_Editor_"],
+	},
 
 	// Entity sprites, like improvements or any other field sprites
 	{
@@ -1209,20 +1217,24 @@
 
 
 
-	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdrawing and top-down
-	      rendering artifacts. This is a 32x32px image. The main sprite itself is 24x28, to fit in the hex grid offsets, interlocking
-	      cropped 16x16px source sprites that are placed in the main sprite in a 4x4 config.
-	    Overlap section: The first two px rows/lines are hard overlap space, we use this space for sprite features that are tall like mountains
-	      and trees. The next two lines are overlap also, we might use these for sprite features that extend upward, which will overdraw
-	      the tile above. The fourth line of the overlap section is used for detail overlapping, but is prone to artifacting.
-	    Notch sections: We cut the black background from the notch area, leaving the detailed pixels, which cleans up messy offset
-	      overlapping to look as close to aligned as possible.
-	    Sprite body: A 16x16px sprite is overlaid into the 32x32px area as 4x4 merged source sprites, shaped to the notch punchout.
-	    Bottom overlap: The last line is normally cut. Corner case artifacts like Surf use the Bottom overlap, vs the Top overlap,
-	      otherwise Surf gets between decor in adjacent land above.
+	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdraw rendering, and, top-down
+	      rendering artifacts. This is a 32x32px image. The primary section of the square sprite is **24x28**, to fit in the hex grid offsets.
+	      The notch shape is interlocking. Original 16x16px Ultima V source sprites are placed into the main sprite as a 4x4 config.
+	      The origin 16x16 section of the 4x4 group maintains the tiling pattern despite the discarded pixels outside the notch.
+	    Overlap section: The top two px rows/lines are hard overlap space. We use this space for sprite features that are tall like mountains
+	      and trees. The next two lines are secondary overlap - we might use these for sprite features that extend upward. Overlay rows will
+	      overdraw the tile above. The fourth px row of the top overlap section is used for detail overlapping, _but is prone to artifacting_.
+	    Notch sections: Red colored middle top-left and top-right sections. We cut the black pixels (background color) from the notch area,
+	      leaving the detailed pixels. This cleans up messy offset overlapping to look as close to aligned as possible.
+	    Sprite body: As noted, the 16x16px source sprite is placed into the 32x32px area as 4 conjoined source sprites. We then shape the sprite
+	      with the punchout shape seen.
+	    Bottom overlap: The last row is normally cut. Corner case artifacts like Surf use the Bottom row for overlap, vs the usual Top row overlap,
+	      otherwise Surf causes artifact pixels inbetween decors in adjacent lands above Surf.
 
-	    And that's how we accurately use square tiling on a hex grid! The only catch is the X axis spacing is squished by like .25px,
-	      as is the Y axis, so tiny corners of the sprites overlap. Solution is to offest _much_ higher res sprites... not needed here.
+	    And that's how we accurately use square tiling on a hex grid!
+
+	    The one gotcha is that the X and Y axis spacing is offset/squished by ~1/4px, which you can see when zoomed in,
+	      so tiny corners of the sprites overlap. Solution (perfection) is to offest this with _much_ higher res sprites.
 	*/
 
 
@@ -1234,7 +1246,9 @@
 
 
 
-// Hey! If this json is helpful or any content in the repo, give the repo a star, I'd appreciate that!
+//// Hey! If this json or any content in the repo is helpful, please give this repo a star. I'd appreciate that! ////
+
+
 
 
   // // // // // // // // // // // // // ///
