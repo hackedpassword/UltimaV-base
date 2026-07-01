@@ -29,7 +29,20 @@ Ongoing mapdev work continues to produce new and fun modding techniques that can
 
 # Updates
 
-Map detailing progresses. Load it up yourself to see mapping artistic capabilities on a whole new level. "Unciv can do that?!"
+## New editor tech: Tile mesh overlays via Rivers
+
+Why? Two reasons - in this mod, rivers are planned to be merged into new base terrain with river attributes thus no built-in rivers, and, rivers can be added later or last in map dev.
+
+Most Unciv players will believe their map is on a hex grid, the truth being it's actually big square sprites with a staggered layout. Ultima mod gives the appearance of an 8-bit square layout via some sprite tricks. These tricks are confusing to regular Unciv players and modders, creating some aesthetic friction. So, for design and for clarity purposes, we can peel back the magic and see that Britannia map still exists in the hex grid realm of normal Unciv, we can see the magic of square tile design, and we can see full sized sprite tiles. These meshes can be added and deleted without impacting terrainFeatures, improvements, etc, by imposing itself as a fake river entity.
+
+Any mod can use this tech, likely then reverting to "normal" rivers before publishing their map.
+
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/e6eb6f5a5703675a6a688d34b4619eeaf2fc5615/Images/Ultima%20V/editor_mesh.png)
+
+
+## Map detailing progress - bgcolor made moddable
+
+Load it up yourself to see mapping artistic capabilities on a whole new level. "Unciv can do that?!"
 
 A requirement for technical visuals has been to change the root background color. This has been notoriously impossible to change, until now. Another Madmapper(tm) modhack. See:
 
@@ -45,7 +58,7 @@ The issue becomes the alpha punchout exposes the base background color. For Ulti
 
 Peruse [jsons/Skins/](jsons/Skins/) to see how this was accomplished.
 
-# Let's Pique
+## Let's Pique
 
 Want to see something unusual? Assets leverage Unicode symbols. "picture worth 1000 words", so using symbols, long asset names have been reduced to 2-4 self-describing symbols.
 
