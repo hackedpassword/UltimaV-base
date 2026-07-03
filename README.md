@@ -39,6 +39,14 @@ Any mod can use this tech, likely then reverting to "normal" rivers before publi
 
 ![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/e6eb6f5a5703675a6a688d34b4619eeaf2fc5615/Images/Ultima%20V/editor_mesh.png)
 
+The above looks very busy, but that is only to visually describe what the technique looks like using different meshes side-by-side. You can see the hex interpretation that's normal to Unciv, the square sprite design, and finally how square texture placement is offset to synthesize the familiar hex grid.
+
+What should stand out: when I've noted that the Britannia map is fully playable in normal Unciv, seen here via hex mesh visibility, is _why_ that statement is rational.
+
+### How is this useful?
+
+The map detail produced by terrain decors can easily create inherent challenges in map dev. I routinely find myself re-determining hex positioning to lay down the appropriate square-aligned sprite. A few mesh sprites can now visually solve this issue, also addressing the other issue of having to wipe out the entire tile terrainfeature stack upon placement error by making less errors due to mesh reference points.
+
 
 ## Map detailing progress - bgcolor made moddable
 
