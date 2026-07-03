@@ -29,6 +29,12 @@ Ongoing mapdev work continues to produce new and fun modding techniques that can
 
 # Updates
 
+## New terrain sub-type: details
+
+This sub-type, another decor, adds the final aesthetic touch to the map. Currently two groups, hill and sand. May make another for vegetation, however these groups keep it simple and lean. Was satisfied to find symbols to easily identify each corner.
+
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/terrain%20details.png)
+
 ## New editor tech: Tile mesh overlays via Rivers
 
 Why? Two reasons - in this mod, rivers are planned to be merged into new base terrain with river attributes thus no built-in rivers, and, rivers can be added later or last in map dev.
