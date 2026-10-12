@@ -1,0 +1,21 @@
+[  
+   // Dungeons ARE barbarian camps: one mechanic, two fictions.
+   // "Marks a barbarian camp" verified in Unciv master (UniqueType.kt L728):
+   // the whole encampment pipeline (spawning, clearing gold) keys off it, and
+   // with several camp-equivalents each new camp picks one randomly.
+
+	{
+		"name": "Dungeon",
+		"uniques": [
+			"Comment [A dungeon is a barbarian camp. Delving == clearing.]",
+			"Marks a barbarian camp"
+		]
+	},
+	{
+		"name": "Monster Lair",
+		"uniques": [
+			"Comment [Second camp-equivalent: new camps pick randomly among equivalents.]",
+			"Marks a barbarian camp"
+		]
+	}
+]

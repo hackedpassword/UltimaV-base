@@ -1,0 +1,52 @@
+[  
+   // The barbarian civ is the monster faction. Roster curation via
+   // "Never appears as a Barbarian unit" (verified, UniqueType.kt L578):
+   // party/Avatar units carry the exclusion; everything else may spawn.
+
+	{  
+		"name": "Wisp Spawner",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 1,
+		"uniques": [
+			"Comment [Invisible barbarian creature-entity-spawner. Roams, plants Dungeons.]",
+			"Invisible to others",
+			"Uncapturable",
+			"Can pass through impassable tiles",
+			"Can build [Dungeon] improvements on tiles",
+			"Never appears as a Barbarian unit"
+		]
+	},
+	{  
+		"name": "Dungeon Stalker",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"uniques": [
+			"Comment [The rank-and-file monster. Spawns from Dungeons.]"
+		]
+	},
+	{  
+		"name": "Dungeon Boss",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 22,
+		"cost": 200,
+		"uniques": [
+			"Comment [Takes Dread Aura from its promotion tree; nearby monsters fight harder.]",
+			"Never appears as a Barbarian unit"
+		]
+	},
+	{  
+		"name": "Avatar",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 12,
+		"cost": 100,
+		"uniques": [
+			"Comment [Party units always carry the exclusion.]",
+			"Never appears as a Barbarian unit"
+		]
+	}
+]

@@ -1,0 +1,303 @@
+[  
+   // 8 branches = 8 Circles of Magic. Patterns: Z2's dynamic-promotion toolkit.
+   // Every unique string below was verified against Unciv master (UniqueType.kt,
+   // Conditionals.kt) on 2026-10-11 unless marked [NEEDS TEST].
+   // Reagents (Garlic, Ginseng, etc.) must be defined as stockpiled resources in TileResources.json.
+
+	{  
+		"name": "Arcane Seeker",
+		"uniques": [
+			"Comment [Base attunement promo. Visiting a shrine attunes the caster to its circle.]",
+			"This Unit gains the [Circle 1 Attuned] promotion <in [Shrine of Compassion] tiles> <for all movement> <once>",
+			"This Unit gains the [Circle 2 Attuned] promotion <in [Shrine of Valor] tiles> <for all movement> <once>"
+			// Circle 3..8 follow the same pattern, one shrine per circle (see README).
+		],
+		"column": 0,
+		"row": 1,
+		"unitTypes": ["Avatar", "Companion"]
+	},
+
+	// ---------- Circle attunements (the gates; Z2's availability-hack targets) ----------
+	{
+		"name": "Circle 1 Attuned",
+		"uniques": ["Comment [Gate promo. Spells show in the tree but are unpickable without it.]"],
+		"column": 1, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 2 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 2, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 3 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 3, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 4 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 4, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 5 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 5, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 6 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 6, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 7 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 7, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Circle 8 Attuned",
+		"uniques": ["Comment [Gate promo.]"],
+		"column": 8, "row": 1, "unitTypes": ["Avatar", "Companion"]
+	},
+
+	// ---------- Circle 1: full exemplar (8 spells) ----------
+	// Cast pattern: action-button promo (Z2's Overload) -> one-shot effect via 1-turn status.
+	{
+		"name": "Cast An Nox",
+		"uniques": [
+			"Comment [Circle 1, cure. Reagents: Garlic, Ginseng.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Garlic]",  
+			"This Unit gains the [An Nox Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "An Nox Effect",
+		"uniques": [
+			"Comment [One-shot effect; the 1-turn status expiry is the cleanup — no lose-triggerable needed.]",
+			"Unit will heal every turn, even if it performs an action"
+		],
+		"column": 1, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast An Zu",
+		"uniques": [
+			"Comment [Circle 1, vigor. Reagents: Garlic, Ginseng.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Ginseng]",  
+			"This Unit gains the [An Zu Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 4, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "An Zu Effect",
+		"uniques": ["Can move after attacking"],
+		"column": 1, "row": 5, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Rel Hur",
+		"uniques": [
+			"Comment [Circle 1, wind-step. Reagents: Garlic.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Garlic]",  
+			"This Unit gains the [Rel Hur Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 6, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Rel Hur Effect",
+		"uniques": ["Ignores terrain cost"],
+		"column": 1, "row": 7, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast In Lor",
+		"uniques": [
+			"Comment [Circle 1, light. Reagents: Garlic.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Garlic]",  
+			"This Unit gains the [In Lor Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 8, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "In Lor Effect",
+		"uniques": ["[+2] Sight", "Can see invisible [All] units"],
+		"column": 1, "row": 9, "unitTypes": ["Avatar", "Companion"]
+	},
+	// Remaining Circle 1 spells: same cast pattern, effects are proposals.
+	{
+		"name": "Cast An Mani",
+		"uniques": [
+			"Comment [Circle 1. Effect proposal: ward — effect promo TBD.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Garlic]",  
+			"This Unit gains the [An Mani Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 10, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "An Mani Effect",
+		"uniques": ["May withdraw before melee ([50]%)"],
+		"column": 1, "row": 11, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Kal Lor",
+		"uniques": [
+			"Comment [Circle 1. Effect proposal: might — effect promo below is a stand-in.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Ginseng]",  
+			"This Unit gains the [Kal Lor Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 12, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Kal Lor Effect",
+		"uniques": ["[+25]% Strength"],
+		"column": 1, "row": 13, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Wis",
+		"uniques": [
+			"Comment [Circle 1, reveal. Reagents: Garlic.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Garlic]",  
+			"This Unit gains the [Wis Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 14, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Wis Effect",
+		"uniques": ["Can see invisible [All] units"],
+		"column": 1, "row": 15, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast In Mani",
+		"uniques": [
+			"Comment [Circle 1. Effect proposal: succor — adjacent healing.]",
+			"Only available <for units with [Circle 1 Attuned]>",
+			"Costs [1] [Ginseng]",  
+			"This Unit gains the [In Mani Effect] status for [1] turn(s)"
+		],
+		"column": 1, "row": 16, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "In Mani Effect",
+		"uniques": ["All adjacent units heal [20] HP when healing"],
+		"column": 1, "row": 17, "unitTypes": ["Avatar", "Companion"]
+	},
+
+	// ---------- Circle 2: migration-chain demo (Z2's Training pattern) ----------
+	{
+		"name": "Mend Wounds",
+		"uniques": [
+			"Comment [Picking this migrates it into Restore Vigor and removes itself — the tree rewrites.]",
+			"Only available <for units with [Circle 2 Attuned]>",
+			"Costs [1] [Blood Moss]",  
+			"This Unit gains the [Restore Vigor] promotion",
+			"This Unit loses the [Mend Wounds] promotion"
+		],
+		"column": 2, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Restore Vigor",
+		"uniques": [
+			"Comment [The migrated form. Stronger, permanent — the upgrade path.]",
+			"Only available <for units with [Circle 2 Attuned]>",
+			"Unit will heal every turn, even if it performs an action",
+			"All adjacent units heal [10] HP when healing"
+		],
+		"column": 2, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+
+	// ---------- Circles 3-8: attunements above; iconic stubs below (roster proposal) ----------
+	{
+		"name": "Cast Stoneskin",
+		"uniques": [
+			"Comment [Circle 3 stub. Learn-location proposal: Shrine of Valor.]",
+			"Only available <for units with [Circle 3 Attuned]>",
+			"Costs [1] [Spider Silk]",  
+			"This Unit gains the [Stoneskin Effect] status for [1] turn(s)"
+		],
+		"column": 3, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Stoneskin Effect",
+		"uniques": ["[+50]% Strength"],
+		"column": 3, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Blade Spirits",
+		"uniques": [
+			"Comment [Circle 4 stub.]",
+			"Only available <for units with [Circle 4 Attuned]>",
+			"Costs [1] [Sulphurous Ash]",  
+			"This Unit gains the [Blade Spirits Effect] status for [1] turn(s)"
+		],
+		"column": 4, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Blade Spirits Effect",
+		"uniques": ["[+50]% Strength", "Can move after attacking"],
+		"column": 4, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Restoration",
+		"uniques": [
+			"Comment [Circle 5 stub.]",
+			"Only available <for units with [Circle 5 Attuned]>",
+			"Costs [1] [Mandrake Root]",  
+			"This Unit gains the [Restoration Effect] status for [1] turn(s)"
+		],
+		"column": 5, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Restoration Effect",
+		"uniques": ["Unit will heal every turn, even if it performs an action", "All adjacent units heal [20] HP when healing"],
+		"column": 5, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Death Bolt",
+		"uniques": [
+			"Comment [Circle 6 stub.]",
+			"Only available <for units with [Circle 6 Attuned]>",
+			"Costs [1] [Black Pearl]",  
+			"This Unit gains the [Death Bolt Effect] status for [1] turn(s)"
+		],
+		"column": 6, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Death Bolt Effect",
+		"uniques": ["[+100]% Strength"],
+		"column": 6, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Gate Travel",
+		"uniques": [
+			"Comment [Circle 7 stub — travel magic; pairs with the moongate paradrop system.]",
+			"Only available <for units with [Circle 7 Attuned]>",
+			"Costs [1] [Black Pearl]",  
+			"This Unit gains the [Gate Travel Effect] status for [1] turn(s)"
+		],
+		"column": 7, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Gate Travel Effect",
+		"uniques": ["Ignores terrain cost", "Can pass through impassable tiles"],
+		"column": 7, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Cast Armageddon",
+		"uniques": [
+			"Comment [Circle 8 stub — the word of power. Proposal only.]",
+			"Only available <for units with [Circle 8 Attuned]>",
+			"Costs [1] [Nightshade]",  
+			"This Unit gains the [Armageddon Effect] status for [1] turn(s)"
+		],
+		"column": 8, "row": 2, "unitTypes": ["Avatar", "Companion"]
+	},
+	{
+		"name": "Armageddon Effect",
+		"uniques": ["[+200]% Strength", "Blast radius [1]"],
+		"column": 8, "row": 3, "unitTypes": ["Avatar", "Companion"]
+	}
+]

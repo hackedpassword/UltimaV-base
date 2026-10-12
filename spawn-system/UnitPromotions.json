@@ -1,0 +1,29 @@
+[  
+   // Boss auras use Z2's Shield pattern: "[25]% Strength bonus for [All] units
+   // within [1] tiles" (verified template: "[relativeAmount]% Strength bonus for
+   // [mapUnitFilter] units within [amount] tiles", UniqueType.kt L450),
+   // gated by the availability hack so only bosses/pack leaders can take them.
+
+	{
+		"name": "Dread Aura",
+		"uniques": [
+			"Comment [Boss aura. Nearby monsters hit harder.]",
+			"Only available <for units with [Dread Aura]>",
+			"[30]% Strength bonus for [All] units within [2] tiles"
+		],
+		"column": 20,
+		"row": 1,
+		"unitTypes": ["Melee"]
+	},
+	{
+		"name": "Pack Hunter",
+		"uniques": [
+			"Comment [Pack-leader aura. Monsters synergize in groups.]",
+			"Only available <for units with [Pack Hunter]>",
+			"[15]% Strength bonus for [Military] units within [1] tiles"
+		],
+		"column": 20,
+		"row": 2,
+		"unitTypes": ["Melee"]
+	}
+]
