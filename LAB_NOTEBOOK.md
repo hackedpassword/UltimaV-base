@@ -81,10 +81,47 @@ the source (or the game) said. Source checks are against Unciv master, 2026-10-1
 
 ---
 
+## Design redirect (2026-10-11 — the retelling premise)
+
+The lab was chasing Dragon Warrior concepts and a monster-hunting loop; UV's own
+structure answers the design questions better. Standing decisions from the redirect:
+
+- **D1 — Retelling, not sequel.** Same myth, new telling (the Spider-Man rule).
+  No chosen Avatar: parties arrive through all moongates, and the adventure
+  determines who is worthy. Competing avatar parties are the design, not a
+  gimmick — and the reason the Ultima Dragons are taking it seriously.
+- **D2 — Monster hunting is out of scope.** Monsters impede pilgrimage routes;
+  they are not a gameplay loop. The invisible mobile spawner concept is SHELVED
+  (served a hunting game this isn't). Test queue item 2 (spawner behavior) is
+  retired with it.
+- **D3 — Dungeons are fixed and canonical.** Eight dungeons at their U5 locations
+  (virtue/dungeon/Word table now in UV_SYSTEMS_MAP §0). Hand-placed camps spawn
+  normally per source, so fixed geography costs nothing. Wandering dungeons would
+  spend the Dragons' credibility for no mechanical gain.
+- **D4 — Reagents are boolean flags.** No stockpiles (4:1 consolidation rule).
+  One canonical tile per reagent; adjacency grants the flag; the Mandrake tile
+  goes dormant 30 turns after harvest. Spell availability = has-all-required-flags.
+  Test queue item 1 (Costs-on-pick) is demoted to fallback status — flags are the
+  direction.
+- **D5 — Quest spine: the pilgrimage.** (1) Arrival through all moongates →
+  (2) visit the 8 cities of virtue (adjacency = visited; culture unlocks the
+  current tracking favorite) → (3) all-visited event → Words of Power → (4) delve
+  the fixed dungeons for Mondain's shards → (5) destroy the Shadowlords at the
+  flames of Truth/Love/Courage → (6) Doom, rescue Lord British, worthiest party
+  named Avatar.
+- **D6 — Virtues are the core.** Religion system dedicated to the 8 virtues;
+  Blackthorn's twisted virtue-laws are event content, not backdrop. The design
+  previously hadn't mentioned virtues once — corrected.
+
 ## Test queue (in-game, when there's a build to poke at)
 
-1. P1 reagent charging — pick `Cast An Nox`, watch the Garlic stockpile.
-2. P4 spawner behavior — 20 turns, observe.
+1. P1 reagent charging — DEMOTED to fallback; flags-via-adjacency is the
+   direction (D4).
+2. P4 spawner behavior — RETIRED; spawner shelved (D2).
 3. Dungeon-clear → proof interlock — no clean triggerable found; design first,
    then test.
 4. P2 status UI — does a 1-turn effect status read clearly to the player?
+5. NEW: adjacency-visit detection — does occupying a tile adjacent to a
+   city/wonder reliably fire location-gated grants (the pilgrimage mechanic)?
+6. NEW: culture-unlock tracking — does a per-city-visited policy unlock read
+   cleanly as pilgrimage progress?
