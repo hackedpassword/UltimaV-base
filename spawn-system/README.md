@@ -10,9 +10,10 @@ this isn't). What remains is the dungeon-as-fixed-quest-site pipeline.
 **Dungeon** (`Improvements.json`) — carries `"Marks a barbarian camp"` (verified,
 UniqueType.kt L728). The eight dungeons sit at their canonical U5 locations
 (virtue/dungeon/Word table in UV_SYSTEMS_MAP.md §0); hand-placed map-authored
-camps **spawn normally** per source, so fixed geography costs nothing and keeps
-the Ultima Dragons' trust. Each dungeon is a quest site first (Words of Power,
-Mondain's shards), a spawn point second.
+dungeon improvements **spawn normally** per source, so fixed geography costs
+nothing and keeps the Ultima Dragons' trust. Each dungeon is a quest site first
+(Words of Power, Mondain's shards), a spawn point second — and fictionally a
+dungeon is *not* a camp (camps are hole-up actions; see UV_SYSTEMS_MAP.md §4).
 
 **Roster curation** — `"Never appears as a Barbarian unit"` (verified, L578) is
 an exclusion list: party/Avatar/boss units carry it, everything else may spawn.

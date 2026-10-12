@@ -65,11 +65,16 @@ the source (or the game) said. Source checks are against Unciv master, 2026-10-1
   threshold knob exists (happiness conditional). Both settable, then
   measured in-game.
 
-### F2 — Cities can found on natural wonders [verified earlier]
+### F2 — Cities can found on natural wonders; the wonder survives [CLOSED 2026-10-11]
 - **Found:** `Tile.canBeSettled()` blocks only water, impassible, city-distance,
-  foreign territory. No wonder exclusion.
-- **Result:** VERIFIED. Open: does the wonder survive founding; do adjacency
-  uniques see it.
+  foreign territory. No wonder exclusion. `CityFounder.foundCity` clears only
+  terrain features with a matching removal improvement and stamps the city
+  center — `tile.naturalWonder` is never touched, so wonder stats/uniques keep
+  applying on the city-center tile and `isNaturalWonder()` stays true.
+  (Detail: `~/workspace/unciv-wonder-settle-verification.md`.)
+- **Result:** VERIFIED + CLOSED. Still empirical: exact yield math at the
+  city-center tile (wonder stats vs. city-center base) — a lab test question.
+  Open: do adjacency uniques see it.
 
 ### F3 — Migration chains work (Z2 precedent, re-confirmed)
 - **Found:** Z2's Training II: gains successor, loses predecessor, "GUI menu
@@ -98,20 +103,38 @@ structure answers the design questions better. Standing decisions from the redir
   (virtue/dungeon/Word table now in UV_SYSTEMS_MAP §0). Hand-placed camps spawn
   normally per source, so fixed geography costs nothing. Wandering dungeons would
   spend the Dragons' credibility for no mechanical gain.
-- **D4 — Reagents are boolean flags.** No stockpiles (4:1 consolidation rule).
-  One canonical tile per reagent; adjacency grants the flag; the Mandrake tile
-  goes dormant 30 turns after harvest. Spell availability = has-all-required-flags.
-  Test queue item 1 (Costs-on-pick) is demoted to fallback status — flags are the
-  direction.
+- **D4 — Reagents: the open question is "how do reagents work?"** (2026-10-12
+  language correction: a proposal is a *candidate solution*, never a "spec").
+  Candidate A — boolean flags, no stockpiles (4:1 consolidation): one canonical
+  tile per reagent; adjacency grants the flag; the Mandrake tile goes dormant 30
+  turns after harvest, turning gathering into contest terrain. Spell availability
+  = has-all-required-flags. Alternatives stay on the table; nothing is decided
+  until prototyped.
 - **D5 — Quest spine: the pilgrimage.** (1) Arrival through all moongates →
   (2) visit the 8 cities of virtue (adjacency = visited; culture unlocks the
   current tracking favorite) → (3) all-visited event → Words of Power → (4) delve
   the fixed dungeons for Mondain's shards → (5) destroy the Shadowlords at the
   flames of Truth/Love/Courage → (6) Doom, rescue Lord British, worthiest party
-  named Avatar.
+  named Avatar. **Anti-cliche law (2026-10-12):** these are phases of a race,
+  not a fetch chain — order within a phase is player-resolved, interference
+  comes from rivals and Blackthorn, replayability from the contest.
 - **D6 — Virtues are the core.** Religion system dedicated to the 8 virtues;
   Blackthorn's twisted virtue-laws are event content, not backdrop. The design
   previously hadn't mentioned virtues once — corrected.
+- **D7 — Camps are hole-up actions, not fixed features** (2026-10-12 correction:
+  "fixed camps" was an invented feature). The U5 hole-up sequence maps natively:
+  rest/heal → city healing; watch → event expanding borders 0→2 (protection area
+  via city mechanics); ambush → the barbarian spawn pipeline (monsters impede,
+  made mechanical); LB apparition → events (heal, level-ups, virtue assessment —
+  in the retelling, the apparition's judgment is the worthiness instrument).
+  Dungeons borrow the spawn pipeline mechanically but are NOT camps fictionally.
+- **D8 — Community research, 2026-10-12** (Codex wiki + walkthroughs):
+  (a) Shrine of Spirituality is reachable ONLY via the Minoc moongate at double
+  full moons — moongate phase-gating is shrine access control, not just travel;
+  (b) U5 has NO runes of entry (that's U4) — Words of Power come from NPCs, and
+  U5 pruned U4's rune fetch entirely, which is precedent for the anti-fetch law;
+  (c) LB's apparition appears probabilistically when camping (not every time),
+  heals regardless, levels up those with enough XP.
 
 ## Test queue (in-game, when there's a build to poke at)
 
