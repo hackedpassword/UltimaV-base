@@ -109,7 +109,7 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": ["[+1] Movement"]
 	},
 	{
 		"name": "Flatland shoreline",
@@ -117,7 +117,7 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": ["[+1] Movement"]
 	},
 	{
 		"name": "Desert",
@@ -443,6 +443,15 @@
 		"uniques": ["_Editor_"],
 	},
 
+	{
+		"name": "grassland field",  // experimental movement layer
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor","Grassland",
+			        "[+1] Movement",
+		],
+	},
 
 // [Land] shoreline decors (land major -> water)
 
@@ -1035,7 +1044,7 @@
  //// Map Editor decors ////
 ///////////////////////////
 
-/* Editor decors are map tiles/sprites that are only used during the construction of the map. 
+/* [Map editor] decors are map tiles/sprites that are *only used during the construction of the map*. 
    Info: ⚠️ Remove editor sprites placed in your map before publishing! ⚠️
    These TF layer sprites aren't rendered on the unit layer (later in the render stack) so they get tiled over
      by adjacent tiles by top-down rendering. :P
@@ -1121,7 +1130,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/alignment/finetune (256x256) ultra",
+		"name": "editor/alignment/finetune (256x256) ultra",  # when pixel precision _really_ matters
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1230,7 +1239,7 @@
 	},
 
 
-
+    // Importance of the Notch sprite:
 	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdraw rendering, and, top-down
 	      rendering artifacts. This is a 32x32px image. The primary section of the square sprite is **24x28**, to fit in the hex grid offsets.
 	      The notch shape is interlocking. Original 16x16px Ultima V source sprites are placed into the main sprite as a 4x4 config.
@@ -1245,7 +1254,7 @@
 	    Bottom overlap: The last row is normally cut. Corner case artifacts like Surf use the Bottom row for overlap, vs the usual Top row overlap,
 	      otherwise Surf causes artifact pixels inbetween decors in adjacent lands above Surf.
 
-	    And that's how we accurately use square tiling on a hex grid!
+	    And that's how we accurately use square tiling on a hex grid! :D
 
 	    The one gotcha is that the X and Y axis spacing is offset/squished by ~1/4px, which you can see when zoomed in,
 	      so tiny corners of the sprites overlap. Solution (perfection) is to offest this with _much_ higher res sprites.
