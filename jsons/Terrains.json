@@ -219,6 +219,7 @@
 			"Rough terrain",
 		    "Has an elevation of [3] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
+			"Has an elevation of [2] for visibility calculations",
 			"Considered [Undesirable] when determining start locations",
 		    //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
 			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
