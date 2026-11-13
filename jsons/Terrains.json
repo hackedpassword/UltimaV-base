@@ -443,15 +443,17 @@
 		"uniques": ["_Editor_"],
 	},
 
+/*
 	{
 		"name": "grassland field",  // experimental movement layer
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland",
-			        "[+1] Movement",
+			        "[+1] Movement"
 		],
 	},
+*/
 
 // [Land] shoreline decors (land major -> water)
 
@@ -1008,8 +1010,8 @@
 	{
 		"name": "features/Grass",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"occursOn": ["Grassland shoreline", "Grassland"],
+		"uniques": ["[+1] Movement"],
 	},
 	{
 		"name": "Fallout",
@@ -1040,9 +1042,9 @@
 	},
 
 
-  ///////////////////////////
- //// Map Editor decors ////
-///////////////////////////
+  /////////////////////////////
+ //// [Map Editor] decors ////
+/////////////////////////////
 
 /* [Map editor] decors are map tiles/sprites that are *only used during the construction of the map*. 
    Info: ⚠️ Remove editor sprites placed in your map before publishing! ⚠️
