@@ -2,9 +2,10 @@
 
 /*	Welcome to Terrains.json, world's best json object hash/keys since 0xD!
 
-	Ultima V base is a TC basemod. Mod explorers should find interest in this mods' internals.
+	Ultima V base is a Total Conversion basemod. Mod explorers should find interest in this mods' internals!
 	  ("TC" mod="total conversion") Mod_params: isBaseRuleset
-	Includes:
+	
+	The mod as a whole includes:
 	  ✅ TileSet
 	  ✅ UnitSet
 	  ✅ Edges
@@ -15,10 +16,19 @@
 	    Mostly the same as G&K, highlighting familiar tiles:
 		Flatland =~ Plains+<features/Grass>, used primarily for Paths
 		Surf: Usually found between Coast and Ocean as a water mid-body, originally subbed as Lakes
-		+ Land&Water de-edging: cloned base tiles de-edge shorelines for decors, suffixed '[land] beach' and '[water] shore'
+		+ Land&Water de-edging: edge sprites are removed in cloned base tiles, to de-edge shorelines for blending decors.
+	        - "waterline" sprite set, universal terrain sprite quads for either land or water source
+	        - the source type ensures correct base terrain behavior
 		+ Rough Ocean: Vis blocking ocean tiles, w/ specific buff/de-buffs
-		? Lakes: May add specific Lake terrain for Lost Lake etc
+	        - new base water terrain not in original U5
+	        - gameplay characteristics extensively observed in mod Z2, found to add real fun over plain "flat water"!
+	        - will create vis and M differentials, ship type modifiers
+		? Lakes: May add specific Lake terrain for Lost Lake etc, surf works fine atm
 		Tundra|Snow: Only one default instance atm, glass sword
+	# Natural Wonders
+		No G&K NW's.
+		+ Ultima V specific NW's:
+		> Dungeons, both main castles, Codex, others
 	# TerrainFeatures
 	    Migrating TF's from Ultima-tileset mod and G&K:
 		Swamp =~ Marsh, basically the same
@@ -29,14 +39,18 @@
 		- Ice,Atoll
 		? Flood plains, possibly useful for bridges/ as an underbody TF
 		+ bridges/, features/
-	# Natural Wonders
-		No G&K NW's.
-		+ Ultima V specific NW's:
-		> Dungeons, both main castles, Codex, others
 	# TerrainDecor
-	    What is "TerrainDecor" (TD)? A sub-class of TF's treated as non-entity TFs to decorate tiles:
-		+ paths/
-		+ rivers/ - a mapdev trickplay, requiring placing actual river as guides then rivers/ decor to follow river flows
+	    What is "TerrainDecor" (TD)? A sub-class of TFs, for decorating tiles:
+	    + Can be layered before or after a TF, extending tile graphics versatility
+		+ paths/  - basic decor, road entity is manually overlaid
+		+ rivers/ - deviation from Unciv, where rivers are an entity type that act as boundary terrain
+	              - in U5, rivers are TF's with associated uniques, gaining the breadth of uniques control
+	              - entity type _rivers_ have been converted into map editor "meshes" for guiding/revealing tile boundariess
+    # TerrainDetails
+        What are "TerrainDetails" (TL)? A final sub-class of TFs, for tile aesthetics:
+        + non-modifier TF layer, no gameplay effect
+        + adds finer details for visual enhancement
+        + bridges map scale (1:4) to (1:1) for various areas using sprite quads
 	# Special assets
 		features/ - for ruleVariant terrain render layering, or other indirect tile render assets
 		editor/ - useful map editor related sprites for better mapdev
