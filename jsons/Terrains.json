@@ -1132,7 +1132,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/alignment/finetune (256x256) ultra",  # when pixel precision _really_ matters
+		"name": "editor/alignment/finetune (256x256) ultra",  // when pixel precision _really_ matters
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
