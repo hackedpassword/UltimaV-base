@@ -3,15 +3,15 @@
 		"name": "Avatar",
 		"unitType": "Adventurer",
 		"movement": 2,
-		"strength": 50,
+		"strength": 100,
 		"cost": 500,
 		"requiredTech": "Summoning",
 		"promotions": ["Hero","Blink"],
 		"uniques": [
 			"Can move after attacking",
 			"Founds a new city <once>",
-
-                ],
+			"[+2] Sight",
+          ],
 		"attackSound": "metalhit"
 	},
 	{

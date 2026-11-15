@@ -2,9 +2,10 @@
 
 /*	Welcome to Terrains.json, world's best json object hash/keys since 0xD!
 
-	Ultima V base is a TC basemod. Mod explorers should find interest in this mods' internals.
+	Ultima V base is a Total Conversion basemod. Mod explorers should find interest in this mods' internals!
 	  ("TC" mod="total conversion") Mod_params: isBaseRuleset
-	Includes:
+	
+	The mod as a whole includes:
 	  ✅ TileSet
 	  ✅ UnitSet
 	  ✅ Edges
@@ -15,10 +16,19 @@
 	    Mostly the same as G&K, highlighting familiar tiles:
 		Flatland =~ Plains+<features/Grass>, used primarily for Paths
 		Surf: Usually found between Coast and Ocean as a water mid-body, originally subbed as Lakes
-		+ Land&Water de-edging: cloned base tiles de-edge shorelines for decors, suffixed '[land] beach' and '[water] shore'
+		+ Land&Water de-edging: edge sprites are removed in cloned base tiles, to de-edge shorelines for blending decors.
+	        - "waterline" sprite set, universal terrain sprite quads for either land or water source
+	        - the source type ensures correct base terrain behavior
 		+ Rough Ocean: Vis blocking ocean tiles, w/ specific buff/de-buffs
-		? Lakes: May add specific Lake terrain for Lost Lake etc
+	        - new base water terrain not in original U5
+	        - gameplay characteristics extensively observed in mod Z2, found to add real fun over plain "flat water"!
+	        - will create vis and M differentials, ship type modifiers
+		? Lakes: May add specific Lake terrain for Lost Lake etc, surf works fine atm
 		Tundra|Snow: Only one default instance atm, glass sword
+	# Natural Wonders
+		No G&K NW's.
+		+ Ultima V specific NW's:
+		> Dungeons, both main castles, Codex, others
 	# TerrainFeatures
 	    Migrating TF's from Ultima-tileset mod and G&K:
 		Swamp =~ Marsh, basically the same
@@ -29,14 +39,18 @@
 		- Ice,Atoll
 		? Flood plains, possibly useful for bridges/ as an underbody TF
 		+ bridges/, features/
-	# Natural Wonders
-		No G&K NW's.
-		+ Ultima V specific NW's:
-		> Dungeons, both main castles, Codex, others
 	# TerrainDecor
-	    What is "TerrainDecor" (TD)? A sub-class of TF's treated as non-entity TFs to decorate tiles:
-		+ paths/
-		+ rivers/ - a mapdev trickplay, requiring placing actual river as guides then rivers/ decor to follow river flows
+	    What is "TerrainDecor" (TD)? A sub-class of TFs, for decorating tiles:
+	    + Can be layered before or after a TF, extending tile graphics versatility
+		+ paths/  - basic decor, road entity is manually overlaid
+		+ rivers/ - deviation from Unciv, where rivers are an entity type that act as boundary terrain
+	              - in U5, rivers are TF's with associated uniques, gaining the breadth of uniques control
+	              - entity type _rivers_ have been converted into map editor "meshes" for guiding/revealing tile boundariess
+    # TerrainDetails
+        What are "TerrainDetails" (TL)? A final sub-class of TFs, for tile aesthetics:
+        + non-modifier TF layer, no gameplay effect
+        + adds finer details for visual enhancement - presently hill and sand
+        + bridges map scale (1:4) to (1:1) for various areas using sprite quads
 	# Special assets
 		features/ - for ruleVariant terrain render layering, or other indirect tile render assets
 		editor/ - useful map editor related sprites for better mapdev
@@ -73,13 +87,18 @@
 	// Cloned tile sprite png's and entity blocks should be identical. Define Edges/ edges for BT's, none for shores.
 	//   RuleVariant alias cloning doesn't work for this purpose.
 
+    // Elevations:
+    // Elevation scheme - water level is e0. Land is generally e1+, with exceptions.
+    // The purpose is to allow expected visibility of water surface level as adjacent land will always be higher than water level.
+    // We further control various layers of berries
+
 	{
-		"name": "Grassland",  // tl;dr entities are not populated yet
+		"name": "Grassland",  // tl;dr entities are not populated yet, focusing on map dev
 		"type": "Land",
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": ["Has an elevation of [1] for visibility calculations"],
 	},
 	{
 		"name": "Grassland shoreline",
@@ -87,7 +106,10 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+			"Has an elevation of [0] for visibility calculations",  // low land or beach type terrain occurring at/near water
+			"Blocks line-of-sight from tiles at same elevation",
+		],
 	},
 	{
 		"name": "Flatland",
@@ -95,7 +117,10 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+			"[+1] Movement",
+			"Has an elevation of [1] for visibility calculations",
+		]
 	},
 	{
 		"name": "Flatland shoreline",
@@ -103,7 +128,11 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+			"[+1] Movement",
+			"Has an elevation of [0] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+		]
 	},
 	{
 		"name": "Desert",
@@ -111,7 +140,7 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": ["Has an elevation of [1] for visibility calculations"],
 	},
 	{
 		"name": "Desert shoreline",
@@ -119,7 +148,10 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+			"Has an elevation of [0] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+		],
 	},
 	{
 		"name": "Coast",
@@ -127,7 +159,7 @@
 		"food": 0,
 		"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": ["Has an elevation of [0] for visibility calculations"],
 	},
 	{
 		"name": "Coast shore",
@@ -135,7 +167,7 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": [],
+		"uniques": ["Has an elevation of [0] for visibility calculations"],
 	},
 	{
 		"name": "Surf",
@@ -143,7 +175,10 @@
 		"food": 0,
 		"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+			"Has an elevation of [0] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+		],
 	},
 	{
 		"name": "Surf shore",
@@ -151,7 +186,7 @@
 		"food": 0,
 		"gold": 0,
 		"movementCost": 1,
-		"uniques": [],
+		"uniques": ["Has an elevation of [1] for visibility calculations"],
 	},
 	{
 		"name": "Ocean",
@@ -159,15 +194,20 @@
 		"food": 2,
 		"gold": 0,
 		"movementCost": 1,
-		"uniques": []
+		"uniques": [
+            "Has an elevation of [1] for visibility calculations",
+            "Blocks line-of-sight from tiles at same elevation",
+        ],
 	},
 	{
-		"name": "Rough Ocean",  // wishlist gameplay enhancement
+		"name": "Rough Ocean",
 		"type": "Water",
 		"food": 0,
 		"gold": 0,
 		"movementCost": 2,
-		"uniques": []
+		"uniques": [
+			"Has an elevation of [2] for visibility calculations",
+		],
 	},
 	{
 		"name": "Mountain",
@@ -177,10 +217,11 @@
 	        "impassable": true,  // unless unit has grapple gear/promotion
 		"uniques": [
 			"Rough terrain",
-		        "Has an elevation of [1] for visibility calculations",
+		    "Has an elevation of [3] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
+			"Has an elevation of [2] for visibility calculations",
 			"Considered [Undesirable] when determining start locations",
-		        //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+		    //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
 			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		], 
 	},
@@ -191,6 +232,12 @@
 		"defenceBonus": 0.5,
 	        "impassable": true, 
 		"uniques": [
+			"Rough terrain",
+		    "Has an elevation of [2] for visibility calculations",
+			"Blocks line-of-sight from tiles at same elevation",
+			"Considered [Undesirable] when determining start locations",
+		    //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		],
 	},
 
@@ -224,6 +271,7 @@
 	{
 		"name": "Britannia Castle",  // May become an improvement
 		"type": "NaturalWonder",
+        "movementCost": 2,
 		"gold": 10,  // Lord British! You cheap bastard!
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -234,10 +282,11 @@
 	{
 		"name": "Blackthorn's Castle",
 		"type": "NaturalWonder",
+		"movementCost": 2,
 		"gold": 10,  // Lord Blackthorn! You squandering bastard!
 		"occursOn": ["Flatland","Hill"],
 		"uniques": [],
-		"turnsInto": "Grassland",
+		"turnsInto": "Flatland",
 		"impassable": false,
 		"unbuildable": true,
 	},
@@ -250,6 +299,7 @@
 	{
 		"name": "dungeons/Shame",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -260,6 +310,7 @@
 	{
 		"name": "dungeons/Despise",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -270,6 +321,7 @@
 	{
 		"name": "dungeons/Wrong",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -280,6 +332,7 @@
 	{
 		"name": "dungeons/Covetous",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -290,6 +343,7 @@
 	{
 		"name": "dungeons/Deceit",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -300,6 +354,7 @@
 	{
 		"name": "dungeons/Hythloth",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -310,6 +365,7 @@
 	{
 		"name": "dungeons/Destard",
 		"type": "NaturalWonder",
+		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Grassland"],
 		"uniques": [],
@@ -331,15 +387,13 @@
 	{
 		"name": "Brush",
 		"type": "TerrainFeature",
-		"movementCost": 21
+		"movementCost": 1
 		"overrideStats": false,
 		"unbuildable": true,
 		"defenceBonus": 0.1,
 		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Vegetation",
-			// ⚠️ ⛔ Actual use will likely differ from vanilla: "Provides a one-time Production bonus to the closest city when cut down",
-			//"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 		],
 	},
@@ -352,9 +406,9 @@
 		"defenceBonus": 0.35,
 		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
-			"Rough terrain", "Vegetation",
-			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			"Vegetation",
 			"Blocks line-of-sight from tiles at same elevation",
+			// "Provides a one-time Production bonus to the closest city when cut down",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 		],
 	},
@@ -368,7 +422,7 @@
 		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
-			// ⚠️ ⛔ "Provides a one-time Production bonus to the closest city when cut down",
+			// "Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
 			// add more vis blockage
@@ -393,7 +447,7 @@
 		"name": "Swamp",
 		"type": "TerrainFeature",
 		"food": -1,
-		"movementCost": 2,
+		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.4,
 		"occursOn": ["Grassland shoreline", "Grassland"],
@@ -410,8 +464,10 @@
 		"occursOn": ["Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain",
-			"[+10] Strength for cities built on this terrain",
+			"Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
+			"Has an elevation of [1] for visibility calculations",
+			"[+10] Strength for cities built on this terrain",
 		],
 	},
 
@@ -429,6 +485,17 @@
 		"uniques": ["_Editor_"],
 	},
 
+/*
+	{
+		"name": "grassland field",  // experimental movement layer
+		"type": "TerrainFeature",
+		"unbuildable": true,
+		"occursOn": ["Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor","Grassland",
+			        "[+1] Movement"
+		],
+	},
+*/
 
 // [Land] shoreline decors (land major -> water)
 
@@ -591,205 +658,205 @@
 	{
 		"name": "river/║",
 		"type": "TerrainFeature",
-		"unbuildable": true,
+		"unbuildable": true,  // the occursOn below needs all these lands so river can act as shoreline decor
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ˭",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ‗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ▀",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ▄",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⩔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⩔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ▨⋖",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⋗▨",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ▨⋖",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⋗▨",
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
-		"uniques": ["TerrainDecor","River","Grassland"]
+		"uniques": ["TerrainDecor","River","Coast"]
 	},
 
 
@@ -985,8 +1052,8 @@
 	{
 		"name": "features/Grass",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
-		"uniques": [],
+		"occursOn": ["Grassland shoreline", "Grassland"],
+		"uniques": ["[+1] Movement"],
 	},
 	{
 		"name": "Fallout",
@@ -1017,11 +1084,11 @@
 	},
 
 
-  ///////////////////////////
- //// Map Editor decors ////
-///////////////////////////
+  /////////////////////////////
+ //// [Map Editor] decors ////
+/////////////////////////////
 
-/* Editor decors are map tiles/sprites that are only used during the construction of the map. 
+/* [Map editor] decors are map tiles/sprites that are *only used during the construction of the map*. 
    Info: ⚠️ Remove editor sprites placed in your map before publishing! ⚠️
    These TF layer sprites aren't rendered on the unit layer (later in the render stack) so they get tiled over
      by adjacent tiles by top-down rendering. :P
@@ -1107,7 +1174,7 @@
 		"uniques": [ "TerrainDecor","_Editor_"],
 	},
 	{
-		"name": "editor/alignment/finetune (256x256) ultra",
+		"name": "editor/alignment/finetune (256x256) ultra",  // when pixel precision _really_ matters
 		"type": "TerrainFeature",
 		"unbuildable": true,
 		"occursOn": ["Grassland","Flatland","Desert","Mountain","Snow","Coast","Ocean","Surf",
@@ -1216,7 +1283,7 @@
 	},
 
 
-
+    // Importance of the Notch sprite:
 	/* The Notch editor sprite has several sections. We need to account for, and compensate for, overdraw rendering, and, top-down
 	      rendering artifacts. This is a 32x32px image. The primary section of the square sprite is **24x28**, to fit in the hex grid offsets.
 	      The notch shape is interlocking. Original 16x16px Ultima V source sprites are placed into the main sprite as a 4x4 config.
@@ -1231,7 +1298,7 @@
 	    Bottom overlap: The last row is normally cut. Corner case artifacts like Surf use the Bottom row for overlap, vs the usual Top row overlap,
 	      otherwise Surf causes artifact pixels inbetween decors in adjacent lands above Surf.
 
-	    And that's how we accurately use square tiling on a hex grid!
+	    And that's how we accurately use square tiling on a hex grid! :D
 
 	    The one gotcha is that the X and Y axis spacing is offset/squished by ~1/4px, which you can see when zoomed in,
 	      so tiny corners of the sprites overlap. Solution (perfection) is to offest this with _much_ higher res sprites.
