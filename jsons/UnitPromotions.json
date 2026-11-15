@@ -3,13 +3,31 @@
 	{
 		"name": "Blink",
 		"uniques": [
-			"May Paradrop to [Land] tiles up to [8] tiles away", // mental note if Land fails add as label
-		]
+			"May Paradrop to [Land] tiles up to [8] tiles away",
+		],
 	},
         {
-		"name": "Hero",  // temp/example
+		"name": "Hero",
 		"uniques": [
-			"[+50]% Strength <vs cities>",
-		]
+			"[+50]% Strength <vs [Monster] units>",
+		],
 	},
+        {
+		"name": "Open terrain",
+		"uniques": [
+		  "[+1] Movement <in [features/Grass] tiles>",
+		],
+	},
+        {
+		"name": "Magic carpet",  // so o-p atm
+		"uniques": [
+			"[+2] Movement <in [Land] tiles>",
+			"All tiles cost 1 movement",
+			"May travel on Water tiles without embarking",
+			"[+1] Sight",
+			"Ignores Zone of Control",
+			"Can move after attacking",
+		],
+	},
+
 ]

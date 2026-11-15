@@ -3,7 +3,6 @@
         "name": "Civilian",
         "movementType": "Land", 
         "uniques": [
-            "Double movement in [Flatland]", // ⚠️ ⛔ <when not at war>",
         ]
     },
     {
@@ -13,4 +12,19 @@
             "Double movement in [Flatland]",
         ]
     },
+    {
+        "name": "Monster",
+        "movementType": "Land", 
+        "uniques": [
+	        ]
+    },
+    {
+        "name": "non Unit",
+        "movementType": "Land", 
+        "uniques": [
+        ]
+    },
+
+
 ]
+

@@ -4,24 +4,93 @@
 		"unitType": "Adventurer",
 		"movement": 2,
 		"strength": 100,
-		"cost": 500,
+		"cost": 10,
 		"requiredTech": "Summoning",
 		"promotions": ["Hero","Blink"],
 		"uniques": [
-			"Can move after attacking",
-			"Founds a new city <once>",
+			"[This Unit] gains the [Open terrain] promotion"
 			"[+2] Sight",
-          ],
+			"Double movement in [features/Grass]",
+			"Can move after attacking",
+			"All healing effects doubled",
+			"Founds a new city <once>",
+			//"May heal outside of friendly territory",
+			"Never appears as a Barbarian unit",
+                ],
 		"attackSound": "metalhit"
 	},
 	{
+		"name": "Adventurer",
+		"unitType": "Adventurer",
+		"movement": 2,
+		"strength": 70,
+		"cost": 5,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+                ],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Bard",
+		"unitType": "Adventurer",
+		"movement": 2,
+		"strength": 55,
+		"cost": 4,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+                ],
+		"attackSound": "metalhit"
+	},
+
+
+// NPCs
+
+	{
 		"name": "Jester",
 		"unitType": "Civilian",
+		"movement": 1,
 		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
-            //"Can instantly construct a [Landmark] improvement <by consuming this unit>",
-            "Is part of Great Person group [Great Person]",
-            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
-		"movement": 2
+			"Cannot attack",
+			"Withdraws before melee combat",
+			"Never appears as a Barbarian unit",
+		],
 	},
+
+
+// Monsters
+
+	{
+		"name": "Orc",
+		"unitType": "Monster",
+		"movement": 1,
+		"strength": 30,
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"Can transform to [Splat] <upon being defeated>",
+		],
+	},
+
+
+// Helper entities
+
+	{
+		"name": "Splat",
+		"unitType": "non Unit",
+		"movement": 0,
+		"strength": 1,
+		"uniques": [
+			"Cannot move",
+			"Self-destructs when attacking",
+			"[-1] HP when healing",
+			"Invisible to non-adjacent units <upon turn end>",
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+		],
+	},
+
+
 ]

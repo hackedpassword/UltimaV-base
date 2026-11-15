@@ -2,13 +2,13 @@
 
 	{
 		"name": "Lighthouse",  // Likely will become named NW
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": []
 	},
 	{
 	// City center to become camp, or such
 		"name": "City center",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],  // check if Land is accepted
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],  // check if Land is accepted
 		"uniques": [
 			// "Unpillagable", "Irremovable", "Unbuildable",
 			// "Blocks line-of-sight from tiles at same elevation",  // This should be a city center default unique - doesn't work
@@ -18,7 +18,7 @@
 
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Flatland","Grassland","Desert","Editor"],
+		"terrainsCanBeBuiltOn": ["Flatland","Grassland","Desert","_Editor_"],
 		"food": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Motivation",
@@ -30,7 +30,7 @@
 
 	{
 		"name": "Camp",
-		"terrainsCanBeBuiltOn": ["Flatland","Grassland","Desert","Editor"],
+		"terrainsCanBeBuiltOn": ["Flatland","Grassland","Desert","_Editor_"],
 		"turnsToBuild": 7,
 		"techRequired": "Motivation",
 		"uniques": [
@@ -122,14 +122,14 @@
 	},
 	{
 		"name": "City ruins",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Unpillagable", "Unbuildable",
 			//"Will be replaced by automated workers"
 		],
 	},
 	{
 		"name": "Barbarian encampment",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Unpillagable", "Unbuildable"],
 	}
 
@@ -138,14 +138,14 @@
 
 	{
 		"name": "Shrine of the Codex",
-		"terrainsCanBeBuiltOn": ["Sacred Ground","Editor"],
+		"terrainsCanBeBuiltOn": ["Sacred Ground","_Editor_"],
 		"faith": 0,
 		"uniques": [ // "Can be built on [The Hallowed Meadow]", // "Great Improvement", 
 		]
 	},
 	{
 		"name": "Shrine",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"faith": 0,
 		"uniques": [ // "Great Improvement",
 			"Removes removable features when built",
@@ -154,7 +154,7 @@
 	},
 	{
 		"name": "Treasure",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": [
 			"Unpillagable",
 			"Provides a random bonus when entered", 
@@ -170,51 +170,6 @@
 //////// LEGACY FOR REMOVAL ////////
 
 
-	{
-		"name": "Lumber mill",
-		"terrainsCanBeBuiltOn": ["Forest","Editor"],
-		"uniques": []
-	},
-	{
-		"name": "Mine",
-		"terrainsCanBeBuiltOn": ["Hill","Editor"],
-		"uniques": []
-	},
-	{
-		"name": "Trading post",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
-		"uniques": []
-	},
-	{
-		"name": "Pasture",
-		"uniques": []
-	},
-	{
-		"name": "Plantation",
-		"uniques": []
-	},
-	{
-		"name": "Quarry",
-		"uniques": []
-	},
-	{
-		"name": "Fishing Boats",
-		"uniques": []
-	},
-	{
-		"name": "Fort",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
-		"uniques": []
-	},
-
-	{
-		"name": "Remove Jungle",
-		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
-	},
-	{
-		"name": "Remove Marsh",
-		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
-	},
 
 
 
@@ -222,38 +177,38 @@
     // Great Person improvements
 	{
 		"name": "Academy",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Great Improvement", "Removes removable features when built"]
 	},
 	{
 		"name": "Landmark",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Great Improvement", "Removes removable features when built"]
 	},
 	{
 		"name": "Manufactory",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Great Improvement", "Removes removable features when built",
-			"Can be built on [TerrainDecor]", "Can be built outside your borders",
+			"Can only be built on [Land] tiles", "Can be built outside your borders",
 		],
 	},
 	{
 		"name": "Customs house",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Great Improvement", "Removes removable features when built",
-			"Can be built on [TerrainDecor]", "Can be built outside your borders",
+			"Can only be built on [Land] tiles", "Can be built outside your borders",
 		],
 	},
 	{
 		"name": "Holy site",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Great Improvement", "Removes removable features when built",
-			"Can be built on [TerrainDecor]", "Can be built outside your borders",
+			"Can only be built on [Land] tiles", "Can be built outside your borders",
 		],
 	},
 	{
 		"name": "Citadel",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": [
 			"Great Improvement",
 			"Gives a defensive bonus of [100]%",
@@ -270,7 +225,7 @@
 	// Unbuildable improvements
 	{
 		"name": "Ancient ruins",
-		"terrainsCanBeBuiltOn": ["Land","Editor"],
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable",
 			"Does not need removal of [Forest]", "Does not need removal of [Jungle]"]
 	},

@@ -118,7 +118,6 @@
         	"gold": 0,
 		"movementCost": 1,
 		"uniques": [
-			"[+1] Movement",
 			"Has an elevation of [1] for visibility calculations",
 		]
 	},
@@ -129,7 +128,6 @@
         	"gold": 0,
 		"movementCost": 1,
 		"uniques": [
-			"[+1] Movement",
 			"Has an elevation of [0] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 		]
@@ -195,8 +193,8 @@
 		"gold": 0,
 		"movementCost": 1,
 		"uniques": [
-            "Has an elevation of [1] for visibility calculations",
-            "Blocks line-of-sight from tiles at same elevation",
+		"Has an elevation of [1] for visibility calculations",
+		"Blocks line-of-sight from tiles at same elevation",
         ],
 	},
 	{
@@ -217,11 +215,11 @@
 	        "impassable": true,  // unless unit has grapple gear/promotion
 		"uniques": [
 			"Rough terrain",
-		    "Has an elevation of [3] for visibility calculations",
+			"Has an elevation of [3] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Has an elevation of [2] for visibility calculations",
 			"Considered [Undesirable] when determining start locations",
-		    //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+			//"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
 			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		], 
 	},
@@ -233,14 +231,26 @@
 	        "impassable": true, 
 		"uniques": [
 			"Rough terrain",
-		    "Has an elevation of [2] for visibility calculations",
+			"Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Undesirable] when determining start locations",
-		    //"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
+			//"Units ending their turn on this terrain take [50] damage <with [80]% chance>", // to be modded per grapple gear
 			//"[-2 Gold] <in [River] tiles>",  // turn down resource noise
 		],
 	},
-
+/*
+	{
+		"name": "River",
+		"type": "Water",
+		"food": 0,
+        	"gold": 0,
+		"movementCost": 1,
+		"uniques": [
+			"Fresh water",
+			"Has an elevation of [0] for visibility calculations",
+		],
+	},
+*/
 
   ////////////////////////
  /////// Wonders ////////
@@ -251,7 +261,7 @@
 		"type": "NaturalWonder",
 		"occursOn": ["Flatland"],
 		"uniques": [],
-		"turnsInto": "Sacred Ground",
+		"turnsInto": "Flatland",
 		"impassable": false,
 	},
 	/* THINKING >>> design idea
@@ -265,16 +275,18 @@
 		"name": "The Hallowed Meadow",  // supposed to be the Codex base terrain, tbd
 		"type": "NaturalWonder",
 		"uniques": [],
-		"turnsInto": "Sacred Ground",
+		"turnsInto": "Flatland",
 		"impassable": false,
 	},
 	{
 		"name": "Britannia Castle",  // May become an improvement
 		"type": "NaturalWonder",
-        "movementCost": 2,
+        	"movementCost": 2,
 		"gold": 10,  // Lord British! You cheap bastard!
 		"occursOn": ["Grassland"],
-		"uniques": [],
+		"uniques": [
+			"Grants [Magic carpet] ([The ultimate vehicle]) to adjacent [Adventurer] units for the rest of the game",
+		],
 		"turnsInto": "Grassland",
 		"impassable": false,
 		"unbuildable": true,
@@ -485,17 +497,6 @@
 		"uniques": ["_Editor_"],
 	},
 
-/*
-	{
-		"name": "grassland field",  // experimental movement layer
-		"type": "TerrainFeature",
-		"unbuildable": true,
-		"occursOn": ["Grassland shoreline","Grassland"],
-		"uniques": ["TerrainDecor","Grassland",
-			        "[+1] Movement"
-		],
-	},
-*/
 
 // [Land] shoreline decors (land major -> water)
 
@@ -1053,7 +1054,7 @@
 		"name": "features/Grass",
 		"type": "TerrainFeature",
 		"occursOn": ["Grassland shoreline", "Grassland"],
-		"uniques": ["[+1] Movement"],
+		"uniques": [],
 	},
 	{
 		"name": "Fallout",
