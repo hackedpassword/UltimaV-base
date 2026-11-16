@@ -167,14 +167,47 @@
 
 
 
-//////// LEGACY FOR REMOVAL ////////
 
-
-
-
-
-
-    // Great Person improvements
+	{
+		"name": "Lumber mill",
+		"terrainsCanBeBuiltOn": ["Forest","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Trading post",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Pasture",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Plantation",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Quarry",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Fort",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
 	{
 		"name": "Academy",
 		"terrainsCanBeBuiltOn": ["Land","_Editor_"],

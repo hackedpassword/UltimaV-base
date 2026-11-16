@@ -988,7 +988,7 @@
 		"name": "Waterfall",
 		"type": "TerrainFeature",
 		"movementCost": 3,
-		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain",
 			"Blocks line-of-sight from tiles at same elevation",
@@ -1053,7 +1053,7 @@
 	{
 		"name": "features/Grass",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland"],
+		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
 		"uniques": [],
 	},
 	{
