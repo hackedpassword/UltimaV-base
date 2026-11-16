@@ -1,6 +1,6 @@
-![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/basemod/west_of_dungeon_shame.png)
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/murky.png)
 
-# UltimaV base mod
+# UltimaV base mod total conversion
 ![](Images/TileSets/Ultima/Tiles/Citadel.png) Ultima V series **total conversion** mod ![](Images/TileSets/Ultima/Tiles/Citadel.png)
 
 	Includes:
@@ -10,17 +10,26 @@
 	  ✅ Maps: Britannia Overworld
 	  ✅ Skins: UltimaV, Minimal
 
-# Info
 
-A WIP repo for continuing development. No Unciv tags atm thus excluded from the mods menu - copy the url and d/l manually in the mods menu. When complete/ready, will package as a new mod.
+![](https://raw.githubusercontent.com/hackedpassword/Unciv-Assets/refs/heads/main/Images/Ultima%20V/basemod/west_of_dungeon_shame.png)
 
-Feel free to explore this repo - you've never seen modding techniques used within before! Examples will be highlighted later.
+# Avatar Royale Ultima V
 
-## WIP
+After the Avatar was thrown into the Red Gate for casting Xor Mani Corpse (Armageddon), having nothing else to do, Lord British turns to finding a way to undo an apocalypse. This research leads to the creation of the Mirror Moon Gate. In exchange for his existence, he steps through the silvery gate where he himself peers back from the other side, with apprehension yet compulsion to reach forth from his imprisoned dwelling to grab the reaching hand of this unknown incarnation of whom is obvious himself from another realm. The weary King of Nothing connects his grasp to his former abducted self, makes a final eye contact, where Lord British finds himself looking at himself in this ordinary mirror with a moment of oblivious disconnect, a feeling of resolved peace, though this only lasts a moment. As if gravity shifted like the wind to become omnidirectional, he stumbles backwards in a lost sense as if he just fell into..himself. Clarity washes over him, he understands. The message was received, his mind echoed "Do not put all ye faith in a single man for no virtue shall undo the sin of curiosity." He had only been in the room a short time, already contemplating summoning the great Avatar of victories past. An unseen flaw has become apparent. An Avatar is bound to eternally prove themselves and not be taken for granted! He begins the meditation ritual, with new purpose, to call upon all who would seek earning the glory of becoming the next Avatar! And in time to come, several Moongates across the Britannian landscape rise, from each, a figure emerges...
 
-The current focus is conversion of the Britannia map from G&K to pure UltimaV. Extensive use of terrainDecor brings forth a natural landscape cartography with stunning details.
+Now that's some high quality lore.
 
-Because the eventual gameplay will be quite different from Civ-style, all legacy resources have been ejected. Every available entity type will have a new role, including promotions and policies for example. CoeHarMod makes use of this type of modded system, to conceptualize the vision here.
+In this game, we leverage multiplayer mechanics of Civ V/Unciv gameplay to create a competitive adventure that incorporates a conceptual gaming experience following the gameplay of Ultima V. If you heard correctly, multiple avatars simultaneously quest, and potentially battle each other, to rescue Lord British. One could say the adventures' lead off is.. awkward. 
+
+# Dev gets us there
+
+It's all fun n games until someone opens a SDE. Fortunately, this is a modding project so the fun of creation is always front and center.
+
+## How we do that
+
+Extensive use of terrain Decor and Details brings forth a natural landscape cartography with stunning details.
+
+Because the eventual gameplay will be quite different from Civ-style, all legacy resources have been ejected. Every available Unciv game mechanic will have a new role, including promotions and policies for example. CoeHarMod makes use of this type of modded system, to conceptualize the vision here.
 
 Ongoing mapdev work continues to produce new and fun modding techniques that can be harnessed in the Unciv modding ecosystem. A few are downright amusing in their application.
 
