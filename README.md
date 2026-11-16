@@ -27,11 +27,37 @@ It's all fun n games until someone opens a SDE. Fortunately, this is a modding p
 
 ## How we do that
 
-Extensive use of terrain Decor and Details brings forth a natural landscape cartography with stunning details.
+This project has been iterated upon extensively to pull capabilities from the Unciv engine never known. Several parallel U5 projects/mods have converged, aggregating the experience gained from each, and other mods pushing limits in every direction. This effort will continue throughout development, continuously raising the bar.
 
-Because the eventual gameplay will be quite different from Civ-style, all legacy resources have been ejected. Every available Unciv game mechanic will have a new role, including promotions and policies for example. CoeHarMod makes use of this type of modded system, to conceptualize the vision here.
+### Map:
+
+Originally conceived as an experiment to see if a Britannia map overlaid on a 128² hex grid during a time where that map size was crumbling the ceiling of Unciv's performance capacity. Today, through many contributor optimizations, not only does the map run smoothly, the incorporation of 2 additional sub-layers of terrain entities impose no performances penalty, allowing the next generation of 2d visuals to properly succeed the original. Great care has gone into assessing an art direction with maximum fan appeal.
+
+### Sprites:
+
+PC U5 sprite set is the opener. Artistic boundaries applied include maintaining the 16 color palette, retaining original composition universally - with occasional progressive touches (Moongate for example casts a ground reflection). I developed the mod tech that allows projecting a square sprite world seamlessly into a hex grid canvas. A few sprite extensions have been added, for example Grasspatch, and combining several domestic entities with a shopkeeper sign. On the road map is including sprites from other Ultima's as part of game progression and gameplay.
+
+### Edges and borders:
+
+Concentrated effort has gone into representing land/water borders as the original game touted. The mod Ethereal Borders is integrated here to portray Shadowlord realm presence effects.
+
+### Spells, items, inventory, etc:
+
+Leveraging the Culture, Religion, Tech, Population, Promotion, and other systems we diverge perpendicularly by recreating the systems to fulfill U5 gameplay through Virtues, Magic, Levels, etc.
+
+### Interface:
+
+Reskinning Unciv is rarely done, here we will replicate the style of the PC / Apple 2e interface. The tech of this project component is in place. Any screenshots seen atm will show a broken mix of Minimal and UltimaV skinning where the latter has very little work done outside of modding the map editor UI (which is awesome in itself). Interested ontributors may certainly lend a needed hand! Styles of other legacy platforms (Amiga crew I hear your call), the style isn't limited to the PC or Apple 2e, this is both style guidance and what I know. If a new proper style emerged as some genetic offspring of several platform UI's, so be it if it fits the intent.
+
+
+
+## Some quick dev thoughts
+
+Since the eventual gameplay will be quite different from Civ-style, all legacy resources have been ejected. Every available Unciv game mechanic will have a new role, including promotions and policies for example. CoeHarMod makes use of this type of modded system, to conceptualize the vision here.
 
 Ongoing mapdev work continues to produce new and fun modding techniques that can be harnessed in the Unciv modding ecosystem. A few are downright amusing in their application.
+
+Extensive use of terrain Decor and Details brings forth a natural landscape cartography with stunning details.
 
 ![](https://raw.githubusercontent.com/hackedpassword/UltimaV-base/refs/heads/main/Images/TileSets/Ultima/Tiles/editor/menu/spacer01rgb.png)
 
