@@ -456,18 +456,6 @@
 		]
 	},
 	{
-		"name": "Swamp",
-		"type": "TerrainFeature",
-		"food": -1,
-		"movementCost": 3,
-		"unbuildable": true,
-		"defenceBonus": -0.4,
-		"occursOn": ["Grassland shoreline", "Grassland"],
-		"uniques": [
-			"Rough terrain", "Vegetation", 
-		],
-	},
-	{
 		"name": "Hill",
 		"type": "TerrainFeature",
 		"movementCost": 2,
@@ -482,7 +470,24 @@
 			"[+10] Strength for cities built on this terrain",
 		],
 	},
-
+	{	// TF overlay, promo 'Open field' targets this as a starting point
+		"name": "features/Grass",
+		"type": "TerrainFeature",
+		"occursOn": ["Desert shoreline","Desert","Flatland shoreline","Flatland","Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor"],
+	},
+	{
+		"name": "Swamp",
+		"type": "TerrainFeature",
+		"food": -1,
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.4,
+		"occursOn": ["Grassland shoreline", "Grassland"],
+		"uniques": [
+			"Rough terrain", "Vegetation", 
+		],
+	},
 
 
   ///////////////////////////////
@@ -916,20 +921,6 @@
 		"uniques": ["TerrainDecor", "Flatland", "Path"], 
 	},
 	{
-		"name": "path/⮟ ╝",
-		"type": "TerrainFeature",
-		"unbuildable": false,
-		"occursOn": ["Flatland shoreline","Flatland","Desert shoreline","Desert","Grassland shoreline","Grassland"],
-		"uniques": ["TerrainDecor", "Flatland", "Path"], 
-	},
-	{
-		"name": "path/⮟ ╚",
-		"type": "TerrainFeature",
-		"unbuildable": false,
-		"occursOn": ["Flatland shoreline","Flatland","Desert shoreline","Desert","Grassland shoreline","Grassland"],
-		"uniques": ["TerrainDecor", "Flatland", "Path"], 
-	},
-	{
 		"name": "path/⮝ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": false,
@@ -938,6 +929,20 @@
 	},
 	{
 		"name": "path/⮝ ╔",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland shoreline","Flatland","Desert shoreline","Desert","Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "path/⮟ ╝",
+		"type": "TerrainFeature",
+		"unbuildable": false,
+		"occursOn": ["Flatland shoreline","Flatland","Desert shoreline","Desert","Grassland shoreline","Grassland"],
+		"uniques": ["TerrainDecor", "Flatland", "Path"], 
+	},
+	{
+		"name": "path/⮟ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": false,
 		"occursOn": ["Flatland shoreline","Flatland","Desert shoreline","Desert","Grassland shoreline","Grassland"],
@@ -1051,9 +1056,10 @@
 	{ "name":"editor/menu/spacer07","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 	{
-		"name": "features/Grass",
+		"name": "features/Dirt",
 		"type": "TerrainFeature",
-		"occursOn": ["Desert shoreline","Desert","Grassland shoreline","Grassland","Flatland shoreline","Flatland"],
+		"movementCost": 1,
+		"occursOn": ["Desert shoreline", "Desert", "Flatland shoreline", "Flatland","Grassland shoreline", "Grassland"],
 		"uniques": [],
 	},
 	{
@@ -1074,13 +1080,11 @@
 		"occursOn": ["Grassland", "Grassland shoreline", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Tundra", "Snow"],
 		"defenceBonus": -0.15
 	},
-
-	// other features tbd //
 	{
 		"name": "Sacred Ground",
 		"type": "TerrainFeature",
 		"movementCost": 1,
-		"occursOn": ["Grassland shoreline", "Grassland", "Desert shoreline", "Desert", "Flatland shoreline", "Flatland"],
+		"occursOn": ["Desert shoreline", "Desert", "Flatland shoreline", "Flatland","Grassland shoreline", "Grassland"],
 		"uniques": [],
 	},
 

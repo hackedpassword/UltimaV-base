@@ -1,6 +1,16 @@
 [
 
 	{
+		"name": "Hut",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+	{
+		"name": "Village",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": []
+	},
+{
 		"name": "Lighthouse",  // Likely will become named NW
 		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": []
@@ -138,7 +148,7 @@
 
 	{
 		"name": "Shrine of the Codex",
-		"terrainsCanBeBuiltOn": ["Sacred Ground","_Editor_"],
+		"terrainsCanBeBuiltOn": ["Flatland","Grassland","_Editor_"],
 		"faith": 0,
 		"uniques": [ // "Can be built on [The Hallowed Meadow]", // "Great Improvement", 
 		]
@@ -178,11 +188,7 @@
 		"terrainsCanBeBuiltOn": ["Hill","_Editor_"],
 		"uniques": []
 	},
-	{
-		"name": "Trading post",
-		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
-		"uniques": []
-	},
+
 	{
 		"name": "Pasture",
 		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
