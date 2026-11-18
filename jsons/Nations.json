@@ -1,38 +1,34 @@
 [
-	//Spectator
-	{
-		"name": "Spectator",
-		"outerColor": [255,255,255],
-//		"innerColor": [255,255,255]
-	},
-	{
+
+	{	// AI gen-created placeholder
 		"name": "Brittania",
 		"leaderName": "Lord British",
 		"adjective": ["English"],
 		"startBias": ["Coast"],
 		"preferredVictoryType": "Basic",
 
-        "startIntroPart1": "",
-        "startIntroPart2": "",
+		"startIntroPart1": "",
+		"startIntroPart2": "",
 
-        "declaringWar": "By the grace of God, your days are numbered.",
+		"declaringWar": "By the grace of God, your days are numbered.",
 		"attacked": "We shall never surrender.",
 		"defeated": "You have triumphed over us. The day is yours.",
 		"introduction": "We are pleased to meet you.",
 		"neutralHello": "Hello, again.",
 		"hateHello": "Oh, it's you!",
 		"tradeRequest": "Would you be interested in a trade agreement with England?",
-		"outerColor": [109, 2, 0],
-		"innerColor": [255, 255, 255],
+		"outerColor": [198,54,54], // [192,32,32],
+		"innerColor": [59,16,16],  // [64,16,16],
 		"favoredReligion": "Valor",
 		"uniqueName": "Sun Never Sets",
 		"uniques": ["[+2] Movement <for [Water] units>"],
 		"cities": ["Trinsic","Yew","Moonglow"],  // ...
-        "spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
+		"spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
 	},
+
 // CS's
-	{
-		"name": "Paws",  // example town/"nation"
+	{	// AI gen-created placeholder
+		"name": "Paws",
 		"adjective": ["Wispies"],
 		"cityStateType": "Virtuous",
 
@@ -44,11 +40,19 @@
 		"cities": ["Paws"],
 		"uniques": ["Will not be displayed in Civilopedia", "Will not be chosen for new games"]
 	},
+
+// Monsters / barbarians / other
 	{
 		"name": "Barbarians",
 		"outerColor": [0,0,0],
 	        "innerColor": [185,12,12],
 		"uniques": ["Can only heal by pillaging"]
 	}
+
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+//		"innerColor": [255,255,255]
+	},
 
 ]
