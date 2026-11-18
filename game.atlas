@@ -4,9 +4,1857 @@ size: 2048, 512
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+Edges/Beach-Coast/Beach-Coast-Desert-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Desert-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Desert-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Desert-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Desert-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Desert-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Ocean-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Desert-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Desert/Beach-Desert-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Flatland/Beach-Flatland-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Grassland/Beach-Grassland-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Mountain/Beach-Mountain-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Mountain/Beach-Mountain-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Mountain/Beach-Mountain-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Desert/Fresh-Desert-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Water-Ocean/Water-Ocean-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-Bottom
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-BottomLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-BottomRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-Top
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-TopLeft
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-TopRight
+  rotate: false
+  xy: 244, 228
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-Bottom
+  rotate: false
+  xy: 996, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-BottomLeft
+  rotate: false
+  xy: 1036, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-BottomRight
+  rotate: false
+  xy: 1076, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-Top
+  rotate: false
+  xy: 1116, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-TopLeft
+  rotate: false
+  xy: 1156, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Flatland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Grassland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Beach-Coast/Beach-Coast-Mountain-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Desert-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Flatland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Grassland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Mountain-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Snow-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/Fresh-Surf/Fresh-Surf-Tundra-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Edges/source-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Edges/source-TopRight
+  rotate: false
+  xy: 1196, 404
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 Skins/UltimaV/background
   rotate: false
-  xy: 2032, 355
+  xy: 844, 227
   size: 9, 9
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
@@ -15,7 +1863,7 @@ Skins/UltimaV/background
   index: -1
 Skins/UltimaV/neutralBackground
   rotate: false
-  xy: 2032, 355
+  xy: 844, 227
   size: 9, 9
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
@@ -24,7 +1872,7 @@ Skins/UltimaV/neutralBackground
   index: -1
 Skins/UltimaV/checkbox
   rotate: false
-  xy: 1884, 295
+  xy: 444, 311
   size: 21, 21
   split: 8, 8, 8, 8
   pad: 0, 0, 0, 0
@@ -33,7 +1881,7 @@ Skins/UltimaV/checkbox
   index: -1
 Skins/UltimaV/roundedEdgeRectangle
   rotate: false
-  xy: 612, 386
+  xy: 484, 250
   size: 52, 50
   split: 19, 20, 19, 21
   pad: 12, 13, 7, 7
@@ -42,11 +1890,67 @@ Skins/UltimaV/roundedEdgeRectangle
   index: -1
 Skins/UltimaV/thinrectangle
   rotate: false
-  xy: 1348, 219
+  xy: 60, 19
   size: 9, 9
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
   orig: 9, 9
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConcaveConvexInner
+  rotate: false
+  xy: 4, 76
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConcaveConvexOuter
+  rotate: false
+  xy: 140, 212
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConcaveInner
+  rotate: false
+  xy: 268, 340
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConcaveOuter
+  rotate: false
+  xy: 540, 476
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConvexConcaveInner
+  rotate: false
+  xy: 4, 36
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConvexConcaveOuter
+  rotate: false
+  xy: 140, 172
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConvexInner
+  rotate: false
+  xy: 268, 300
+  size: 96, 32
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+TileSets/Ultima/Borders/ConvexOuter
+  rotate: false
+  xy: 372, 340
+  size: 96, 32
+  orig: 96, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/CrosshatchHexagon
@@ -54,930 +1958,6 @@ TileSets/Ultima/CrosshatchHexagon
   xy: 268, 380
   size: 128, 128
   orig: 128, 128
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Desert-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Ocean-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Desert-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/edgeless/Beach-Coast-Flatland-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Desert/Beach-Desert-Coast-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Flatland/Beach-Flatland-Coast-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Grassland/Beach-Grassland-Coast-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Mountain/Beach-Mountain-Coast-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Desert/Fresh-Desert-Surf-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Flatland/Fresh-Flatland-Surf-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Grassland/Fresh-Grassland-Surf-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Mountain/Fresh-Mountain-Surf-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-Bottom
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-BottomLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-BottomRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-Top
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-TopLeft
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Water-Ocean/Water-Ocean-Coast-TopRight
-  rotate: false
-  xy: 1952, 380
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-Bottom
-  rotate: false
-  xy: 1576, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-BottomLeft
-  rotate: false
-  xy: 1616, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-BottomRight
-  rotate: false
-  xy: 1656, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-Top
-  rotate: false
-  xy: 1696, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-TopLeft
-  rotate: false
-  xy: 1736, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Flatland-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Grassland-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Beach-Coast/Beach-Coast-Mountain-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Desert-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Flatland-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Grassland-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Mountain-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Snow-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/Fresh-Surf/Fresh-Surf-Tundra-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
-  offset: 0, 0
-  index: -1
-TileSets/Ultima/Edges/source-TopRight
-  rotate: false
-  xy: 1776, 404
-  size: 32, 32
-  orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Hexagon
@@ -989,1092 +1969,1092 @@ TileSets/Ultima/Hexagon
   index: -1
 TileSets/Ultima/Highlight
   rotate: false
-  xy: 972, 444
+  xy: 1220, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Railroad
   rotate: false
-  xy: 140, 136
+  xy: 372, 296
   size: 64, 36
   orig: 64, 36
   offset: 0, 0
   index: -1
 TileSets/Ultima/Road
   rotate: false
-  xy: 1252, 221
+  xy: 444, 296
   size: 16, 7
   orig: 16, 7
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Academy
   rotate: false
-  xy: 84, 4
+  xy: 2012, 436
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Academy-Pillaged
   rotate: false
-  xy: 124, 4
+  xy: 756, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Aluminum
   rotate: false
-  xy: 212, 196
+  xy: 484, 194
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Shield
   rotate: false
-  xy: 212, 196
+  xy: 484, 194
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Armor
   rotate: false
-  xy: 1456, 404
+  xy: 876, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Silver
   rotate: false
-  xy: 1456, 404
+  xy: 876, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Blackthorn's Castle
   rotate: false
-  xy: 1896, 404
+  xy: 1316, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Blue Potion
   rotate: false
-  xy: 672, 388
+  xy: 544, 220
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Coal
   rotate: false
-  xy: 672, 388
+  xy: 544, 220
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Brick
   rotate: false
-  xy: 492, 284
+  xy: 1396, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Britannia Castle
   rotate: false
-  xy: 492, 244
+  xy: 1436, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Brush
   rotate: false
-  xy: 532, 284
+  xy: 1476, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Cactus
   rotate: false
-  xy: 532, 244
+  xy: 1516, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Camp
   rotate: false
-  xy: 268, 196
+  xy: 604, 276
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Citadel
   rotate: false
-  xy: 588, 332
+  xy: 1556, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Citadel-Pillaged
   rotate: false
-  xy: 628, 346
+  xy: 1596, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/City center
   rotate: false
-  xy: 324, 252
+  xy: 600, 220
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/City ruins
   rotate: false
-  xy: 728, 388
+  xy: 596, 164
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Coast
   rotate: false
-  xy: 148, 96
+  xy: 1636, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Coast shore
   rotate: false
-  xy: 148, 96
+  xy: 1636, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Customs house
   rotate: false
-  xy: 340, 308
+  xy: 716, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert
   rotate: false
-  xy: 228, 100
+  xy: 1796, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert shoreline
   rotate: false
-  xy: 228, 100
+  xy: 1796, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert Farm
   rotate: false
-  xy: 228, 60
+  xy: 1836, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Desert Farm-Pillaged
   rotate: false
-  xy: 268, 100
+  xy: 1876, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Dock
   rotate: false
-  xy: 308, 60
+  xy: 612, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Dungeon2
   rotate: false
-  xy: 348, 60
+  xy: 660, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Hythloth
   rotate: false
-  xy: 348, 60
+  xy: 660, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Shame
   rotate: false
-  xy: 348, 60
+  xy: 660, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Fallout
   rotate: false
-  xy: 652, 266
+  xy: 740, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Fallout2
   rotate: false
-  xy: 652, 226
+  xy: 780, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Lava
   rotate: false
-  xy: 652, 226
+  xy: 780, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Farm
   rotate: false
-  xy: 1232, 356
+  xy: 780, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Farm-Pillaged
   rotate: false
-  xy: 1272, 356
+  xy: 820, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmD
   rotate: false
-  xy: 412, 308
+  xy: 860, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmD-Pillaged
   rotate: false
-  xy: 684, 444
+  xy: 932, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmG
   rotate: false
-  xy: 756, 444
+  xy: 1004, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmP
   rotate: false
-  xy: 828, 444
+  xy: 1076, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmP-Pillaged
   rotate: false
-  xy: 900, 444
+  xy: 1148, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/FarmPH-Pillaged
   rotate: false
-  xy: 1312, 356
+  xy: 780, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Flatland
   rotate: false
-  xy: 1352, 356
+  xy: 820, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Flatland shoreline
   rotate: false
-  xy: 1352, 356
+  xy: 820, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Flatland Farm
   rotate: false
-  xy: 1392, 364
+  xy: 860, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Forest
   rotate: false
-  xy: 1432, 364
+  xy: 820, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Fort-Pillaged
   rotate: false
-  xy: 1472, 364
+  xy: 860, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Gems
   rotate: false
-  xy: 1552, 364
+  xy: 860, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Glass Sword
   rotate: false
-  xy: 1592, 364
+  xy: 900, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Grassland
   rotate: false
-  xy: 1672, 364
+  xy: 900, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Grassland shoreline
   rotate: false
-  xy: 1672, 364
+  xy: 900, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Hill
   rotate: false
-  xy: 1712, 364
+  xy: 940, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Holy site
   rotate: false
-  xy: 1044, 444
+  xy: 1292, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Holy site-Pillaged
   rotate: false
-  xy: 1116, 444
+  xy: 1364, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Horses
   rotate: false
-  xy: 324, 196
+  xy: 284, 60
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Hut
   rotate: false
-  xy: 1188, 444
+  xy: 1436, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Iron
   rotate: false
-  xy: 784, 388
+  xy: 340, 4
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Jungle
   rotate: false
-  xy: 428, 100
+  xy: 1020, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Landmark
   rotate: false
-  xy: 1260, 444
+  xy: 1508, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Left Statue
   rotate: false
-  xy: 1332, 444
+  xy: 1580, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Lighthouse
   rotate: false
-  xy: 428, 60
+  xy: 1060, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Loot
   rotate: false
-  xy: 1476, 444
+  xy: 1724, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Loot2
   rotate: false
-  xy: 1548, 444
+  xy: 1796, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Treasure2
   rotate: false
-  xy: 1548, 444
+  xy: 1796, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Lumber mill
   rotate: false
-  xy: 324, 140
+  xy: 340, 168
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Mandrake Root
   rotate: false
-  xy: 1432, 324
+  xy: 1060, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Manufactory
   rotate: false
-  xy: 1620, 444
+  xy: 1868, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Marsh
   rotate: false
-  xy: 1472, 324
+  xy: 1100, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Mine
   rotate: false
-  xy: 1692, 444
+  xy: 1940, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Moongate
   rotate: false
-  xy: 380, 196
+  xy: 396, 168
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Mountain
   rotate: false
-  xy: 1512, 324
+  xy: 1060, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Mountain shoreline
   rotate: false
-  xy: 1512, 324
+  xy: 1060, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Nightshade
   rotate: false
-  xy: 1552, 324
+  xy: 1100, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Oasis
   rotate: false
-  xy: 1712, 324
+  xy: 1180, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Ocean
   rotate: false
-  xy: 1752, 324
+  xy: 1140, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Plains
   rotate: false
-  xy: 1872, 324
+  xy: 1180, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/PlantationB
   rotate: false
-  xy: 1812, 252
+  xy: 612, 444
   size: 24, 24
   orig: 24, 24
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/QuarryH
   rotate: false
-  xy: 1852, 292
+  xy: 4, 4
   size: 24, 24
   orig: 24, 24
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Railroad-Pillaged
   rotate: false
-  xy: 1764, 444
+  xy: 340, 224
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Right Statue
   rotate: false
-  xy: 1912, 324
+  xy: 1220, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Ring
   rotate: false
-  xy: 1836, 444
+  xy: 476, 308
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-Bottom
   rotate: false
-  xy: 1952, 332
+  xy: 1260, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-BottomLeft
   rotate: false
-  xy: 1908, 444
+  xy: 548, 332
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/River-BottomRight
   rotate: false
-  xy: 1992, 332
+  xy: 1220, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Rough Ocean
   rotate: false
-  xy: 228, 20
+  xy: 1260, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Sandlewood box
   rotate: false
-  xy: 1980, 444
+  xy: 108, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Scroll
   rotate: false
-  xy: 840, 388
+  xy: 340, 112
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Shrine
   rotate: false
-  xy: 708, 348
+  xy: 1340, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Shrine of the Avatar
   rotate: false
-  xy: 1980, 372
+  xy: 212, 100
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Shrine of the Codex
   rotate: false
-  xy: 748, 348
+  xy: 1380, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Snow
   rotate: false
-  xy: 828, 348
+  xy: 1460, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Stone
   rotate: false
-  xy: 868, 348
+  xy: 1460, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Surf
   rotate: false
-  xy: 908, 348
+  xy: 1460, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Surf shore
   rotate: false
-  xy: 908, 348
+  xy: 1460, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Swamp
   rotate: false
-  xy: 868, 308
+  xy: 1500, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/The Hallowed Meadow
   rotate: false
-  xy: 948, 348
+  xy: 1540, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Thicket
   rotate: false
-  xy: 908, 308
+  xy: 1500, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Trading post-Pillaged
   rotate: false
-  xy: 988, 348
+  xy: 1540, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Treasure
   rotate: false
-  xy: 948, 308
+  xy: 1580, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Tundra
   rotate: false
-  xy: 988, 308
+  xy: 1580, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Uranium
   rotate: false
-  xy: 1064, 388
+  xy: 452, 26
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Village
   rotate: false
-  xy: 1068, 348
+  xy: 1620, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Waterfall
   rotate: false
-  xy: 1028, 308
+  xy: 1580, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Well
   rotate: false
-  xy: 1108, 348
+  xy: 1620, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Wishing well
   rotate: false
-  xy: 1108, 348
+  xy: 1620, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Whirlpool
   rotate: false
-  xy: 1120, 388
+  xy: 508, 108
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Whirlpool2
   rotate: false
-  xy: 1068, 308
+  xy: 1660, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Wisp
   rotate: false
-  xy: 76, 44
+  xy: 180, 28
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Woods
   rotate: false
-  xy: 1148, 348
+  xy: 1620, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/_Editor_
   rotate: false
-  xy: 1937, 300
+  xy: 508, 170
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridge/⮝ ][
   rotate: false
-  xy: 892, 228
+  xy: 1900, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridge/⮝ ⎶
   rotate: false
-  xy: 972, 228
+  xy: 1940, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridge/⮟ ][
   rotate: false
-  xy: 1372, 276
+  xy: 1500, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/bridge/⮟ ⎶
   rotate: false
-  xy: 1452, 284
+  xy: 1660, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Alchemy
   rotate: false
-  xy: 484, 324
+  xy: 244, 172
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Ankh
   rotate: false
-  xy: 1416, 404
+  xy: 836, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Anvil
   rotate: false
-  xy: 4, 44
+  xy: 540, 404
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Armory
   rotate: false
-  xy: 140, 180
+  xy: 140, 100
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Barrel
   rotate: false
-  xy: 268, 252
+  xy: 548, 276
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Bed
   rotate: false
-  xy: 1816, 404
+  xy: 1236, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Bellows
   rotate: false
-  xy: 268, 308
+  xy: 268, 228
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Bookshelf
   rotate: false
-  xy: 212, 140
+  xy: 540, 164
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Brazier
   rotate: false
-  xy: 540, 444
+  xy: 644, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Crystalball
   rotate: false
-  xy: 188, 96
+  xy: 1716, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Drinks
   rotate: false
-  xy: 268, 140
+  xy: 284, 116
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Eternal Flame
   rotate: false
-  xy: 612, 266
+  xy: 740, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Inn
   rotate: false
-  xy: 380, 252
+  xy: 284, 4
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Locksmith
   rotate: false
-  xy: 1404, 444
+  xy: 1652, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Shop
   rotate: false
-  xy: 380, 140
+  xy: 396, 112
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Stable
   rotate: false
-  xy: 952, 388
+  xy: 452, 82
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/Stove
   rotate: false
-  xy: 1008, 388
+  xy: 396, 56
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/decor/sleeping
   rotate: false
-  xy: 1108, 324
+  xy: 620, 340
   size: 32, 16
   orig: 32, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Hills ◰
   rotate: false
-  xy: 1792, 364
+  xy: 940, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Hills ◱
   rotate: false
-  xy: 1832, 364
+  xy: 980, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Hills ◲
   rotate: false
-  xy: 1872, 364
+  xy: 1020, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Hills ◳
   rotate: false
-  xy: 1912, 364
+  xy: 980, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Sand ◰
   rotate: false
-  xy: 268, 20
+  xy: 1300, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Sand ◱
   rotate: false
-  xy: 308, 20
+  xy: 1260, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Sand ◲
   rotate: false
-  xy: 348, 20
+  xy: 1300, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/detail/Sand ◳
   rotate: false
-  xy: 388, 20
+  xy: 1340, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Covetous
   rotate: false
-  xy: 148, 56
+  xy: 1676, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Dungeon
   rotate: false
-  xy: 148, 56
+  xy: 1676, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Deceit
   rotate: false
-  xy: 148, 56
+  xy: 1676, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Wrong
   rotate: false
-  xy: 148, 56
+  xy: 1676, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Despise
   rotate: false
-  xy: 268, 60
+  xy: 1916, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Dungeon3
   rotate: false
-  xy: 268, 60
+  xy: 1916, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/dungeons/Destard
   rotate: false
-  xy: 268, 60
+  xy: 1916, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/Editor
   rotate: false
-  xy: 1913, 300
+  xy: 452, 200
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/blank
   rotate: false
-  xy: 1913, 300
+  xy: 452, 200
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/⚕
   rotate: false
-  xy: 1913, 300
+  xy: 452, 200
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/Notch detail
   rotate: false
-  xy: 1592, 324
+  xy: 1140, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/Notch overlay
   rotate: false
-  xy: 1632, 324
+  xy: 1100, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/Notch template
   rotate: false
-  xy: 1672, 324
+  xy: 1140, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/alignment/24x28 (32x32)
   rotate: false
-  xy: 4, 4
+  xy: 2012, 476
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/alignment/24x28 (32x32) detailed
   rotate: false
-  xy: 44, 4
+  xy: 300, 188
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -2088,784 +3068,784 @@ TileSets/Ultima/Tiles/editor/alignment/finetune (256x256) ultra
   index: -1
 TileSets/Ultima/Tiles/editor/alignment/large (64x64) detailed
   rotate: false
-  xy: 540, 372
+  xy: 412, 224
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/entities/Editor entity 1
   rotate: false
-  xy: 612, 444
+  xy: 788, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/Fort
   rotate: false
-  xy: 612, 444
+  xy: 788, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___☠☠ Mɪɢʀᴀᴛɪᴏɴ Sᴘʀɪᴛᴇs ☠☠___
   rotate: false
-  xy: 1276, 212
+  xy: 564, 4
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚕⚕ Eᴅɪᴛᴏʀ Sᴘʀɪᴛᴇs ⚕⚕___
   rotate: false
-  xy: 1300, 212
+  xy: 820, 220
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/___⚘⚘ Tᴇʀʀᴀɪɴ Dᴇᴄᴏʀᴀᴛɪᴏɴs ⚘⚘___
   rotate: false
-  xy: 1324, 212
+  xy: 36, 12
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/header
   rotate: false
-  xy: 468, 45
+  xy: 2020, 261
   size: 24, 87
   orig: 24, 87
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer00
   rotate: false
-  xy: 1176, 388
+  xy: 564, 108
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer01
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer02
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer03
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer04
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer05
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer06
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/menu/spacer07
   rotate: false
-  xy: 436, 242
+  xy: 620, 98
   size: 48, 58
   orig: 48, 58
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/terrain/Bordered square
   rotate: false
-  xy: 1936, 404
+  xy: 1356, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/terrain/Edging square
   rotate: false
-  xy: 388, 100
+  xy: 700, 356
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/terrain/Ocean aligner
   rotate: false
-  xy: 1792, 324
+  xy: 1180, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/terrain/Striped square
   rotate: false
-  xy: 828, 308
+  xy: 1500, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 1
   rotate: false
-  xy: 388, 60
+  xy: 1996, 396
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 10
   rotate: false
-  xy: 572, 244
+  xy: 700, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 11
   rotate: false
-  xy: 628, 306
+  xy: 700, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 2
   rotate: false
-  xy: 164, 16
+  xy: 660, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 3
   rotate: false
-  xy: 540, 324
+  xy: 340, 64
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 4
   rotate: false
-  xy: 572, 284
+  xy: 660, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Shadowlord
   rotate: false
-  xy: 572, 284
+  xy: 660, 276
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 5
   rotate: false
-  xy: 1232, 396
+  xy: 396, 8
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 6
   rotate: false
-  xy: 1280, 396
+  xy: 660, 396
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/features/Dirt
   rotate: false
-  xy: 308, 100
+  xy: 1956, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/features/Grass
   rotate: false
-  xy: 1632, 364
+  xy: 940, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/features/Hills
   rotate: false
-  xy: 1752, 364
+  xy: 980, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/║
   rotate: false
-  xy: 1188, 348
+  xy: 1660, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ˭
   rotate: false
-  xy: 932, 268
+  xy: 1940, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╔
   rotate: false
-  xy: 1012, 268
+  xy: 780, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╗
   rotate: false
-  xy: 1052, 268
+  xy: 860, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╗╚ ⮟
   rotate: false
-  xy: 1092, 268
+  xy: 940, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╚
   rotate: false
-  xy: 1092, 228
+  xy: 980, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╝
   rotate: false
-  xy: 1132, 228
+  xy: 1060, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮝ ╦
   rotate: false
-  xy: 1212, 228
+  xy: 1220, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ‗
   rotate: false
-  xy: 1372, 236
+  xy: 1540, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╔
   rotate: false
-  xy: 1452, 244
+  xy: 1700, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╗
   rotate: false
-  xy: 1492, 244
+  xy: 1780, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╚
   rotate: false
-  xy: 1532, 244
+  xy: 1860, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╝
   rotate: false
-  xy: 1572, 244
+  xy: 1940, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╝╔ ⮝
   rotate: false
-  xy: 1612, 244
+  xy: 604, 58
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/path/⮟ ╩
   rotate: false
-  xy: 1692, 244
+  xy: 644, 18
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/║
   rotate: false
-  xy: 1148, 308
+  xy: 1700, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ˭
   rotate: false
-  xy: 932, 228
+  xy: 1900, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ⋗▨
   rotate: false
-  xy: 972, 268
+  xy: 1940, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╔
   rotate: false
-  xy: 1012, 228
+  xy: 820, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╗
   rotate: false
-  xy: 1052, 228
+  xy: 900, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╚
   rotate: false
-  xy: 1132, 268
+  xy: 1020, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╝
   rotate: false
-  xy: 1172, 268
+  xy: 1100, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╠
   rotate: false
-  xy: 1172, 228
+  xy: 1140, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╣
   rotate: false
-  xy: 1212, 268
+  xy: 1180, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╦
   rotate: false
-  xy: 1252, 276
+  xy: 1260, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ╩
   rotate: false
-  xy: 1252, 236
+  xy: 1300, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ▀
   rotate: false
-  xy: 1292, 276
+  xy: 1340, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ▨⋖
   rotate: false
-  xy: 1292, 236
+  xy: 1380, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ⩓
   rotate: false
-  xy: 1332, 276
+  xy: 1420, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮝ ⩔
   rotate: false
-  xy: 1332, 236
+  xy: 1460, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ‗
   rotate: false
-  xy: 1412, 284
+  xy: 1580, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ⋗▨
   rotate: false
-  xy: 1412, 244
+  xy: 1620, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╔
   rotate: false
-  xy: 1492, 284
+  xy: 1740, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╗
   rotate: false
-  xy: 1532, 284
+  xy: 1820, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╚
   rotate: false
-  xy: 1572, 284
+  xy: 1900, 244
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╝
   rotate: false
-  xy: 1612, 284
+  xy: 564, 68
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╠
   rotate: false
-  xy: 1652, 284
+  xy: 644, 58
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╣
   rotate: false
-  xy: 1652, 244
+  xy: 564, 28
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╦
   rotate: false
-  xy: 1692, 284
+  xy: 604, 18
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ╩
   rotate: false
-  xy: 1732, 284
+  xy: 1980, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ▄
   rotate: false
-  xy: 1732, 244
+  xy: 660, 236
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ▨⋖
   rotate: false
-  xy: 1772, 284
+  xy: 700, 236
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ⩓
   rotate: false
-  xy: 1772, 244
+  xy: 740, 236
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/river/⮟ ⩔
   rotate: false
-  xy: 1812, 284
+  xy: 780, 204
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◢
   rotate: false
-  xy: 1188, 308
+  xy: 1660, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◣
   rotate: false
-  xy: 1268, 316
+  xy: 1740, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◤
   rotate: false
-  xy: 1348, 316
+  xy: 1740, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◥
   rotate: false
-  xy: 692, 226
+  xy: 1740, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◸
   rotate: false
-  xy: 732, 228
+  xy: 1820, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◹
   rotate: false
-  xy: 772, 228
+  xy: 1820, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◺
   rotate: false
-  xy: 812, 228
+  xy: 1820, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterfront/◿
   rotate: false
-  xy: 852, 228
+  xy: 1900, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◢
   rotate: false
-  xy: 1228, 316
+  xy: 1700, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◣
   rotate: false
-  xy: 1308, 316
+  xy: 1700, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◤
   rotate: false
-  xy: 692, 266
+  xy: 1780, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◥
   rotate: false
-  xy: 732, 268
+  xy: 1780, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◸
   rotate: false
-  xy: 772, 268
+  xy: 1780, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◹
   rotate: false
-  xy: 812, 268
+  xy: 1860, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◺
   rotate: false
-  xy: 852, 268
+  xy: 1860, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/waterline/◿
   rotate: false
-  xy: 892, 268
+  xy: 1860, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Adventurer
   rotate: false
-  xy: 1376, 404
+  xy: 796, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Avatar
   rotate: false
-  xy: 1496, 404
+  xy: 916, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Bard
   rotate: false
-  xy: 1536, 404
+  xy: 956, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Tiles/editor/units/Editor unit 7
   rotate: false
-  xy: 1536, 404
+  xy: 956, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Beholder
   rotate: false
-  xy: 1856, 404
+  xy: 1276, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Daemon
   rotate: false
-  xy: 188, 56
+  xy: 1756, 404
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Dragon
   rotate: false
-  xy: 348, 100
+  xy: 620, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Ettin
   rotate: false
-  xy: 612, 226
+  xy: 740, 316
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Galley
   rotate: false
-  xy: 1512, 364
+  xy: 900, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Magical seahorse
   rotate: false
-  xy: 1392, 324
+  xy: 1020, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Orc
   rotate: false
-  xy: 1832, 324
+  xy: 1220, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Sea serpent
   rotate: false
-  xy: 428, 20
+  xy: 1300, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Ship
   rotate: false
-  xy: 668, 346
+  xy: 1340, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Ship2
   rotate: false
-  xy: 668, 306
+  xy: 1380, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Skiff
   rotate: false
-  xy: 708, 308
+  xy: 1420, 364
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Skiff2
   rotate: false
-  xy: 788, 348
+  xy: 1380, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Snake
   rotate: false
-  xy: 748, 308
+  xy: 1420, 324
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Splat
   rotate: false
-  xy: 896, 388
+  xy: 452, 138
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Squid
   rotate: false
-  xy: 788, 308
+  xy: 1420, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Steed
   rotate: false
-  xy: 1328, 396
+  xy: 708, 396
   size: 40, 40
   orig: 40, 40
   offset: 0, 0
   index: -1
 TileSets/Ultima/Units/Troll
   rotate: false
-  xy: 1028, 348
+  xy: 1540, 284
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
