@@ -465,6 +465,7 @@
 		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
+			"Has an elevation of [0] for visibility calculations",
 			// "Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
@@ -482,6 +483,7 @@
 		"occursOn": ["Flatland shoreline", "Flatland", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
+			"Has an elevation of [2] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[70]% Chance to be destroyed by nukes",
 		]

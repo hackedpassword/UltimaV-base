@@ -16,6 +16,7 @@
 			"Founds a new city <once>",
 			//"May heal outside of friendly territory",
 			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
                 ],
 		"attackSound": "metalhit"
 	},
@@ -29,6 +30,7 @@
 		"promotions": [],
 		"uniques": [
 			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
                 ],
 		"attackSound": "metalhit"
 	},
@@ -37,11 +39,13 @@
 		"unitType": "Adventurer",
 		"movement": 2,
 		"strength": 55,
+		"range": 3,
 		"cost": 4,
 		"requiredTech": "Summoning",
 		"promotions": [],
 		"uniques": [
 			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
                 ],
 		"attackSound": "metalhit"
 	},
@@ -54,9 +58,11 @@
 		"unitType": "Civilian",
 		"movement": 1,
 		"uniques": [
+			"Requires at least [3] population",
+			"Limited to [1] per Civilization",
+			"All adjacent units heal [7] HP when healing",
 			"Cannot attack",
 			"Withdraws before melee combat",
-			"Never appears as a Barbarian unit",
 		],
 	},
 
@@ -66,40 +72,58 @@
 	{
 		"name": "Orc",
 		"unitType": "Monster",
-		"uniqueTo": "Barbarians",
-		"movement": 2,
-		"strength": 50,
+		"movement": 1,
+		"strength": 30,
 		"uniques": [
 			"Destroys tile improvements when attacking",
 			"Can transform to [Splat] <upon being defeated>",
 		],
 	},
 
-	
+
 	{
 		"name": "Troll",
-		"unitType": "Monster",
-		"uniqueTo": "Barbarians",
+		"unitType": "Trolls",
 		"movement": 1,
-		"strength": 75,
-		"uniques": [
-			"Destroys tile improvements when attacking",
-			"Can transform to [Splat] <upon being defeated>",
-		],
+		"uniques": ["Can transform to [Troll2] <for [0] movement>"]
 	},
+	{
+		"name": "Troll2",
+		"unitType": "Trolls",
+		"movement": 1,
+		"uniques": ["Can transform to [Troll3] <for [0] movement>",
+			    "Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Troll3",
+		"unitType": "Trolls",
+		"movement": 1,
+		"uniques": ["Can transform to [Troll4] <for [0] movement>",
+			    "Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Troll4",
+		"unitType": "Trolls",
+		"movement": 1,
+		"uniques": ["Can transform to [Troll] <for [0] movement>",
+			    "Will not be displayed in Civilopedia"]
+	},
+
+
 
 	{
 		"name": "Ettin",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
+		"range": 3,
 		"movement": 1,
 		"strength": 130,
 		"uniques": [
 			"Destroys tile improvements when attacking",
 			"Can transform to [Splat] <upon being defeated>",
+			"Cannot be purchased",
 		],
-	},
-	
+	},	
 	{
 		"name": "Snake",
 		"unitType": "Monster",
@@ -108,12 +132,13 @@
 		"strength": 30,
 		"uniques": [
 			"Can transform to [Splat] <upon being defeated>",
+			"Cannot be purchased",
 		],
 	},
-	
+
 // Helper entities
 
-	{
+	{	// ongoing work to turn killed things into corpses or whatever
 		"name": "Splat",
 		"unitType": "non Unit",
 		"movement": 0,

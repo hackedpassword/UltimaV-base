@@ -3,20 +3,40 @@
         "name": "Civilian",
         "movementType": "Land", 
         "uniques": [
+		"Never appears as a Barbarian unit",
         ]
     },
     {
         "name": "Adventurer",
-        "movementType": "Land", 
+        "movementType": "Land",
+	"cost": 20,
         "uniques": [
-            "Double movement in [Flatland]",
+		"Double movement in [River]",
+		"Never appears as a Barbarian unit",
         ]
     },
     {
         "name": "Monster",
-        "movementType": "Land", 
+        "movementType": "Land",
+	"uniqueTo": "Barbarians",
         "uniques": [
-	        ]
+		"Cannot be purchased",
+		//"Unbuildable",
+		"Double movement in [Woods]",
+	]
+    },
+    {
+        "name": "Trolls",
+        "movementType": "Land",
+	"uniqueTo": "Barbarians",
+	"strength": 75,
+        "uniques": [
+		"Cannot be purchased",
+		//"Unbuildable",
+		"Double movement in [Brush]",
+		"Destroys tile improvements when attacking",
+		"Monster",
+	]
     },
     {
         "name": "non Unit",
