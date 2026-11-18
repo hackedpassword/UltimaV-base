@@ -66,15 +66,51 @@
 	{
 		"name": "Orc",
 		"unitType": "Monster",
-		"movement": 1,
-		"strength": 30,
+		"uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 50,
 		"uniques": [
 			"Destroys tile improvements when attacking",
 			"Can transform to [Splat] <upon being defeated>",
 		],
 	},
 
+	
+	{
+		"name": "Troll",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"movement": 1,
+		"strength": 75,
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"Can transform to [Splat] <upon being defeated>",
+		],
+	},
 
+	{
+		"name": "Ettin",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"movement": 1,
+		"strength": 130,
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"Can transform to [Splat] <upon being defeated>",
+		],
+	},
+	
+	{
+		"name": "Snake",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"movement": 1,
+		"strength": 30,
+		"uniques": [
+			"Can transform to [Splat] <upon being defeated>",
+		],
+	},
+	
 // Helper entities
 
 	{
