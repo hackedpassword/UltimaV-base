@@ -93,6 +93,15 @@
     // We further control various layers of berries
 
 	{
+		"name": "River",
+		"type": "Land",
+		"food": 0,
+        	"gold": 0,
+		"movementCost": 1,
+		"uniques": ["Has an elevation of [0] for visibility calculations"],
+		"RGB": [0, 170, 0]
+	},
+	{
 		"name": "Grassland",  // tl;dr entities are not populated yet, focusing on map dev
 		"type": "Land",
 		"food": 0,
@@ -316,7 +325,7 @@
 		"occursOn": ["Sacred Ground","Grassland"],
 		"uniques": [
 			"Blocks line-of-sight from tiles at same elevation",
-			"Grants [Magic carpet] ([The ultimate vehicle]) to adjacent [Adventurer] units for the rest of the game",
+			"Grants [Magic carpet] ([The ultimate vehicle]) to adjacent [Avatars] units for the rest of the game",
 		],
 		"turnsInto": "Sacred Ground",
 		"impassable": false,
@@ -345,7 +354,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -356,7 +365,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -367,7 +376,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -378,7 +387,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -389,7 +398,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -400,7 +409,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -411,7 +420,7 @@
 		"movementCost": 3,
 		"gold": 10,
 		"occursOn": ["Mountain","Flatland","Cursed Ground"],
-		"uniques": [],
+		"uniques": ["Dungeon"],
 		"turnsInto": "Cursed Ground",
 		"impassable": false,
 		"unbuildable": true,
@@ -503,8 +512,8 @@
 			"[+10] Strength for cities built on this terrain",
 		],
 	},
-	{	// TF overlay, promo 'Open field' targets this as a starting point
-		"name": "features/Grass",
+	{	// TF overlay
+		"name": "features/Grass", // Grasspatch
 		"type": "TerrainFeature",
 		"occursOn": ["Desert shoreline","Desert","Flatland shoreline","Flatland","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor"],

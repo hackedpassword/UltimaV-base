@@ -1,49 +1,93 @@
-[
-    {
-        "name": "Civilian",
-        "movementType": "Land", 
-        "uniques": [
-		"Never appears as a Barbarian unit",
-        ]
-    },
-    {
-        "name": "Adventurer",
-        "movementType": "Land",
-	"cost": 20,
-        "uniques": [
-		"Double movement in [River]",
-		"Never appears as a Barbarian unit",
-        ]
-    },
-    {
-        "name": "Monster",
-        "movementType": "Land",
-	"uniqueTo": "Barbarians",
-        "uniques": [
-		"Cannot be purchased",
-		//"Unbuildable",
-		"Double movement in [Woods]",
-	]
-    },
-    {
-        "name": "Trolls",
-        "movementType": "Land",
-	"uniqueTo": "Barbarians",
-	"strength": 75,
-        "uniques": [
-		"Cannot be purchased",
-		//"Unbuildable",
-		"Double movement in [Brush]",
-		"Destroys tile improvements when attacking",
-		"Monster",
-	]
-    },
-    {
-        "name": "non Unit",
-        "movementType": "Land", 
-        "uniques": [
-        ]
-    },
+[	
+	{
+		"name": "Civilian",
+		"movementType": "Land",
+		"movement": 2,
+		"strength": 10,
+		"cost": 2,
+		"uniques": [
+			"Never appears as a Barbarian unit",
+		]
+	},
+	{
+		"name": "Avatars",
+		"movementType": "Land",
+		"cost": 10,
+		"requiredTech": "Summoning",
+		"uniques": [
+			"Free [Bard] appears <in [Hut] tiles> <once>",
+			"Free [Adventurer] appears <in [Village] tiles> <once>",
+			"[This Unit] gains the [Blink] promotion <in [Customs house] tiles>",  // naming
+			"[This Unit] gains the [Focus] promotion <in [Dungeon] tiles>",
+			"[This Unit] gains the [Hero] promotion <in [Manufactory] tiles>",
+			"[+2] Sight",
+			//"May heal outside of friendly territory",
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			"Unbuildable",
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Bards",
+		"movementType": "Land", 
+		"strength": 55,
+		"range": 3,
+		"cost": 4,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"uniques": [
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			"Unbuildable",
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Adventurers",
+		"movementType": "Land",
+		"movement": 2,
+		"strength": 70,
+		"cost": 20,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"uniques": [
+			"Double movement in [River]",
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+		],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Monster",
+		"movementType": "Land",
+		"uniqueTo": "Barbarians",
+		"uniques": [
+			"Cannot be purchased",
+			"Unbuildable",
+			"Double movement in [Woods]",
+		]
+	},
+	{
+		"name": "Trolls",
+		"movementType": "Land",
+		"movement": 1,
+		"uniqueTo": "Barbarians",
+		"strength": 75,
+		"uniques": [
+			"Cannot be purchased",
+			//"Unbuildable",
+			"Double movement in [Brush]",
+			"Destroys tile improvements when attacking",
+			"Monster",
+		]
+	},
+	{
+		"name": "non Unit",
+		"movementType": "Land", 
+		"uniques": [
+		]
+	},
 
 
 ]

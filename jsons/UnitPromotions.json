@@ -13,6 +13,12 @@
 		],
 	},
         {
+		"name": "Focus",
+		"uniques": [
+			"Withdraws before melee combat <with [15]% chance>",
+		],
+	},
+        {
 		"name": "Open terrain",
 		"uniques": [
 		  "[+1] Movement <in [features/Grass] tiles>",

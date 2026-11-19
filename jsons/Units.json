@@ -1,53 +1,101 @@
 [
-  {
-		"name": "Avatar",
-		"unitType": "Adventurer",
-		"movement": 2,
-		"strength": 100,
-		"cost": 10,
-		"requiredTech": "Summoning",
-		"promotions": ["Hero","Blink"],
+	{
+		"name": "Peasant",
+		"unitType": "Civilian",
+		"movement": 1,
 		"uniques": [
-			"[This Unit] gains the [Open terrain] promotion"
-			"[+2] Sight",
-			"Double movement in [features/Grass]",
-			"Can move after attacking",
-			"All healing effects doubled",
-			"Founds a new city <once>",
-			//"May heal outside of friendly territory",
-			"Never appears as a Barbarian unit",
-			"Cannot be purchased",
-                ],
-		"attackSound": "metalhit"
+		],
 	},
+
+	{
+		"name": "Avatar",
+		"unitType": "Avatars",
+		"strength": 100,
+		"promotions": [],  // required as unit, sticks to unit
+		"movement": 2,  // required as unit, any change is transitive, so M=1 reduces all forms' M to 1
+		"uniques": ["Can transform to [Avatar2] <for [0] movement>",  // Invention: Unit forms. Stats swap, most everything else stays the same.
+			"Can move after attacking",]
+	},
+	{
+		"name": "Avatar2",
+		"unitType": "Avatars",
+		"movement": 2,
+		"uniques": ["Can transform to [Avatar3] <for [0] movement>",
+			"All healing effects doubled",
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Avatar3",
+		"unitType": "Avatars",
+		"movement": 2,
+		"uniques": ["Can transform to [Avatar4] <for [0] movement>",
+			"[+15] Strength",                                             // game requires one unit having settler ability, modify later
+                        "Founds a new city <in tiles without [Vegetation]> <once>",  // only this form will set camp
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Avatar4",
+		"unitType": "Avatars",
+		"movement": 2,
+		"uniques": ["Can transform to [Avatar] <for [0] movement>",
+			"[1] additional attacks per turn",
+			"Will not be displayed in Civilopedia"]
+	},
+
 	{
 		"name": "Adventurer",
-		"unitType": "Adventurer",
+		"unitType": "Adventurers",
 		"movement": 2,
-		"strength": 70,
-		"cost": 5,
-		"requiredTech": "Summoning",
-		"promotions": [],
-		"uniques": [
-			"Never appears as a Barbarian unit",
-			"Cannot be purchased",
-                ],
-		"attackSound": "metalhit"
+		"uniques": ["Can transform to [Adventurer2] <for [0] movement>"]
 	},
 	{
-		"name": "Bard",
-		"unitType": "Adventurer",
+		"name": "Adventurer2",
+		"unitType": "Adventurers",
 		"movement": 2,
-		"strength": 55,
-		"range": 3,
-		"cost": 4,
-		"requiredTech": "Summoning",
-		"promotions": [],
-		"uniques": [
-			"Never appears as a Barbarian unit",
-			"Cannot be purchased",
-                ],
-		"attackSound": "metalhit"
+		"uniques": ["Can transform to [Adventurer3] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Adventurer3",
+		"unitType": "Adventurers",
+		"movement": 2,
+		"uniques": ["Can transform to [Adventurer4] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Adventurer4",
+		"unitType": "Adventurers",
+		"movement": 2,
+		"uniques": ["Can transform to [Adventurer] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
+	},
+
+	{
+		"name": "Bard",
+		"unitType": "Bards",
+		"movement": 2,
+		"uniques": ["Can transform to [Bard2] <for [0] movement>"]
+	},
+	{
+		"name": "Bard2",
+		"unitType": "Bards",
+		"movement": 2,
+		"uniques": ["Can transform to [Bard3] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Bard3",
+		"unitType": "Bards",
+		"movement": 2,
+		"uniques": ["Can transform to [Bard4] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
+	},
+	{
+		"name": "Bard4",
+		"unitType": "Bards",
+		"movement": 2,
+		"uniques": ["Can transform to [Bard] <for [0] movement>",
+			"Will not be displayed in Civilopedia"]
 	},
 
 
@@ -84,29 +132,25 @@
 	{
 		"name": "Troll",
 		"unitType": "Trolls",
-		"movement": 1,
 		"uniques": ["Can transform to [Troll2] <for [0] movement>"]
 	},
 	{
 		"name": "Troll2",
 		"unitType": "Trolls",
-		"movement": 1,
 		"uniques": ["Can transform to [Troll3] <for [0] movement>",
-			    "Will not be displayed in Civilopedia"]
+			"Will not be displayed in Civilopedia"]
 	},
 	{
 		"name": "Troll3",
 		"unitType": "Trolls",
-		"movement": 1,
 		"uniques": ["Can transform to [Troll4] <for [0] movement>",
-			    "Will not be displayed in Civilopedia"]
+			"Will not be displayed in Civilopedia"]
 	},
 	{
 		"name": "Troll4",
 		"unitType": "Trolls",
-		"movement": 1,
 		"uniques": ["Can transform to [Troll] <for [0] movement>",
-			    "Will not be displayed in Civilopedia"]
+			"Will not be displayed in Civilopedia"]
 	},
 
 
