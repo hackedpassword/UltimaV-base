@@ -16,9 +16,20 @@
 	{
 		"name": "Shrine of the Avatar",
 		"faith": 1,
-		"cost": 40,
+		"cost": 9999,
 		"maintenance": 1,
 		"requiredTech": "Summoning",
 		"uniques": ["Only available <when religion is enabled>"]
+	},
+	{
+		"name": "Something",
+		"isNationalWonder": false,
+		"cost": 9999,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"uniques": []
 	},
 ]

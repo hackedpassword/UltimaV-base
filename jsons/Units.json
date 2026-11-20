@@ -2,41 +2,47 @@
 	{
 		"name": "Peasant",
 		"unitType": "Civilian",
-		"movement": 1,
-		"uniques": [
-		],
+		"movement": 2,
+		"cost": 2,
+		"uniques": [],
 	},
 
 	{
 		"name": "Avatar",
 		"unitType": "Avatars",
-		"strength": 100,
-		"promotions": [],  // required as unit, sticks to unit
-		"movement": 2,  // required as unit, any change is transitive, so M=1 reduces all forms' M to 1
-		"uniques": ["Can transform to [Avatar2] <for [0] movement>",  // Invention: Unit forms. Stats swap, most everything else stays the same.
-			"Can move after attacking",]
-	},
-	{
-		"name": "Avatar2",
+		"movement": 2,  // any change between forms is transitive, so M=1 reduces all forms' M to 1
+		"strength": 200,
+		"cost": 10,
+		"requiredTech": "Summoning",  // could learn a new form depending on tech age!
+		"promotions": [],
+		"attackSound": "metalhit",
+		"uniques": ["Can transform to [Avatar2] <for [0] movement>",	// Innovation: Unit forms. Makes uniques swappable. Noisy, whatever.
+			"Can move after attacking",]				// Each form has its own sprite, making forms visual! Kinda like manual animation too.
+	},{
+		"name": "Avatar2",  // By swapping forms, the player is choosing character strategy. This takes no M, but matters at EoT.
 		"unitType": "Avatars",
 		"movement": 2,
+		"strength": 200,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Avatar3] <for [0] movement>",
 			"All healing effects doubled",
-			"Will not be displayed in Civilopedia"]
-	},
-	{
-		"name": "Avatar3",
+			"Will not be displayed in Civilopedia"],  // We'll list forms in cpedia later
+	},{
+		"name": "Avatar3",  // only form that will set camp (found city)
 		"unitType": "Avatars",
 		"movement": 2,
+		"strength": 200,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Avatar4] <for [0] movement>",
-			"[+15] Strength",                                             // game requires one unit having settler ability, modify later
-                        "Founds a new city <in tiles without [Vegetation]> <once>",  // only this form will set camp
+			"[+15] Strength",
+                        "Founds a new city <in tiles without [Vegetation]> <once>",  // game requires one unit having settler ability. modify later
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Avatar4",
 		"unitType": "Avatars",
 		"movement": 2,
+		"strength": 200,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Avatar] <for [0] movement>",
 			"[1] additional attacks per turn",
 			"Will not be displayed in Civilopedia"]
@@ -46,26 +52,34 @@
 		"name": "Adventurer",
 		"unitType": "Adventurers",
 		"movement": 2,
+		"strength": 70,
+		"cost": 20,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Adventurer2] <for [0] movement>"]
-	},
-	{
+	},{
 		"name": "Adventurer2",
 		"unitType": "Adventurers",
 		"movement": 2,
+		"strength": 70,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Adventurer3] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Adventurer3",
 		"unitType": "Adventurers",
 		"movement": 2,
+		"strength": 70,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Adventurer4] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Adventurer4",
 		"unitType": "Adventurers",
 		"movement": 2,
+		"strength": 70,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Adventurer] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
 	},
@@ -74,26 +88,42 @@
 		"name": "Bard",
 		"unitType": "Bards",
 		"movement": 2,
+		"strength": 55,
+		"range": 3,
+		"rangedStrength": 85,
+		"cost": 4,
+		"requiredTech": "Summoning",
+		"promotions": [],
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Bard2] <for [0] movement>"]
-	},
-	{
+	},{
 		"name": "Bard2",
 		"unitType": "Bards",
 		"movement": 2,
+		"strength": 55,
+		"range": 3,
+		"rangedStrength": 85,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Bard3] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Bard3",
 		"unitType": "Bards",
 		"movement": 2,
+		"strength": 55,
+		"range": 3,
+		"rangedStrength": 85,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Bard4] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Bard4",
 		"unitType": "Bards",
 		"movement": 2,
+		"strength": 55,
+		"range": 3,
+		"rangedStrength": 85,
+		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Bard] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
 	},
@@ -128,55 +158,61 @@
 		],
 	},
 
-
 	{
 		"name": "Troll",
 		"unitType": "Trolls",
-		"uniques": ["Can transform to [Troll2] <for [0] movement>"]
-	},
-	{
+		"movement": 2,
+		"uniqueTo": "Barbarians",
+		"strength": 75,
+		"uniques": ["Can transform to [Troll2] <for [0] movement>"]  // what happens if we add a label like "Monster"?
+	},{
 		"name": "Troll2",
 		"unitType": "Trolls",
+		"movement": 1,
+		"uniqueTo": "Barbarians",
+		"strength": 75,
 		"uniques": ["Can transform to [Troll3] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Troll3",
 		"unitType": "Trolls",
+		"movement": 1,
+		"uniqueTo": "Barbarians",
+		"strength": 75,
 		"uniques": ["Can transform to [Troll4] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
-	},
-	{
+	},{
 		"name": "Troll4",
 		"unitType": "Trolls",
+		"movement": 1,
+		"uniqueTo": "Barbarians",
+		"strength": 75,
 		"uniques": ["Can transform to [Troll] <for [0] movement>",
 			"Will not be displayed in Civilopedia"]
 	},
-
 
 
 	{
 		"name": "Ettin",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"range": 3,
+		"range": 2,
 		"movement": 1,
-		"strength": 130,
+		"strength": 90,
+		"rangedStrength": 60,
 		"uniques": [
 			"Destroys tile improvements when attacking",
 			"Can transform to [Splat] <upon being defeated>",
-			"Cannot be purchased",
 		],
 	},	
 	{
 		"name": "Snake",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"movement": 1,
+		"movement": 2,
 		"strength": 30,
 		"uniques": [
 			"Can transform to [Splat] <upon being defeated>",
-			"Cannot be purchased",
 		],
 	},
 
@@ -192,8 +228,6 @@
 			"Self-destructs when attacking",
 			"[-1] HP when healing",
 			"Invisible to non-adjacent units <upon turn end>",
-			"Never appears as a Barbarian unit",
-			"Cannot be purchased",
 		],
 	},
 

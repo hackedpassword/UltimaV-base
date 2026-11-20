@@ -1,6 +1,11 @@
 [  // Mostly representative abilities, good for now
 
 	{
+		"name": "Skiff",
+		"uniques": [
+		],
+	},
+	{
 		"name": "Blink",
 		"uniques": [
 			"May Paradrop to [Land] tiles up to [8] tiles away",

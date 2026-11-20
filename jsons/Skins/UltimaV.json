@@ -47,10 +47,10 @@
 	{"r":1,"g":0,"b":1,"a":1}, 		//	*Icons (not fonts) are overridden by iconColor.
 
 	"iconColor": 				// Docs: The color this UI element should use for its icons. Overrides foregroundColor for icons if specified.
-	{"r":0.5,"g":0.5,"b":0.75,"a":0.5},	// Fill color of: Pick a Tech button, city screen city name
+	{"r":0,"g":0,"b":0,"a":0.01},	// Fill color of: Pick a Tech button, city screen city name
 
 	"defaultVariantTint": 			// Default global tint
-	{"r":1,"g":0.75,"b":0.75,"a":0.75},
+	{"r":1,"g":0.25,"b":1,"a":0.75},
 
 	"clearColor": 				// Game root background color, the very first rendered layer. Normally Unciv dark blue color.
 	{"r":0,"g":0,"b":0,"a":1}, 		// In order to make clearColor work, we modhack a code logic pickle that denies setting this element.
@@ -423,7 +423,7 @@
 
 	"WorldScreen/CityButton/IconTable": { 					// Cities names
 		"image": "roundedEdgeRectangle",
-		"alpha": 0.9, },
+		"alpha": 0.5, },
 
 	"WorldScreen/CityButton/InfluenceBar": { 				// Inluence bar background
 		"tint": {"r":1,"g":1,"b":1,"a":1},

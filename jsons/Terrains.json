@@ -94,12 +94,12 @@
 
 	{
 		"name": "River",
-		"type": "Land",
+		"type": "Water",
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
 		"uniques": ["Has an elevation of [0] for visibility calculations"],
-		"RGB": [0, 170, 0]
+		"RGB": [0, 0, 170]
 	},
 	{
 		"name": "Grassland",  // tl;dr entities are not populated yet, focusing on map dev
@@ -181,7 +181,7 @@
 		"food": 0,
         	"gold": 0,
 		"movementCost": 1,
-		"uniques": ["Has an elevation of [0] for visibility calculations"],
+		"uniques": ["Coast","Coastal Water","Has an elevation of [0] for visibility calculations"],
 		"RGB": [85, 255, 255]
 	},
 	{
@@ -443,7 +443,7 @@
 		"overrideStats": false,
 		"unbuildable": true,
 		"defenceBonus": 0.1,
-		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Vegetation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
@@ -456,7 +456,7 @@
 		"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.35,
-		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Vegetation",
 			"Blocks line-of-sight from tiles at same elevation",
@@ -471,7 +471,7 @@
 		//"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.5,
-		"occursOn": ["Grassland shoreline", "Grassland", "Hill"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
 			"Has an elevation of [0] for visibility calculations",
@@ -525,7 +525,7 @@
 		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.4,
-		"occursOn": ["Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain", "Vegetation", 
 		],
@@ -557,28 +557,28 @@
 		"name": "waterline/◤", // legacy - "shoreline NW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
+		"occursOn": ["River", "Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 	{
 		"name": "waterline/◥", // legacy - "shoreline NE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
+		"occursOn": ["River", "Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","shoreline"],
 	},
 	{
 		"name": "waterline/◣", // legacy - "shoreline SW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
+		"occursOn": ["River", "Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 	{
 		"name": "waterline/◢", // legacy - "shoreline SE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
+		"occursOn": ["River", "Desert","Desert shoreline","Mountain","Mountain shoreline","Flatland","Flatland shoreline","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor","Grassland","waterline"],
 	},
 
@@ -587,28 +587,28 @@
 		"name": "waterline/◸", // legacy - "Shore NW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"occursOn": ["River", "Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
 		"name": "waterline/◹", // legacy - "Shore NE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"occursOn": ["River", "Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
 		"name": "waterline/◺", // legacy - "Shore SW straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"occursOn": ["River", "Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 	{
 		"name": "waterline/◿", // legacy - "Shore SE straight"
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore","Surf","Coast shore","Coast"],
+		"occursOn": ["River", "Surf shore","Surf","Coast shore","Coast"],
 		"uniques": ["TerrainDecor","Coast","waterline"],
 	},
 
@@ -624,49 +624,49 @@
 	{
 		"name": "detail/Hills ◰",
 		"type": "TerrainFeature",
-		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◳",
 		"type": "TerrainFeature",
-		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◱",
 		"type": "TerrainFeature",
-		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Hills ◲",
 		"type": "TerrainFeature",
-		"occursOn": ["Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◰",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◳",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◱",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
 		"uniques": ["TerrainDetail"],
 	},
 	{
 		"name": "detail/Sand ◲",
 		"type": "TerrainFeature",
-		"occursOn": ["Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
+		"occursOn": ["River", "Grassland shoreline", "Grassland", "Flatland shoreline", "Flatland", "Desert shoreline", "Desert"],
 		"uniques": ["TerrainDetail"],
 	},
 
@@ -707,203 +707,203 @@
 		"name": "river/║",
 		"type": "TerrainFeature",
 		"unbuildable": true,  // the occursOn below needs all these lands so river can act as shoreline decor
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ˭",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ‗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ▀",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ▄",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╝",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╚",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╗",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╩",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╦",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╣",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ╠",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⩔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⩓",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⩔",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ▨⋖",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮝ ⋗▨",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ▨⋖",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 	{
 		"name": "river/⮟ ⋗▨",
 		"type": "TerrainFeature",
 		"unbuildable": true,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": ["TerrainDecor","River","Coast"]
 	},
 
@@ -1037,6 +1037,7 @@
 		"movementCost": 3,
 		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": [
+			"Grants [Skiff] ([I'm on a boat!]) to adjacent [Avatars] units for the rest of the game",
 			"Rough terrain",
 			"Blocks line-of-sight from tiles at same elevation",
 		],

@@ -26,13 +26,12 @@
 		"wonderCost": 1,
 		"techs": [
 			{
-				"name": "Motivation",  // placeholder tech
+				"name": "Motivation",
+				"cost": 1,
 				"row": 1,
-				"quote": "",
-				"uniques": [
-				        //"motivated",
-				],
+				"prerequisites": ["Summoning"],
+				"uniques": ["Enables embarkation for land units"],
 			},
-		]
+		],
 	},
 ]
