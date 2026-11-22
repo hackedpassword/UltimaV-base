@@ -1099,6 +1099,15 @@
 	{ "name":"editor/menu/spacer07","type":"TerrainFeature","unbuildable":true,"uniques":["_Editor_"], }	// Menu spacer
 
 	{
+		"name": "Moongate",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": false,
+		"occursOn": ["Desert shoreline", "Desert", "Flatland shoreline", "Flatland","Grassland shoreline", "Grassland"],
+		"uniques": [
+		],
+	},
+	{
 		"name": "features/Dirt",
 		"type": "TerrainFeature",
 		"movementCost": 1,

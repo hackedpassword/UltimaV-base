@@ -12,6 +12,7 @@
 		"uniques": [
 			"Free [Bard] appears <in [Hut] tiles> <once>",
 			"Free [Adventurer] appears <in [Village] tiles> <once>",
+			"[This Unit] gains the [Moongate travel] status for [0] turn(s) <in [Moongate portal] tiles> <for [0] movement>",
 			"[This Unit] gains the [Blink] promotion <in [Customs house] tiles>",  // naming
 			"[This Unit] gains the [Focus] promotion <in [Dungeon] tiles>",
 			"[This Unit] gains the [Hero] promotion <in [Manufactory] tiles>",

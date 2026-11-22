@@ -1,6 +1,13 @@
 [
 
 	{
+		"name": "Moongate portal",
+		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
+		"uniques": [
+			"Unpillagable",
+		],
+	}
+	{
 		"name": "Hut",
 		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": []

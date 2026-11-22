@@ -2,11 +2,19 @@
 	{
 		"name": "Moongate travel",
 		"uniques": [
-			"Only available <on [Moongate] tiles>",
-			"Only available <for [Avatars] units>",
-			"May Paradrop to [Moongate] tiles up to [128] tiles away",
+			"Only available <in [Moongate] tiles>",
+			"This Promotion is free",
+			"May Paradrop to [Moongate portal] tiles up to [128] tiles away",
+			"[This Unit] gains the [Moongate egress] promotion",
 		],
 	},
+/*	{
+		"name": "Moongate egress",
+		"uniques": [
+			"[This Unit] loses the [Moongate travel] promotion",
+			"[This Unit] loses the [Moongate egress] promotion",
+		],
+	},*/
 	{
 		"name": "Skiff",
 		"uniques": [
