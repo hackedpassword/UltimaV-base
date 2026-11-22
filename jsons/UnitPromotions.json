@@ -1,5 +1,12 @@
 [  // Mostly representative abilities, good for now
-
+	{
+		"name": "Moongate travel",
+		"uniques": [
+			"Only available <on [Moongate] tiles>",
+			"Only available <for [Avatars] units>",
+			"May Paradrop to [Moongate] tiles up to [128] tiles away",
+		],
+	},
 	{
 		"name": "Skiff",
 		"uniques": [
