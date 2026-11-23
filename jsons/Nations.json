@@ -22,7 +22,7 @@
 		"favoredReligion": "Valor",
 		"uniqueName": "Sun Never Sets",
 		"uniques": ["[+2] Movement <for [Water] units>"],
-		"cities": ["Trinsic","Yew","Moonglow"],  // ...
+		"cities": ["Camp"],  // ...
 		"spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
 	},
 
