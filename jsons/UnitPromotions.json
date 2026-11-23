@@ -4,17 +4,20 @@
 		"uniques": [
 			"Only available <in [Moongate] tiles>",
 			"This Promotion is free",
+			"[This Unit] loses the [Moongate travel] promotion <upon entering a [Moongate] tile>",
+			"[This Unit] loses the [Moongate travel] promotion <upon entering a [non-[Moongate]] tile>",
+			"Reveal up to [all] [Moongate] within a [128] tile radius",
+			"Gain control over [Moongate] tiles in a [128]-tile radius",
 			"May Paradrop to [Moongate portal] tiles up to [128] tiles away",
-			"[This Unit] gains the [Moongate egress] promotion",
 		],
 	},
-/*	{
-		"name": "Moongate egress",
+	{
+		"name": "yerded",  // crowd control during testing
 		"uniques": [
-			"[This Unit] loses the [Moongate travel] promotion",
-			"[This Unit] loses the [Moongate egress] promotion",
+			"[This Unit] is destroyed <upon losing the [yerded] status>",
 		],
-	},*/
+	},
+
 	{
 		"name": "Skiff",
 		"uniques": [

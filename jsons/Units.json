@@ -6,6 +6,18 @@
 		"cost": 2,
 		"uniques": [],
 	},
+	{
+		"name": "Apparition",
+		"unitType": "Civilian",
+		"movement": 0,
+		"uniques": [
+			"[This Unit] is destroyed <upon turn end>",
+			"Never appears as a Barbarian unit",
+			"Cannot be purchased",
+			"Unbuildable",
+		],
+	},
+
 
 	{
 		"name": "Avatar",

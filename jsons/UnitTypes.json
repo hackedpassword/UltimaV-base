@@ -12,12 +12,11 @@
 		"uniques": [
 			"Free [Bard] appears <in [Hut] tiles> <once>",
 			"Free [Adventurer] appears <in [Village] tiles> <once>",
-			"[This Unit] gains the [Moongate travel] status for [0] turn(s) <in [Moongate portal] tiles> <for [0] movement>",
-			"[This Unit] gains the [Blink] promotion <in [Customs house] tiles>",  // naming
-			"[This Unit] gains the [Focus] promotion <in [Dungeon] tiles>",
-			"[This Unit] gains the [Hero] promotion <in [Manufactory] tiles>",
+			"[This Unit] gains the [Moongate travel] promotion <in [Moongate] tiles> <upon entering a [Moongate portal] tile>", // <upon turn end>",
+			"[This Unit] gains the [Blink] promotion <upon entering a [Academy] tile>",  // naming
+			"[This Unit] gains the [Focus] promotion <upon entering a [Dungeon] tile>",
+			"[This Unit] gains the [Hero] promotion <upon entering a [Manufactory] tile>",
 			"[+2] Sight",
-			//"May heal outside of friendly territory",
 			"Never appears as a Barbarian unit",
 			"Cannot be purchased",
 			"Unbuildable",
@@ -37,6 +36,7 @@
 		"name": "Adventurers",
 		"movementType": "Land",
 		"uniques": [
+			"[This Unit] gains the [yerded] promotion",
 			"Double movement in [River]",
 			"Never appears as a Barbarian unit",
 			"Cannot be purchased",
@@ -58,8 +58,9 @@
 		"name": "Trolls",
 		"movementType": "Land",
 		"uniques": [
+			"[This Unit] gains the [yerded] status for [5] turn(s)",
 			"Cannot be purchased",
-			//"Unbuildable",
+			"Unbuildable",
 			"Double movement in [Brush]",
 			"Destroys tile improvements when attacking",
 		]

@@ -4,6 +4,7 @@
 		"name": "Moongate portal",
 		"terrainsCanBeBuiltOn": ["Land","_Editor_"],
 		"uniques": [
+			//"Free [Apparition] appears <upon entering a [Moongate portal] tile>",
 			"Unpillagable",
 		],
 	}
