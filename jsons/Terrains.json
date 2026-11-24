@@ -474,7 +474,7 @@
 		"occursOn": ["River", "Grassland shoreline", "Grassland", "Hill"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
-			"Has an elevation of [0] for visibility calculations",
+			"Has an elevation of [1] for visibility calculations",
 			// "Provides a one-time Production bonus to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[99]% Chance to be destroyed by nukes",  // this works, can set values to TerrainFeatures
@@ -492,7 +492,7 @@
 		"occursOn": ["Flatland shoreline", "Flatland", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
-			"Has an elevation of [2] for visibility calculations",
+			"Has an elevation of [1] for visibility calculations",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[70]% Chance to be destroyed by nukes",
 		]
@@ -503,7 +503,7 @@
 		"movementCost": 2,
 		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Desert shoreline", "Desert", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Rough terrain",
 			"Has an elevation of [2] for visibility calculations",
@@ -515,7 +515,7 @@
 	{	// TF overlay
 		"name": "features/Grass", // Grasspatch
 		"type": "TerrainFeature",
-		"occursOn": ["Desert shoreline","Desert","Flatland shoreline","Flatland","Grassland shoreline","Grassland"],
+		"occursOn": ["River", "Desert shoreline","Desert","Flatland shoreline","Flatland","Grassland shoreline","Grassland"],
 		"uniques": ["TerrainDecor"],
 	},
 	{
@@ -1035,7 +1035,7 @@
 		"name": "Waterfall",
 		"type": "TerrainFeature",
 		"movementCost": 3,
-		"occursOn": ["Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
+		"occursOn": ["River", "Surf shore", "Surf", "Coast", "Coast shore", "Flatland", "Flatland shoreline", "Desert shoreline", "Desert", "Mountain shoreline", "Mountain", "Grassland shoreline", "Grassland"],
 		"uniques": [
 			"Grants [Skiff] ([I'm on a boat!]) to adjacent [Avatars] units for the rest of the game",
 			"Rough terrain",
