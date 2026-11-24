@@ -58,7 +58,7 @@
 		"name": "Trolls",
 		"movementType": "Land",
 		"uniques": [
-			"[This Unit] gains the [yerded] status for [5] turn(s)",
+			"[This Unit] gains the [yerded] status for [10] turn(s)",
 			"Cannot be purchased",
 			"Unbuildable",
 			"Double movement in [Brush]",
