@@ -29,6 +29,8 @@
 		"promotions": [],
 		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Avatar2] <for [0] movement>",	// Innovation: Unit forms. Makes uniques swappable. Noisy, whatever.
+			// Unciv bug: transforming before settling first city reveals the entire map. Moving ability to initial form.
+			"Founds a new city <in tiles without [Vegetation]> <once>",  // game requires one unit having settler ability. modify later
 			"Can move after attacking",]				// Each form has its own sprite, making forms visual! Kinda like manual animation too.
 	},{
 		"name": "Avatar2",  // By swapping forms, the player is choosing character strategy. This takes no M, but matters at EoT.
@@ -47,8 +49,7 @@
 		"attackSound": "metalhit",
 		"uniques": ["Can transform to [Avatar4] <for [0] movement>",
 			"[+15] Strength",
-                        "Founds a new city <in tiles without [Vegetation]> <once>",  // game requires one unit having settler ability. modify later
-			"Will not be displayed in Civilopedia"]
+       		"Will not be displayed in Civilopedia"]
 	},{
 		"name": "Avatar4",
 		"unitType": "Avatars",
