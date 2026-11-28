@@ -59,7 +59,7 @@
 		"movementType": "Land",
 		"uniques": [
 			"[This Unit] gains the [yerded] status for [10] turn(s)",  // No monsters are showing up?
-			"[This Unit] is destroyed <upon losing the [yerded] status>",  // Let's see if a status is removed then re-added every turn
+			//"[This Unit] is destroyed <upon losing the [yerded] status>",  // Let's see if a status is removed then re-added every turn
 			"Cannot be purchased",
 			"Unbuildable",
 			"Double movement in [Brush]",
