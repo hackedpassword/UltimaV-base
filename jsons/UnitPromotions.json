@@ -14,7 +14,7 @@
 	{
 		"name": "yerded",  // crowd control during testing
 		"uniques": [
-			"[This Unit] is destroyed <upon losing the [yerded] status>",
+			//"[This Unit] is destroyed <upon losing the [yerded] status>",
 		],
 	},
 
